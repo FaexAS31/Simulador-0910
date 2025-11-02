@@ -71,6 +71,8 @@ router.register(r'dashboard/weekly-comparison', views.VwWeeklyComparisonViewSet,
 # URL patterns
 urlpatterns = [
     path('', include(router.urls)),
+    path('predict/', views.predict_craving),
+    path('task-status/<str:task_id>/', views.check_task_status),
 ]
 
 """

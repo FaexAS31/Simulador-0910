@@ -6,8 +6,8 @@ Custom admin interfaces for all models with search, filters, and inline editing.
 Access at: http://localhost:8000/admin/
 """
 
-from django.contrib import admin
-from django.utils.html import format_html
+from django.contrib import admin # type: ignore
+from django.utils.html import format_html # type: ignore
 from api.models import *
 
 

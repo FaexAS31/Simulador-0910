@@ -171,3 +171,723 @@
 [2025-10-30 21:33:17] [INFO] [api.views.VentanaViewSet] 📥 PATCH /api/ventanas/{id}/ | Action: partial_update
 [2025-10-30 21:33:17] [INFO] [api.views.VentanaViewSet] 📥 DELETE /api/ventanas/{id}/ | Action: destroy
 [2025-10-30 21:33:17] [INFO] [django.server:213] "GET /api/schema/ HTTP/1.1" 200 452321
+[2025-10-30 22:11:30] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-10-30 22:11:53] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-10-30 22:12:06] [INFO] [django.server:213] "GET /api/docs/ HTTP/1.1" 200 4731
+[2025-10-30 22:12:07] [INFO] [api.views.AdministradorViewSet] 📥 GET /api/administradores/ | Action: list
+[2025-10-30 22:12:07] [INFO] [api.views.AdministradorViewSet] 📥 POST /api/administradores/ | Action: create
+[2025-10-30 22:12:07] [INFO] [api.views.AdministradorViewSet] 📥 GET /api/administradores/{id}/ | Action: retrieve
+[2025-10-30 22:12:07] [INFO] [api.views.AdministradorViewSet] 📥 PUT /api/administradores/{id}/ | Action: update
+[2025-10-30 22:12:07] [INFO] [api.views.AdministradorViewSet] 📥 PATCH /api/administradores/{id}/ | Action: partial_update
+[2025-10-30 22:12:07] [INFO] [api.views.AdministradorViewSet] 📥 DELETE /api/administradores/{id}/ | Action: destroy
+[2025-10-30 22:12:07] [INFO] [api.views.AnalisisViewSet] 📥 GET /api/analisis/ | Action: list
+[2025-10-30 22:12:07] [INFO] [api.views.AnalisisViewSet] 📥 POST /api/analisis/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.AnalisisViewSet] 📥 GET /api/analisis/{id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.AnalisisViewSet] 📥 PUT /api/analisis/{id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.AnalisisViewSet] 📥 PATCH /api/analisis/{id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.AnalisisViewSet] 📥 DELETE /api/analisis/{id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.ConsumidorViewSet] 📥 GET /api/consumidores/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.ConsumidorViewSet] 📥 POST /api/consumidores/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.ConsumidorViewSet] 📥 GET /api/consumidores/{id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.ConsumidorViewSet] 📥 PUT /api/consumidores/{id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.ConsumidorViewSet] 📥 PATCH /api/consumidores/{id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.ConsumidorViewSet] 📥 DELETE /api/consumidores/{id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.VwDailySummaryViewSet] 📥 GET /api/dashboard/daily-summary/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.VwDailySummaryViewSet] 📥 POST /api/dashboard/daily-summary/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.VwDailySummaryViewSet] 📥 GET /api/dashboard/daily-summary/{consumidor_id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.VwDailySummaryViewSet] 📥 PUT /api/dashboard/daily-summary/{consumidor_id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.VwDailySummaryViewSet] 📥 PATCH /api/dashboard/daily-summary/{consumidor_id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.VwDailySummaryViewSet] 📥 DELETE /api/dashboard/daily-summary/{consumidor_id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.VwDesiresTrackingViewSet] 📥 GET /api/dashboard/desires/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.VwDesiresTrackingViewSet] 📥 POST /api/dashboard/desires/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.VwDesiresStatsViewSet] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.VwDesiresStatsViewSet] 📥 POST /api/dashboard/desires-stats/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.VwDesiresStatsViewSet] 📥 GET /api/dashboard/desires-stats/{deseo_tipo}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.VwDesiresStatsViewSet] 📥 PUT /api/dashboard/desires-stats/{deseo_tipo}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.VwDesiresStatsViewSet] 📥 PATCH /api/dashboard/desires-stats/{deseo_tipo}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.VwDesiresStatsViewSet] 📥 DELETE /api/dashboard/desires-stats/{deseo_tipo}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.VwDesiresTrackingViewSet] 📥 GET /api/dashboard/desires/{deseo_id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.VwDesiresTrackingViewSet] 📥 PUT /api/dashboard/desires/{deseo_id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.VwDesiresTrackingViewSet] 📥 PATCH /api/dashboard/desires/{deseo_id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.VwDesiresTrackingViewSet] 📥 DELETE /api/dashboard/desires/{deseo_id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.VwHabitStatsViewSet] 📥 GET /api/dashboard/habit-stats/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.VwHabitStatsViewSet] 📥 POST /api/dashboard/habit-stats/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.VwHabitStatsViewSet] 📥 GET /api/dashboard/habit-stats/{consumidor_id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.VwHabitStatsViewSet] 📥 PUT /api/dashboard/habit-stats/{consumidor_id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.VwHabitStatsViewSet] 📥 PATCH /api/dashboard/habit-stats/{consumidor_id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.VwHabitStatsViewSet] 📥 DELETE /api/dashboard/habit-stats/{consumidor_id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.VwHabitTrackingViewSet] 📥 GET /api/dashboard/habit-tracking/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.VwHabitTrackingViewSet] 📥 POST /api/dashboard/habit-tracking/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.VwHabitTrackingViewSet] 📥 GET /api/dashboard/habit-tracking/{consumidor_id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.VwHabitTrackingViewSet] 📥 PUT /api/dashboard/habit-tracking/{consumidor_id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.VwHabitTrackingViewSet] 📥 PATCH /api/dashboard/habit-tracking/{consumidor_id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.VwHabitTrackingViewSet] 📥 DELETE /api/dashboard/habit-tracking/{consumidor_id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.VwHeartRateTimelineViewSet] 📥 GET /api/dashboard/heart-rate/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.VwHeartRateTimelineViewSet] 📥 POST /api/dashboard/heart-rate/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.VwHeartRateStatsViewSet] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.VwHeartRateStatsViewSet] 📥 POST /api/dashboard/heart-rate-stats/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.VwHeartRateStatsViewSet] 📥 GET /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.VwHeartRateStatsViewSet] 📥 PUT /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.VwHeartRateStatsViewSet] 📥 PATCH /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.VwHeartRateStatsViewSet] 📥 DELETE /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.VwHeartRateTimelineViewSet] 📥 GET /api/dashboard/heart-rate/{id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.VwHeartRateTimelineViewSet] 📥 PUT /api/dashboard/heart-rate/{id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.VwHeartRateTimelineViewSet] 📥 PATCH /api/dashboard/heart-rate/{id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.VwHeartRateTimelineViewSet] 📥 DELETE /api/dashboard/heart-rate/{id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.VwPredictionSummaryViewSet] 📥 GET /api/dashboard/prediction-summary/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.VwPredictionSummaryViewSet] 📥 POST /api/dashboard/prediction-summary/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.VwPredictionSummaryViewSet] 📥 GET /api/dashboard/prediction-summary/{consumidor_id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.VwPredictionSummaryViewSet] 📥 PUT /api/dashboard/prediction-summary/{consumidor_id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.VwPredictionSummaryViewSet] 📥 PATCH /api/dashboard/prediction-summary/{consumidor_id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.VwPredictionSummaryViewSet] 📥 DELETE /api/dashboard/prediction-summary/{consumidor_id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.VwPredictionTimelineViewSet] 📥 GET /api/dashboard/predictions/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.VwPredictionTimelineViewSet] 📥 POST /api/dashboard/predictions/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.VwPredictionTimelineViewSet] 📥 GET /api/dashboard/predictions/{analisis_id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.VwPredictionTimelineViewSet] 📥 PUT /api/dashboard/predictions/{analisis_id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.VwPredictionTimelineViewSet] 📥 PATCH /api/dashboard/predictions/{analisis_id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.VwPredictionTimelineViewSet] 📥 DELETE /api/dashboard/predictions/{analisis_id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.VwWeeklyComparisonViewSet] 📥 GET /api/dashboard/weekly-comparison/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.VwWeeklyComparisonViewSet] 📥 POST /api/dashboard/weekly-comparison/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.VwWeeklyComparisonViewSet] 📥 GET /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.VwWeeklyComparisonViewSet] 📥 PUT /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.VwWeeklyComparisonViewSet] 📥 PATCH /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.VwWeeklyComparisonViewSet] 📥 DELETE /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.DeseoViewSet] 📥 GET /api/deseos/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.DeseoViewSet] 📥 POST /api/deseos/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.DeseoViewSet] 📥 GET /api/deseos/{id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.DeseoViewSet] 📥 PUT /api/deseos/{id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.DeseoViewSet] 📥 PATCH /api/deseos/{id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.DeseoViewSet] 📥 DELETE /api/deseos/{id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.DeseoViewSet] 📥 POST /api/deseos/{id}/resolve/ | Action: resolve
+[2025-10-30 22:12:08] [INFO] [api.views.EmocionViewSet] 📥 GET /api/emociones/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.EmocionViewSet] 📥 POST /api/emociones/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.EmocionViewSet] 📥 GET /api/emociones/{id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.EmocionViewSet] 📥 PUT /api/emociones/{id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.EmocionViewSet] 📥 PATCH /api/emociones/{id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.EmocionViewSet] 📥 DELETE /api/emociones/{id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.FormularioViewSet] 📥 GET /api/formularios/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.FormularioViewSet] 📥 POST /api/formularios/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.FormularioTemporalViewSet] 📥 GET /api/formularios-temporales/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.FormularioTemporalViewSet] 📥 POST /api/formularios-temporales/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.FormularioTemporalViewSet] 📥 GET /api/formularios-temporales/{id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.FormularioTemporalViewSet] 📥 PUT /api/formularios-temporales/{id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.FormularioTemporalViewSet] 📥 PATCH /api/formularios-temporales/{id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.FormularioTemporalViewSet] 📥 DELETE /api/formularios-temporales/{id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.FormularioViewSet] 📥 GET /api/formularios/{id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.FormularioViewSet] 📥 PUT /api/formularios/{id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.FormularioViewSet] 📥 PATCH /api/formularios/{id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.FormularioViewSet] 📥 DELETE /api/formularios/{id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.HabitoViewSet] 📥 GET /api/habitos/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.HabitoViewSet] 📥 POST /api/habitos/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.HabitoViewSet] 📥 GET /api/habitos/{id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.HabitoViewSet] 📥 PUT /api/habitos/{id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.HabitoViewSet] 📥 PATCH /api/habitos/{id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.HabitoViewSet] 📥 DELETE /api/habitos/{id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.LecturaViewSet] 📥 GET /api/lecturas/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.LecturaViewSet] 📥 POST /api/lecturas/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.LecturaViewSet] 📥 GET /api/lecturas/{id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.LecturaViewSet] 📥 PUT /api/lecturas/{id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.LecturaViewSet] 📥 PATCH /api/lecturas/{id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.LecturaViewSet] 📥 DELETE /api/lecturas/{id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.MotivoViewSet] 📥 GET /api/motivos/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.MotivoViewSet] 📥 POST /api/motivos/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.MotivoViewSet] 📥 GET /api/motivos/{id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.MotivoViewSet] 📥 PUT /api/motivos/{id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.MotivoViewSet] 📥 PATCH /api/motivos/{id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.MotivoViewSet] 📥 DELETE /api/motivos/{id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.NotificacionViewSet] 📥 GET /api/notificaciones/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.NotificacionViewSet] 📥 POST /api/notificaciones/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.NotificacionViewSet] 📥 GET /api/notificaciones/{id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.NotificacionViewSet] 📥 PUT /api/notificaciones/{id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.NotificacionViewSet] 📥 PATCH /api/notificaciones/{id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.NotificacionViewSet] 📥 DELETE /api/notificaciones/{id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.NotificacionViewSet] 📥 POST /api/notificaciones/{id}/mark_read/ | Action: mark_read
+[2025-10-30 22:12:08] [INFO] [api.views.NotificacionViewSet] 📥 POST /api/notificaciones/{id}/mark_unread/ | Action: mark_unread
+[2025-10-30 22:12:08] [INFO] [api.views.PermisoViewSet] 📥 GET /api/permisos/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.PermisoViewSet] 📥 POST /api/permisos/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.PermisoViewSet] 📥 GET /api/permisos/{id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.PermisoViewSet] 📥 PUT /api/permisos/{id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.PermisoViewSet] 📥 PATCH /api/permisos/{id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.PermisoViewSet] 📥 DELETE /api/permisos/{id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.SolucionViewSet] 📥 GET /api/soluciones/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.SolucionViewSet] 📥 POST /api/soluciones/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.SolucionViewSet] 📥 GET /api/soluciones/{id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.SolucionViewSet] 📥 PUT /api/soluciones/{id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.SolucionViewSet] 📥 PATCH /api/soluciones/{id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.SolucionViewSet] 📥 DELETE /api/soluciones/{id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.UsuarioViewSet] 📥 GET /api/usuarios/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.UsuarioViewSet] 📥 POST /api/usuarios/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.UsuarioViewSet] 📥 GET /api/usuarios/{id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.UsuarioViewSet] 📥 PUT /api/usuarios/{id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.UsuarioViewSet] 📥 PATCH /api/usuarios/{id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.UsuarioViewSet] 📥 DELETE /api/usuarios/{id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [api.views.UsuarioViewSet] 📥 POST /api/usuarios/login/ | Action: login
+[2025-10-30 22:12:08] [INFO] [api.views.UsuarioViewSet] 📥 POST /api/usuarios/register/ | Action: register
+[2025-10-30 22:12:08] [INFO] [api.views.VentanaViewSet] 📥 GET /api/ventanas/ | Action: list
+[2025-10-30 22:12:08] [INFO] [api.views.VentanaViewSet] 📥 POST /api/ventanas/ | Action: create
+[2025-10-30 22:12:08] [INFO] [api.views.VentanaViewSet] 📥 GET /api/ventanas/{id}/ | Action: retrieve
+[2025-10-30 22:12:08] [INFO] [api.views.VentanaViewSet] 📥 PUT /api/ventanas/{id}/ | Action: update
+[2025-10-30 22:12:08] [INFO] [api.views.VentanaViewSet] 📥 PATCH /api/ventanas/{id}/ | Action: partial_update
+[2025-10-30 22:12:08] [INFO] [api.views.VentanaViewSet] 📥 DELETE /api/ventanas/{id}/ | Action: destroy
+[2025-10-30 22:12:08] [INFO] [django.server:213] "GET /api/schema/ HTTP/1.1" 200 452321
+[2025-10-30 22:12:17] [INFO] [django.server:213] "GET /admin/ HTTP/1.1" 200 15506
+[2025-10-30 22:13:41] [INFO] [api.views.ConsumidorViewSet] 📥 GET /api/consumidores/ | Action: list
+[2025-10-30 22:13:41] [INFO] [api.views.ConsumidorViewSet] 📤 ✓ Response: 200 | Action: list
+[2025-10-30 22:13:41] [INFO] [django.server:213] "GET /api/consumidores/ HTTP/1.1" 200 1586
+[2025-10-30 22:18:20] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-10-30 22:18:52] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 21:29:48] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 21:36:38] [INFO] [api.tasks:21] Starting prediction for user 1
+[2025-11-01 21:36:38] [ERROR] [api.tasks:88] Prediction failed: Usuario has no consumidor.
+[2025-11-01 21:37:38] [INFO] [api.tasks:21] Starting prediction for user 1
+[2025-11-01 21:37:38] [ERROR] [api.tasks:88] Prediction failed: Usuario has no consumidor.
+[2025-11-01 21:39:38] [INFO] [api.tasks:21] Starting prediction for user 1
+[2025-11-01 21:39:38] [ERROR] [api.tasks:88] Prediction failed: Usuario has no consumidor.
+[2025-11-01 21:42:14] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 21:42:16] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 21:43:38] [INFO] [api.tasks:21] Starting prediction for user 1
+[2025-11-01 21:43:38] [ERROR] [api.tasks:88] Prediction failed: Usuario has no consumidor.
+[2025-11-01 21:48:44] [INFO] [api.tasks:21] Starting prediction for user 2
+[2025-11-01 21:48:44] [ERROR] [api.tasks:88] Prediction failed: [Errno 2] No such file or directory: 'models/smoking_craving_model.pkl'
+[2025-11-01 21:49:44] [INFO] [api.tasks:21] Starting prediction for user 2
+[2025-11-01 21:49:44] [ERROR] [api.tasks:88] Prediction failed: [Errno 2] No such file or directory: 'models/smoking_craving_model.pkl'
+[2025-11-01 21:51:44] [INFO] [api.tasks:21] Starting prediction for user 2
+[2025-11-01 21:51:44] [ERROR] [api.tasks:88] Prediction failed: [Errno 2] No such file or directory: 'models/smoking_craving_model.pkl'
+[2025-11-01 21:54:23] [INFO] [django.server:213] "GET /api/docs/ HTTP/1.1" 200 4731
+[2025-11-01 21:54:23] [INFO] [api.views.AdministradorViewSet] 📥 GET /api/administradores/ | Action: list
+[2025-11-01 21:54:23] [INFO] [api.views.AdministradorViewSet] 📥 POST /api/administradores/ | Action: create
+[2025-11-01 21:54:23] [INFO] [api.views.AdministradorViewSet] 📥 GET /api/administradores/{id}/ | Action: retrieve
+[2025-11-01 21:54:23] [INFO] [api.views.AdministradorViewSet] 📥 PUT /api/administradores/{id}/ | Action: update
+[2025-11-01 21:54:23] [INFO] [api.views.AdministradorViewSet] 📥 PATCH /api/administradores/{id}/ | Action: partial_update
+[2025-11-01 21:54:23] [INFO] [api.views.AdministradorViewSet] 📥 DELETE /api/administradores/{id}/ | Action: destroy
+[2025-11-01 21:54:23] [INFO] [api.views.AnalisisViewSet] 📥 GET /api/analisis/ | Action: list
+[2025-11-01 21:54:23] [INFO] [api.views.AnalisisViewSet] 📥 POST /api/analisis/ | Action: create
+[2025-11-01 21:54:23] [INFO] [api.views.AnalisisViewSet] 📥 GET /api/analisis/{id}/ | Action: retrieve
+[2025-11-01 21:54:23] [INFO] [api.views.AnalisisViewSet] 📥 PUT /api/analisis/{id}/ | Action: update
+[2025-11-01 21:54:23] [INFO] [api.views.AnalisisViewSet] 📥 PATCH /api/analisis/{id}/ | Action: partial_update
+[2025-11-01 21:54:23] [INFO] [api.views.AnalisisViewSet] 📥 DELETE /api/analisis/{id}/ | Action: destroy
+[2025-11-01 21:54:23] [INFO] [api.views.ConsumidorViewSet] 📥 GET /api/consumidores/ | Action: list
+[2025-11-01 21:54:23] [INFO] [api.views.ConsumidorViewSet] 📥 POST /api/consumidores/ | Action: create
+[2025-11-01 21:54:23] [INFO] [api.views.ConsumidorViewSet] 📥 GET /api/consumidores/{id}/ | Action: retrieve
+[2025-11-01 21:54:23] [INFO] [api.views.ConsumidorViewSet] 📥 PUT /api/consumidores/{id}/ | Action: update
+[2025-11-01 21:54:23] [INFO] [api.views.ConsumidorViewSet] 📥 PATCH /api/consumidores/{id}/ | Action: partial_update
+[2025-11-01 21:54:23] [INFO] [api.views.ConsumidorViewSet] 📥 DELETE /api/consumidores/{id}/ | Action: destroy
+[2025-11-01 21:54:23] [INFO] [api.views.VwDailySummaryViewSet] 📥 GET /api/dashboard/daily-summary/ | Action: list
+[2025-11-01 21:54:23] [INFO] [api.views.VwDailySummaryViewSet] 📥 POST /api/dashboard/daily-summary/ | Action: create
+[2025-11-01 21:54:23] [INFO] [api.views.VwDailySummaryViewSet] 📥 GET /api/dashboard/daily-summary/{consumidor_id}/ | Action: retrieve
+[2025-11-01 21:54:23] [INFO] [api.views.VwDailySummaryViewSet] 📥 PUT /api/dashboard/daily-summary/{consumidor_id}/ | Action: update
+[2025-11-01 21:54:23] [INFO] [api.views.VwDailySummaryViewSet] 📥 PATCH /api/dashboard/daily-summary/{consumidor_id}/ | Action: partial_update
+[2025-11-01 21:54:23] [INFO] [api.views.VwDailySummaryViewSet] 📥 DELETE /api/dashboard/daily-summary/{consumidor_id}/ | Action: destroy
+[2025-11-01 21:54:23] [INFO] [api.views.VwDesiresTrackingViewSet] 📥 GET /api/dashboard/desires/ | Action: list
+[2025-11-01 21:54:23] [INFO] [api.views.VwDesiresTrackingViewSet] 📥 POST /api/dashboard/desires/ | Action: create
+[2025-11-01 21:54:23] [INFO] [api.views.VwDesiresStatsViewSet] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-01 21:54:23] [INFO] [api.views.VwDesiresStatsViewSet] 📥 POST /api/dashboard/desires-stats/ | Action: create
+[2025-11-01 21:54:23] [INFO] [api.views.VwDesiresStatsViewSet] 📥 GET /api/dashboard/desires-stats/{deseo_tipo}/ | Action: retrieve
+[2025-11-01 21:54:23] [INFO] [api.views.VwDesiresStatsViewSet] 📥 PUT /api/dashboard/desires-stats/{deseo_tipo}/ | Action: update
+[2025-11-01 21:54:23] [INFO] [api.views.VwDesiresStatsViewSet] 📥 PATCH /api/dashboard/desires-stats/{deseo_tipo}/ | Action: partial_update
+[2025-11-01 21:54:23] [INFO] [api.views.VwDesiresStatsViewSet] 📥 DELETE /api/dashboard/desires-stats/{deseo_tipo}/ | Action: destroy
+[2025-11-01 21:54:23] [INFO] [api.views.VwDesiresTrackingViewSet] 📥 GET /api/dashboard/desires/{deseo_id}/ | Action: retrieve
+[2025-11-01 21:54:23] [INFO] [api.views.VwDesiresTrackingViewSet] 📥 PUT /api/dashboard/desires/{deseo_id}/ | Action: update
+[2025-11-01 21:54:23] [INFO] [api.views.VwDesiresTrackingViewSet] 📥 PATCH /api/dashboard/desires/{deseo_id}/ | Action: partial_update
+[2025-11-01 21:54:23] [INFO] [api.views.VwDesiresTrackingViewSet] 📥 DELETE /api/dashboard/desires/{deseo_id}/ | Action: destroy
+[2025-11-01 21:54:23] [INFO] [api.views.VwHabitStatsViewSet] 📥 GET /api/dashboard/habit-stats/ | Action: list
+[2025-11-01 21:54:23] [INFO] [api.views.VwHabitStatsViewSet] 📥 POST /api/dashboard/habit-stats/ | Action: create
+[2025-11-01 21:54:23] [INFO] [api.views.VwHabitStatsViewSet] 📥 GET /api/dashboard/habit-stats/{consumidor_id}/ | Action: retrieve
+[2025-11-01 21:54:23] [INFO] [api.views.VwHabitStatsViewSet] 📥 PUT /api/dashboard/habit-stats/{consumidor_id}/ | Action: update
+[2025-11-01 21:54:23] [INFO] [api.views.VwHabitStatsViewSet] 📥 PATCH /api/dashboard/habit-stats/{consumidor_id}/ | Action: partial_update
+[2025-11-01 21:54:23] [INFO] [api.views.VwHabitStatsViewSet] 📥 DELETE /api/dashboard/habit-stats/{consumidor_id}/ | Action: destroy
+[2025-11-01 21:54:23] [INFO] [api.views.VwHabitTrackingViewSet] 📥 GET /api/dashboard/habit-tracking/ | Action: list
+[2025-11-01 21:54:23] [INFO] [api.views.VwHabitTrackingViewSet] 📥 POST /api/dashboard/habit-tracking/ | Action: create
+[2025-11-01 21:54:23] [INFO] [api.views.VwHabitTrackingViewSet] 📥 GET /api/dashboard/habit-tracking/{consumidor_id}/ | Action: retrieve
+[2025-11-01 21:54:23] [INFO] [api.views.VwHabitTrackingViewSet] 📥 PUT /api/dashboard/habit-tracking/{consumidor_id}/ | Action: update
+[2025-11-01 21:54:23] [INFO] [api.views.VwHabitTrackingViewSet] 📥 PATCH /api/dashboard/habit-tracking/{consumidor_id}/ | Action: partial_update
+[2025-11-01 21:54:24] [INFO] [api.views.VwHabitTrackingViewSet] 📥 DELETE /api/dashboard/habit-tracking/{consumidor_id}/ | Action: destroy
+[2025-11-01 21:54:24] [INFO] [api.views.VwHeartRateTimelineViewSet] 📥 GET /api/dashboard/heart-rate/ | Action: list
+[2025-11-01 21:54:24] [INFO] [api.views.VwHeartRateTimelineViewSet] 📥 POST /api/dashboard/heart-rate/ | Action: create
+[2025-11-01 21:54:24] [INFO] [api.views.VwHeartRateStatsViewSet] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-01 21:54:24] [INFO] [api.views.VwHeartRateStatsViewSet] 📥 POST /api/dashboard/heart-rate-stats/ | Action: create
+[2025-11-01 21:54:24] [INFO] [api.views.VwHeartRateStatsViewSet] 📥 GET /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: retrieve
+[2025-11-01 21:54:24] [INFO] [api.views.VwHeartRateStatsViewSet] 📥 PUT /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: update
+[2025-11-01 21:54:24] [INFO] [api.views.VwHeartRateStatsViewSet] 📥 PATCH /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: partial_update
+[2025-11-01 21:54:24] [INFO] [api.views.VwHeartRateStatsViewSet] 📥 DELETE /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: destroy
+[2025-11-01 21:54:24] [INFO] [api.views.VwHeartRateTimelineViewSet] 📥 GET /api/dashboard/heart-rate/{id}/ | Action: retrieve
+[2025-11-01 21:54:24] [INFO] [api.views.VwHeartRateTimelineViewSet] 📥 PUT /api/dashboard/heart-rate/{id}/ | Action: update
+[2025-11-01 21:54:24] [INFO] [api.views.VwHeartRateTimelineViewSet] 📥 PATCH /api/dashboard/heart-rate/{id}/ | Action: partial_update
+[2025-11-01 21:54:24] [INFO] [api.views.VwHeartRateTimelineViewSet] 📥 DELETE /api/dashboard/heart-rate/{id}/ | Action: destroy
+[2025-11-01 21:54:24] [INFO] [api.views.VwPredictionSummaryViewSet] 📥 GET /api/dashboard/prediction-summary/ | Action: list
+[2025-11-01 21:54:24] [INFO] [api.views.VwPredictionSummaryViewSet] 📥 POST /api/dashboard/prediction-summary/ | Action: create
+[2025-11-01 21:54:24] [INFO] [api.views.VwPredictionSummaryViewSet] 📥 GET /api/dashboard/prediction-summary/{consumidor_id}/ | Action: retrieve
+[2025-11-01 21:54:24] [INFO] [api.views.VwPredictionSummaryViewSet] 📥 PUT /api/dashboard/prediction-summary/{consumidor_id}/ | Action: update
+[2025-11-01 21:54:24] [INFO] [api.views.VwPredictionSummaryViewSet] 📥 PATCH /api/dashboard/prediction-summary/{consumidor_id}/ | Action: partial_update
+[2025-11-01 21:54:24] [INFO] [api.views.VwPredictionSummaryViewSet] 📥 DELETE /api/dashboard/prediction-summary/{consumidor_id}/ | Action: destroy
+[2025-11-01 21:54:24] [INFO] [api.views.VwPredictionTimelineViewSet] 📥 GET /api/dashboard/predictions/ | Action: list
+[2025-11-01 21:54:24] [INFO] [api.views.VwPredictionTimelineViewSet] 📥 POST /api/dashboard/predictions/ | Action: create
+[2025-11-01 21:54:24] [INFO] [api.views.VwPredictionTimelineViewSet] 📥 GET /api/dashboard/predictions/{analisis_id}/ | Action: retrieve
+[2025-11-01 21:54:24] [INFO] [api.views.VwPredictionTimelineViewSet] 📥 PUT /api/dashboard/predictions/{analisis_id}/ | Action: update
+[2025-11-01 21:54:24] [INFO] [api.views.VwPredictionTimelineViewSet] 📥 PATCH /api/dashboard/predictions/{analisis_id}/ | Action: partial_update
+[2025-11-01 21:54:24] [INFO] [api.views.VwPredictionTimelineViewSet] 📥 DELETE /api/dashboard/predictions/{analisis_id}/ | Action: destroy
+[2025-11-01 21:54:24] [INFO] [api.views.VwWeeklyComparisonViewSet] 📥 GET /api/dashboard/weekly-comparison/ | Action: list
+[2025-11-01 21:54:24] [INFO] [api.views.VwWeeklyComparisonViewSet] 📥 POST /api/dashboard/weekly-comparison/ | Action: create
+[2025-11-01 21:54:24] [INFO] [api.views.VwWeeklyComparisonViewSet] 📥 GET /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: retrieve
+[2025-11-01 21:54:24] [INFO] [api.views.VwWeeklyComparisonViewSet] 📥 PUT /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: update
+[2025-11-01 21:54:24] [INFO] [api.views.VwWeeklyComparisonViewSet] 📥 PATCH /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: partial_update
+[2025-11-01 21:54:24] [INFO] [api.views.VwWeeklyComparisonViewSet] 📥 DELETE /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: destroy
+[2025-11-01 21:54:24] [INFO] [api.views.DeseoViewSet] 📥 GET /api/deseos/ | Action: list
+[2025-11-01 21:54:24] [INFO] [api.views.DeseoViewSet] 📥 POST /api/deseos/ | Action: create
+[2025-11-01 21:54:24] [INFO] [api.views.DeseoViewSet] 📥 GET /api/deseos/{id}/ | Action: retrieve
+[2025-11-01 21:54:24] [INFO] [api.views.DeseoViewSet] 📥 PUT /api/deseos/{id}/ | Action: update
+[2025-11-01 21:54:24] [INFO] [api.views.DeseoViewSet] 📥 PATCH /api/deseos/{id}/ | Action: partial_update
+[2025-11-01 21:54:24] [INFO] [api.views.DeseoViewSet] 📥 DELETE /api/deseos/{id}/ | Action: destroy
+[2025-11-01 21:54:24] [INFO] [api.views.DeseoViewSet] 📥 POST /api/deseos/{id}/resolve/ | Action: resolve
+[2025-11-01 21:54:24] [INFO] [api.views.EmocionViewSet] 📥 GET /api/emociones/ | Action: list
+[2025-11-01 21:54:24] [INFO] [api.views.EmocionViewSet] 📥 POST /api/emociones/ | Action: create
+[2025-11-01 21:54:24] [INFO] [api.views.EmocionViewSet] 📥 GET /api/emociones/{id}/ | Action: retrieve
+[2025-11-01 21:54:24] [INFO] [api.views.EmocionViewSet] 📥 PUT /api/emociones/{id}/ | Action: update
+[2025-11-01 21:54:24] [INFO] [api.views.EmocionViewSet] 📥 PATCH /api/emociones/{id}/ | Action: partial_update
+[2025-11-01 21:54:24] [INFO] [api.views.EmocionViewSet] 📥 DELETE /api/emociones/{id}/ | Action: destroy
+[2025-11-01 21:54:24] [INFO] [api.views.FormularioViewSet] 📥 GET /api/formularios/ | Action: list
+[2025-11-01 21:54:24] [INFO] [api.views.FormularioViewSet] 📥 POST /api/formularios/ | Action: create
+[2025-11-01 21:54:24] [INFO] [api.views.FormularioTemporalViewSet] 📥 GET /api/formularios-temporales/ | Action: list
+[2025-11-01 21:54:24] [INFO] [api.views.FormularioTemporalViewSet] 📥 POST /api/formularios-temporales/ | Action: create
+[2025-11-01 21:54:24] [INFO] [api.views.FormularioTemporalViewSet] 📥 GET /api/formularios-temporales/{id}/ | Action: retrieve
+[2025-11-01 21:54:24] [INFO] [api.views.FormularioTemporalViewSet] 📥 PUT /api/formularios-temporales/{id}/ | Action: update
+[2025-11-01 21:54:24] [INFO] [api.views.FormularioTemporalViewSet] 📥 PATCH /api/formularios-temporales/{id}/ | Action: partial_update
+[2025-11-01 21:54:24] [INFO] [api.views.FormularioTemporalViewSet] 📥 DELETE /api/formularios-temporales/{id}/ | Action: destroy
+[2025-11-01 21:54:24] [INFO] [api.views.FormularioViewSet] 📥 GET /api/formularios/{id}/ | Action: retrieve
+[2025-11-01 21:54:24] [INFO] [api.views.FormularioViewSet] 📥 PUT /api/formularios/{id}/ | Action: update
+[2025-11-01 21:54:24] [INFO] [api.views.FormularioViewSet] 📥 PATCH /api/formularios/{id}/ | Action: partial_update
+[2025-11-01 21:54:24] [INFO] [api.views.FormularioViewSet] 📥 DELETE /api/formularios/{id}/ | Action: destroy
+[2025-11-01 21:54:24] [INFO] [api.views.HabitoViewSet] 📥 GET /api/habitos/ | Action: list
+[2025-11-01 21:54:24] [INFO] [api.views.HabitoViewSet] 📥 POST /api/habitos/ | Action: create
+[2025-11-01 21:54:24] [INFO] [api.views.HabitoViewSet] 📥 GET /api/habitos/{id}/ | Action: retrieve
+[2025-11-01 21:54:24] [INFO] [api.views.HabitoViewSet] 📥 PUT /api/habitos/{id}/ | Action: update
+[2025-11-01 21:54:24] [INFO] [api.views.HabitoViewSet] 📥 PATCH /api/habitos/{id}/ | Action: partial_update
+[2025-11-01 21:54:24] [INFO] [api.views.HabitoViewSet] 📥 DELETE /api/habitos/{id}/ | Action: destroy
+[2025-11-01 21:54:24] [INFO] [api.views.LecturaViewSet] 📥 GET /api/lecturas/ | Action: list
+[2025-11-01 21:54:24] [INFO] [api.views.LecturaViewSet] 📥 POST /api/lecturas/ | Action: create
+[2025-11-01 21:54:24] [INFO] [api.views.LecturaViewSet] 📥 GET /api/lecturas/{id}/ | Action: retrieve
+[2025-11-01 21:54:24] [INFO] [api.views.LecturaViewSet] 📥 PUT /api/lecturas/{id}/ | Action: update
+[2025-11-01 21:54:24] [INFO] [api.views.LecturaViewSet] 📥 PATCH /api/lecturas/{id}/ | Action: partial_update
+[2025-11-01 21:54:24] [INFO] [api.views.LecturaViewSet] 📥 DELETE /api/lecturas/{id}/ | Action: destroy
+[2025-11-01 21:54:24] [INFO] [api.views.MotivoViewSet] 📥 GET /api/motivos/ | Action: list
+[2025-11-01 21:54:24] [INFO] [api.views.MotivoViewSet] 📥 POST /api/motivos/ | Action: create
+[2025-11-01 21:54:24] [INFO] [api.views.MotivoViewSet] 📥 GET /api/motivos/{id}/ | Action: retrieve
+[2025-11-01 21:54:24] [INFO] [api.views.MotivoViewSet] 📥 PUT /api/motivos/{id}/ | Action: update
+[2025-11-01 21:54:24] [INFO] [api.views.MotivoViewSet] 📥 PATCH /api/motivos/{id}/ | Action: partial_update
+[2025-11-01 21:54:24] [INFO] [api.views.MotivoViewSet] 📥 DELETE /api/motivos/{id}/ | Action: destroy
+[2025-11-01 21:54:24] [INFO] [api.views.NotificacionViewSet] 📥 GET /api/notificaciones/ | Action: list
+[2025-11-01 21:54:24] [INFO] [api.views.NotificacionViewSet] 📥 POST /api/notificaciones/ | Action: create
+[2025-11-01 21:54:24] [INFO] [api.views.NotificacionViewSet] 📥 GET /api/notificaciones/{id}/ | Action: retrieve
+[2025-11-01 21:54:24] [INFO] [api.views.NotificacionViewSet] 📥 PUT /api/notificaciones/{id}/ | Action: update
+[2025-11-01 21:54:24] [INFO] [api.views.NotificacionViewSet] 📥 PATCH /api/notificaciones/{id}/ | Action: partial_update
+[2025-11-01 21:54:24] [INFO] [api.views.NotificacionViewSet] 📥 DELETE /api/notificaciones/{id}/ | Action: destroy
+[2025-11-01 21:54:24] [INFO] [api.views.NotificacionViewSet] 📥 POST /api/notificaciones/{id}/mark_read/ | Action: mark_read
+[2025-11-01 21:54:24] [INFO] [api.views.NotificacionViewSet] 📥 POST /api/notificaciones/{id}/mark_unread/ | Action: mark_unread
+[2025-11-01 21:54:24] [INFO] [api.views.PermisoViewSet] 📥 GET /api/permisos/ | Action: list
+[2025-11-01 21:54:24] [INFO] [api.views.PermisoViewSet] 📥 POST /api/permisos/ | Action: create
+[2025-11-01 21:54:24] [INFO] [api.views.PermisoViewSet] 📥 GET /api/permisos/{id}/ | Action: retrieve
+[2025-11-01 21:54:24] [INFO] [api.views.PermisoViewSet] 📥 PUT /api/permisos/{id}/ | Action: update
+[2025-11-01 21:54:24] [INFO] [api.views.PermisoViewSet] 📥 PATCH /api/permisos/{id}/ | Action: partial_update
+[2025-11-01 21:54:24] [INFO] [api.views.PermisoViewSet] 📥 DELETE /api/permisos/{id}/ | Action: destroy
+[2025-11-01 21:54:24] [INFO] [api.views.SolucionViewSet] 📥 GET /api/soluciones/ | Action: list
+[2025-11-01 21:54:24] [INFO] [api.views.SolucionViewSet] 📥 POST /api/soluciones/ | Action: create
+[2025-11-01 21:54:24] [INFO] [api.views.SolucionViewSet] 📥 GET /api/soluciones/{id}/ | Action: retrieve
+[2025-11-01 21:54:24] [INFO] [api.views.SolucionViewSet] 📥 PUT /api/soluciones/{id}/ | Action: update
+[2025-11-01 21:54:24] [INFO] [api.views.SolucionViewSet] 📥 PATCH /api/soluciones/{id}/ | Action: partial_update
+[2025-11-01 21:54:24] [INFO] [api.views.SolucionViewSet] 📥 DELETE /api/soluciones/{id}/ | Action: destroy
+[2025-11-01 21:54:24] [INFO] [api.views.UsuarioViewSet] 📥 GET /api/usuarios/ | Action: list
+[2025-11-01 21:54:24] [INFO] [api.views.UsuarioViewSet] 📥 POST /api/usuarios/ | Action: create
+[2025-11-01 21:54:24] [INFO] [api.views.UsuarioViewSet] 📥 GET /api/usuarios/{id}/ | Action: retrieve
+[2025-11-01 21:54:24] [INFO] [api.views.UsuarioViewSet] 📥 PUT /api/usuarios/{id}/ | Action: update
+[2025-11-01 21:54:24] [INFO] [api.views.UsuarioViewSet] 📥 PATCH /api/usuarios/{id}/ | Action: partial_update
+[2025-11-01 21:54:24] [INFO] [api.views.UsuarioViewSet] 📥 DELETE /api/usuarios/{id}/ | Action: destroy
+[2025-11-01 21:54:24] [INFO] [api.views.UsuarioViewSet] 📥 POST /api/usuarios/login/ | Action: login
+[2025-11-01 21:54:24] [INFO] [api.views.UsuarioViewSet] 📥 POST /api/usuarios/register/ | Action: register
+[2025-11-01 21:54:24] [INFO] [api.views.VentanaViewSet] 📥 GET /api/ventanas/ | Action: list
+[2025-11-01 21:54:24] [INFO] [api.views.VentanaViewSet] 📥 POST /api/ventanas/ | Action: create
+[2025-11-01 21:54:24] [INFO] [api.views.VentanaViewSet] 📥 GET /api/ventanas/{id}/ | Action: retrieve
+[2025-11-01 21:54:24] [INFO] [api.views.VentanaViewSet] 📥 PUT /api/ventanas/{id}/ | Action: update
+[2025-11-01 21:54:24] [INFO] [api.views.VentanaViewSet] 📥 PATCH /api/ventanas/{id}/ | Action: partial_update
+[2025-11-01 21:54:24] [INFO] [api.views.VentanaViewSet] 📥 DELETE /api/ventanas/{id}/ | Action: destroy
+[2025-11-01 21:54:24] [INFO] [django.server:213] "GET /api/schema/ HTTP/1.1" 200 454062
+[2025-11-01 21:54:34] [INFO] [api.views.DeseoViewSet] 📥 GET /api/deseos/ | Action: list
+[2025-11-01 21:54:34] [INFO] [api.views.DeseoViewSet] 📤 ✓ Response: 200 | Action: list
+[2025-11-01 21:54:34] [INFO] [django.server:213] "GET /api/deseos/ HTTP/1.1" 200 1806
+[2025-11-01 22:02:27] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 22:09:10] [INFO] [api.tasks:20] Starting prediction for user 2
+[2025-11-01 22:09:10] [ERROR] [api.tasks:59] ML model file not found at 'models/smoking_craving_model.pkl'
+[2025-11-01 22:15:20] [INFO] [api.tasks:20] Starting prediction for user 2
+[2025-11-01 22:15:21] [ERROR] [api.tasks:133] Unexpected error in prediction: 'dict' object has no attribute 'predict'
+[2025-11-01 22:16:21] [INFO] [api.tasks:20] Starting prediction for user 2
+[2025-11-01 22:16:22] [ERROR] [api.tasks:133] Unexpected error in prediction: 'dict' object has no attribute 'predict'
+[2025-11-01 22:18:22] [INFO] [api.tasks:20] Starting prediction for user 2
+[2025-11-01 22:18:22] [ERROR] [api.tasks:133] Unexpected error in prediction: 'dict' object has no attribute 'predict'
+[2025-11-01 22:22:22] [INFO] [api.tasks:20] Starting prediction for user 2
+[2025-11-01 22:22:22] [ERROR] [api.tasks:133] Unexpected error in prediction: 'dict' object has no attribute 'predict'
+[2025-11-01 22:25:55] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 22:25:57] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 22:26:12] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 22:26:13] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 22:27:06] [INFO] [api.tasks:20] Starting prediction for user 2
+[2025-11-01 22:27:08] [ERROR] [api.tasks:152] Unexpected error in prediction: "None of [Index(['hr_mean', 'hr_std', 'hr_min', 'hr_max', 'hr_range',\n       'accel_magnitude_mean', 'accel_magnitude_std', 'gyro_magnitude_mean',\n       'gyro_magnitude_std', 'accel_energy', 'gyro_energy'],\n      dtype='object')] are in the [columns]"
+[2025-11-01 22:28:08] [INFO] [api.tasks:20] Starting prediction for user 2
+[2025-11-01 22:28:08] [ERROR] [api.tasks:152] Unexpected error in prediction: "None of [Index(['hr_mean', 'hr_std', 'hr_min', 'hr_max', 'hr_range',\n       'accel_magnitude_mean', 'accel_magnitude_std', 'gyro_magnitude_mean',\n       'gyro_magnitude_std', 'accel_energy', 'gyro_energy'],\n      dtype='object')] are in the [columns]"
+[2025-11-01 22:28:19] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 22:28:21] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 22:28:38] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 22:28:39] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 22:28:47] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 22:28:49] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 22:29:09] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\views.py changed, reloading.
+[2025-11-01 22:29:10] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 22:30:08] [INFO] [api.tasks:20] Starting prediction for user 2
+[2025-11-01 22:30:08] [ERROR] [api.tasks:152] Unexpected error in prediction: "None of [Index(['hr_mean', 'hr_std', 'hr_min', 'hr_max', 'hr_range',\n       'accel_magnitude_mean', 'accel_magnitude_std', 'gyro_magnitude_mean',\n       'gyro_magnitude_std', 'accel_energy', 'gyro_energy'],\n      dtype='object')] are in the [columns]"
+[2025-11-01 22:30:40] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\views.py changed, reloading.
+[2025-11-01 22:30:42] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 22:34:04] [INFO] [api.tasks:93] Starting prediction for user 2
+[2025-11-01 22:34:05] [ERROR] [api.tasks:184] Missing required features: "None of [Index(['hr_mean', 'hr_std', 'hr_min', 'hr_max', 'hr_range',\n       'accel_magnitude_mean', 'accel_magnitude_std', 'gyro_magnitude_mean',\n       'gyro_magnitude_std', 'accel_energy', 'gyro_energy'],\n      dtype='object')] are in the [columns]". Required: ['hr_mean', 'hr_std', 'hr_min', 'hr_max', 'hr_range', 'accel_magnitude_mean', 'accel_magnitude_std', 'gyro_magnitude_mean', 'gyro_magnitude_std', 'accel_energy', 'gyro_energy']
+[2025-11-01 22:34:08] [INFO] [api.tasks:93] Starting prediction for user 2
+[2025-11-01 22:34:08] [ERROR] [api.tasks:184] Missing required features: "None of [Index(['hr_mean', 'hr_std', 'hr_min', 'hr_max', 'hr_range',\n       'accel_magnitude_mean', 'accel_magnitude_std', 'gyro_magnitude_mean',\n       'gyro_magnitude_std', 'accel_energy', 'gyro_energy'],\n      dtype='object')] are in the [columns]". Required: ['hr_mean', 'hr_std', 'hr_min', 'hr_max', 'hr_range', 'accel_magnitude_mean', 'accel_magnitude_std', 'gyro_magnitude_mean', 'gyro_magnitude_std', 'accel_energy', 'gyro_energy']
+[2025-11-01 22:35:33] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 22:35:35] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 22:36:22] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 22:36:23] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 22:40:19] [INFO] [api.tasks:93] Starting prediction for user 2
+[2025-11-01 22:40:19] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 22:40:19] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 22:40:19] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 22:40:19] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 1
+[2025-11-01 22:40:19] [WARNING] [api.tasks:32] No recent ventanas found for consumidor 1
+[2025-11-01 22:40:19] [ERROR] [api.tasks:132] No recent sensor readings found. Cannot make prediction.
+[2025-11-01 22:42:37] [INFO] [api.tasks:93] Starting prediction for user 2
+[2025-11-01 22:42:37] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 22:42:37] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 22:42:37] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 22:42:37] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 1
+[2025-11-01 22:42:37] [INFO] [api.tasks:140] Features calculated: {'hr_mean': 70.69646303633718, 'hr_std': 4.964822891751009, 'hr_min': 58.79620411369299, 'hr_max': 81.63918275346097, 'hr_range': 22.842978639767985, 'accel_magnitude_mean': 0.9566132680523605, 'accel_magnitude_std': 0.5414002604710345, 'gyro_magnitude_mean': 0.2940664725747101, 'gyro_magnitude_std': 0.16701420124039332, 'accel_energy': 36.24669559955765, 'gyro_energy': 3.4310650112549776}
+[2025-11-01 22:42:38] [INFO] [api.tasks:229] Prediction saved: Analisis ID 11, risk=high
+[2025-11-01 22:42:38] [INFO] [api.tasks:248] High risk notification created for consumidor 1
+[2025-11-01 22:45:06] [INFO] [api.tasks:93] Starting prediction for user 2
+[2025-11-01 22:45:06] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 22:45:06] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 22:45:06] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 22:45:06] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 1
+[2025-11-01 22:45:06] [INFO] [api.tasks:140] Features calculated: {'hr_mean': 70.69646303633718, 'hr_std': 4.964822891751009, 'hr_min': 58.79620411369299, 'hr_max': 81.63918275346097, 'hr_range': 22.842978639767985, 'accel_magnitude_mean': 0.9566132680523605, 'accel_magnitude_std': 0.5414002604710345, 'gyro_magnitude_mean': 0.2940664725747101, 'gyro_magnitude_std': 0.16701420124039332, 'accel_energy': 36.24669559955765, 'gyro_energy': 3.4310650112549776}
+[2025-11-01 22:45:07] [INFO] [api.tasks:229] Prediction saved: Analisis ID 12, risk=high
+[2025-11-01 22:45:07] [INFO] [api.tasks:248] High risk notification created for consumidor 1
+[2025-11-01 22:46:46] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 22:46:47] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 22:46:58] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 22:47:00] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 22:47:07] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 22:47:08] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 22:47:10] [INFO] [api.tasks:93] Starting prediction for user 2
+[2025-11-01 22:47:10] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 22:47:10] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 22:47:10] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 22:47:10] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 1
+[2025-11-01 22:47:10] [INFO] [api.tasks:140] Features calculated: {'hr_mean': 70.69646303633718, 'hr_std': 4.964822891751009, 'hr_min': 58.79620411369299, 'hr_max': 81.63918275346097, 'hr_range': 22.842978639767985, 'accel_magnitude_mean': 0.9566132680523605, 'accel_magnitude_std': 0.5414002604710345, 'gyro_magnitude_mean': 0.2940664725747101, 'gyro_magnitude_std': 0.16701420124039332, 'accel_energy': 36.24669559955765, 'gyro_energy': 3.4310650112549776}
+[2025-11-01 22:47:11] [INFO] [api.tasks:222] Prediction: probability=100.00%, risk=high
+[2025-11-01 22:47:11] [INFO] [api.tasks:247] Prediction saved: Analisis ID 13, risk=high, prob=100.00%
+[2025-11-01 22:47:11] [INFO] [api.tasks:266] High risk notification created for consumidor 1
+[2025-11-01 22:47:35] [INFO] [api.tasks:93] Starting prediction for user 2
+[2025-11-01 22:47:35] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 22:47:35] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 22:47:35] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 22:47:35] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 1
+[2025-11-01 22:47:35] [INFO] [api.tasks:140] Features calculated: {'hr_mean': 70.69646303633718, 'hr_std': 4.964822891751009, 'hr_min': 58.79620411369299, 'hr_max': 81.63918275346097, 'hr_range': 22.842978639767985, 'accel_magnitude_mean': 0.9566132680523605, 'accel_magnitude_std': 0.5414002604710345, 'gyro_magnitude_mean': 0.2940664725747101, 'gyro_magnitude_std': 0.16701420124039332, 'accel_energy': 36.24669559955765, 'gyro_energy': 3.4310650112549776}
+[2025-11-01 22:47:36] [INFO] [api.tasks:222] Prediction: probability=100.00%, risk=high
+[2025-11-01 22:47:36] [INFO] [api.tasks:247] Prediction saved: Analisis ID 14, risk=high, prob=100.00%
+[2025-11-01 22:47:36] [INFO] [api.tasks:266] High risk notification created for consumidor 1
+[2025-11-01 22:58:40] [INFO] [api.tasks:93] Starting prediction for user 2
+[2025-11-01 22:58:41] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 22:58:41] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 22:58:41] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 22:58:41] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 1
+[2025-11-01 22:58:41] [INFO] [api.tasks:140] Features calculated: {'hr_mean': 72.84072802488839, 'hr_std': 8.087523385687161, 'hr_min': 54.26316821151275, 'hr_max': 87.02421249149936, 'hr_range': 32.761044279986606, 'accel_magnitude_mean': 0.8680955765907025, 'accel_magnitude_std': 0.5438016205253673, 'gyro_magnitude_mean': 0.3458109474162209, 'gyro_magnitude_std': 0.28005171804492385, 'accel_energy': 31.479303977470785, 'gyro_energy': 5.940425283984536}
+[2025-11-01 22:58:42] [INFO] [api.tasks:229] Prediction saved: Analisis ID 65, risk=low
+[2025-11-01 22:58:42] [INFO] [api.tasks:93] Starting prediction for user 2
+[2025-11-01 22:58:42] [INFO] [api.tasks:121] Received features_dict: {'hr_mean': 98.5, 'hr_std': 14.2, 'hr_min': 80.0, 'hr_max': 120.0, 'hr_range': 40.0, 'accel_magnitude_mean': 2.1, 'accel_magnitude_std': 0.9, 'gyro_magnitude_mean': 1.2, 'gyro_magnitude_std': 0.5, 'accel_energy': 250.0, 'gyro_energy': 120.0}
+[2025-11-01 22:58:42] [INFO] [api.tasks:122] features_dict is None: False
+[2025-11-01 22:58:42] [INFO] [api.tasks:123] features_dict type: <class 'dict'>
+[2025-11-01 22:58:42] [INFO] [api.tasks:142] Using provided manual features
+[2025-11-01 22:58:42] [INFO] [api.tasks:229] Prediction saved: Analisis ID 66, risk=high
+[2025-11-01 22:58:42] [INFO] [api.tasks:248] High risk notification created for consumidor 1
+[2025-11-01 22:58:42] [INFO] [api.tasks:93] Starting prediction for user 2
+[2025-11-01 22:58:42] [INFO] [api.tasks:121] Received features_dict: {'hr_mean': 68.5, 'hr_std': 6.2, 'hr_min': 60.0, 'hr_max': 78.0, 'hr_range': 18.0, 'accel_magnitude_mean': 0.5, 'accel_magnitude_std': 0.2, 'gyro_magnitude_mean': 0.2, 'gyro_magnitude_std': 0.1, 'accel_energy': 80.0, 'gyro_energy': 30.0}
+[2025-11-01 22:58:42] [INFO] [api.tasks:122] features_dict is None: False
+[2025-11-01 22:58:42] [INFO] [api.tasks:123] features_dict type: <class 'dict'>
+[2025-11-01 22:58:42] [INFO] [api.tasks:142] Using provided manual features
+[2025-11-01 22:58:42] [INFO] [api.tasks:229] Prediction saved: Analisis ID 67, risk=low
+[2025-11-01 23:02:54] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 23:02:56] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 23:03:10] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 23:03:11] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 23:03:19] [INFO] [api.tasks:93] Starting prediction for user 2
+[2025-11-01 23:03:19] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 23:03:19] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 23:03:19] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 23:03:19] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 1
+[2025-11-01 23:03:19] [WARNING] [api.tasks:39] No lecturas found in ventana 63
+[2025-11-01 23:03:19] [ERROR] [api.tasks:132] No recent sensor readings found. Cannot make prediction.
+[2025-11-01 23:03:20] [INFO] [api.tasks:93] Starting prediction for user 2
+[2025-11-01 23:03:20] [INFO] [api.tasks:121] Received features_dict: {'hr_mean': 98.5, 'hr_std': 14.2, 'hr_min': 80.0, 'hr_max': 120.0, 'hr_range': 40.0, 'accel_magnitude_mean': 2.1, 'accel_magnitude_std': 0.9, 'gyro_magnitude_mean': 1.2, 'gyro_magnitude_std': 0.5, 'accel_energy': 250.0, 'gyro_energy': 120.0}
+[2025-11-01 23:03:20] [INFO] [api.tasks:122] features_dict is None: False
+[2025-11-01 23:03:20] [INFO] [api.tasks:123] features_dict type: <class 'dict'>
+[2025-11-01 23:03:20] [INFO] [api.tasks:142] Using provided manual features
+[2025-11-01 23:03:20] [INFO] [api.tasks:229] Prediction saved: Analisis ID 68, risk=high
+[2025-11-01 23:03:20] [INFO] [api.tasks:248] High risk notification created for consumidor 1
+[2025-11-01 23:03:20] [INFO] [api.tasks:93] Starting prediction for user 2
+[2025-11-01 23:03:20] [INFO] [api.tasks:121] Received features_dict: {'hr_mean': 68.5, 'hr_std': 6.2, 'hr_min': 60.0, 'hr_max': 78.0, 'hr_range': 18.0, 'accel_magnitude_mean': 0.5, 'accel_magnitude_std': 0.2, 'gyro_magnitude_mean': 0.2, 'gyro_magnitude_std': 0.1, 'accel_energy': 80.0, 'gyro_energy': 30.0}
+[2025-11-01 23:03:20] [INFO] [api.tasks:122] features_dict is None: False
+[2025-11-01 23:03:20] [INFO] [api.tasks:123] features_dict type: <class 'dict'>
+[2025-11-01 23:03:20] [INFO] [api.tasks:142] Using provided manual features
+[2025-11-01 23:03:20] [INFO] [api.tasks:229] Prediction saved: Analisis ID 69, risk=low
+[2025-11-01 23:07:37] [INFO] [api.tasks:93] Starting prediction for user 2
+[2025-11-01 23:07:37] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 23:07:37] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 23:07:37] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 23:07:37] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 1
+[2025-11-01 23:07:37] [WARNING] [api.tasks:39] No lecturas found in ventana 65
+[2025-11-01 23:07:37] [ERROR] [api.tasks:132] No recent sensor readings found. Cannot make prediction.
+[2025-11-01 23:07:37] [INFO] [api.tasks:93] Starting prediction for user 2
+[2025-11-01 23:07:37] [INFO] [api.tasks:121] Received features_dict: {'hr_mean': 98.5, 'hr_std': 14.2, 'hr_min': 80.0, 'hr_max': 120.0, 'hr_range': 40.0, 'accel_magnitude_mean': 2.1, 'accel_magnitude_std': 0.9, 'gyro_magnitude_mean': 1.2, 'gyro_magnitude_std': 0.5, 'accel_energy': 250.0, 'gyro_energy': 120.0}
+[2025-11-01 23:07:37] [INFO] [api.tasks:122] features_dict is None: False
+[2025-11-01 23:07:37] [INFO] [api.tasks:123] features_dict type: <class 'dict'>
+[2025-11-01 23:07:37] [INFO] [api.tasks:142] Using provided manual features
+[2025-11-01 23:07:38] [INFO] [api.tasks:222] Prediction: probability=97.93%, risk=high
+[2025-11-01 23:07:38] [INFO] [api.tasks:241] Features saved to Ventana ID 66
+[2025-11-01 23:07:38] [INFO] [api.tasks:256] Prediction saved: Analisis ID 70, risk=high, prob=97.93%
+[2025-11-01 23:07:38] [INFO] [api.tasks:275] High risk notification created for consumidor 1
+[2025-11-01 23:07:39] [INFO] [api.tasks:93] Starting prediction for user 2
+[2025-11-01 23:07:39] [INFO] [api.tasks:121] Received features_dict: {'hr_mean': 68.5, 'hr_std': 6.2, 'hr_min': 60.0, 'hr_max': 78.0, 'hr_range': 18.0, 'accel_magnitude_mean': 0.5, 'accel_magnitude_std': 0.2, 'gyro_magnitude_mean': 0.2, 'gyro_magnitude_std': 0.1, 'accel_energy': 80.0, 'gyro_energy': 30.0}
+[2025-11-01 23:07:39] [INFO] [api.tasks:122] features_dict is None: False
+[2025-11-01 23:07:39] [INFO] [api.tasks:123] features_dict type: <class 'dict'>
+[2025-11-01 23:07:39] [INFO] [api.tasks:142] Using provided manual features
+[2025-11-01 23:07:39] [INFO] [api.tasks:222] Prediction: probability=1.59%, risk=low
+[2025-11-01 23:07:39] [INFO] [api.tasks:241] Features saved to Ventana ID 67
+[2025-11-01 23:07:39] [INFO] [api.tasks:256] Prediction saved: Analisis ID 71, risk=low, prob=1.59%
+[2025-11-01 23:10:04] [INFO] [api.tasks:93] Starting prediction for user 2
+[2025-11-01 23:10:04] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 23:10:04] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 23:10:04] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 23:10:04] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 1
+[2025-11-01 23:10:04] [WARNING] [api.tasks:39] No lecturas found in ventana 67
+[2025-11-01 23:10:04] [ERROR] [api.tasks:132] No recent sensor readings found. Cannot make prediction.
+[2025-11-01 23:10:05] [INFO] [api.tasks:93] Starting prediction for user 2
+[2025-11-01 23:10:05] [INFO] [api.tasks:121] Received features_dict: {'hr_mean': 98.5, 'hr_std': 14.2, 'hr_min': 80.0, 'hr_max': 120.0, 'hr_range': 40.0, 'accel_magnitude_mean': 2.1, 'accel_magnitude_std': 0.9, 'gyro_magnitude_mean': 1.2, 'gyro_magnitude_std': 0.5, 'accel_energy': 250.0, 'gyro_energy': 120.0}
+[2025-11-01 23:10:05] [INFO] [api.tasks:122] features_dict is None: False
+[2025-11-01 23:10:05] [INFO] [api.tasks:123] features_dict type: <class 'dict'>
+[2025-11-01 23:10:05] [INFO] [api.tasks:142] Using provided manual features
+[2025-11-01 23:10:05] [INFO] [api.tasks:222] Prediction: probability=97.93%, risk=high
+[2025-11-01 23:10:05] [INFO] [api.tasks:241] Features saved to Ventana ID 68
+[2025-11-01 23:10:05] [INFO] [api.tasks:256] Prediction saved: Analisis ID 72, risk=high, prob=97.93%
+[2025-11-01 23:10:05] [INFO] [api.tasks:275] High risk notification created for consumidor 1
+[2025-11-01 23:10:05] [INFO] [api.tasks:93] Starting prediction for user 2
+[2025-11-01 23:10:05] [INFO] [api.tasks:121] Received features_dict: {'hr_mean': 68.5, 'hr_std': 6.2, 'hr_min': 60.0, 'hr_max': 78.0, 'hr_range': 18.0, 'accel_magnitude_mean': 0.5, 'accel_magnitude_std': 0.2, 'gyro_magnitude_mean': 0.2, 'gyro_magnitude_std': 0.1, 'accel_energy': 80.0, 'gyro_energy': 30.0}
+[2025-11-01 23:10:05] [INFO] [api.tasks:122] features_dict is None: False
+[2025-11-01 23:10:05] [INFO] [api.tasks:123] features_dict type: <class 'dict'>
+[2025-11-01 23:10:05] [INFO] [api.tasks:142] Using provided manual features
+[2025-11-01 23:10:05] [INFO] [api.tasks:222] Prediction: probability=1.59%, risk=low
+[2025-11-01 23:10:05] [INFO] [api.tasks:241] Features saved to Ventana ID 69
+[2025-11-01 23:10:05] [INFO] [api.tasks:256] Prediction saved: Analisis ID 73, risk=low, prob=1.59%
+[2025-11-01 23:16:43] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\WearableApi\celery.py changed, reloading.
+[2025-11-01 23:16:44] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 23:17:23] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 23:17:24] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 23:18:12] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 23:18:14] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 23:27:41] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 23:27:43] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 23:27:53] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 23:27:54] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 23:37:00] [INFO] [api.tasks:319] ======================================================================
+[2025-11-01 23:37:00] [INFO] [api.tasks:399] ======================================================================
+[2025-11-01 23:37:02] [INFO] [api.tasks:93] Starting prediction for user 4
+[2025-11-01 23:37:02] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 23:37:03] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 23:37:03] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 23:37:03] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 3
+[2025-11-01 23:37:03] [INFO] [api.tasks:140] Features calculated: {'hr_mean': 77.21337525725694, 'hr_std': 3.0545780538892386, 'hr_min': 72.41972141742423, 'hr_max': 82.2004566750979, 'hr_range': 9.780735257673669, 'accel_magnitude_mean': 1.3993890496673906, 'accel_magnitude_std': 0.4617572847420896, 'gyro_magnitude_mean': 0.7594104804703569, 'gyro_magnitude_std': 0.21423052743420248, 'accel_energy': 130.29057014048337, 'gyro_energy': 37.35593980397728}
+[2025-11-01 23:37:03] [INFO] [api.tasks:222] Prediction: probability=9.20%, risk=low
+[2025-11-01 23:37:03] [INFO] [api.tasks:241] Features saved to Ventana ID 70
+[2025-11-01 23:37:03] [INFO] [api.tasks:256] Prediction saved: Analisis ID 74, risk=low, prob=9.20%
+[2025-11-01 23:37:40] [INFO] [api.tasks:319] ======================================================================
+[2025-11-01 23:37:41] [INFO] [api.tasks:399] ======================================================================
+[2025-11-01 23:37:43] [INFO] [api.tasks:93] Starting prediction for user 4
+[2025-11-01 23:37:43] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 23:37:43] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 23:37:43] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 23:37:43] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 3
+[2025-11-01 23:37:43] [INFO] [api.tasks:140] Features calculated: {'hr_mean': 77.21337525725694, 'hr_std': 3.0545780538892386, 'hr_min': 72.41972141742423, 'hr_max': 82.2004566750979, 'hr_range': 9.780735257673669, 'accel_magnitude_mean': 1.3993890496673906, 'accel_magnitude_std': 0.4617572847420896, 'gyro_magnitude_mean': 0.7594104804703569, 'gyro_magnitude_std': 0.21423052743420248, 'accel_energy': 130.29057014048337, 'gyro_energy': 37.35593980397728}
+[2025-11-01 23:37:43] [INFO] [api.tasks:222] Prediction: probability=9.20%, risk=low
+[2025-11-01 23:37:43] [INFO] [api.tasks:241] Features saved to Ventana ID 70
+[2025-11-01 23:37:43] [INFO] [api.tasks:256] Prediction saved: Analisis ID 75, risk=low, prob=9.20%
+[2025-11-01 23:38:40] [INFO] [api.tasks:319] ======================================================================
+[2025-11-01 23:38:41] [INFO] [api.tasks:399] ======================================================================
+[2025-11-01 23:38:43] [INFO] [api.tasks:93] Starting prediction for user 5
+[2025-11-01 23:38:43] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 23:38:43] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 23:38:43] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 23:38:43] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 4
+[2025-11-01 23:38:43] [INFO] [api.tasks:140] Features calculated: {'hr_mean': 87.44312211876357, 'hr_std': 2.9224359174233174, 'hr_min': 82.73890898024078, 'hr_max': 92.48172402496124, 'hr_range': 9.742815044720459, 'accel_magnitude_mean': 1.4405537621716926, 'accel_magnitude_std': 0.4081429283413165, 'gyro_magnitude_mean': 0.7548175106632319, 'gyro_magnitude_std': 0.20298299514111207, 'accel_energy': 134.5065474997226, 'gyro_energy': 36.657094243217706}
+[2025-11-01 23:38:43] [INFO] [api.tasks:222] Prediction: probability=16.89%, risk=low
+[2025-11-01 23:38:43] [INFO] [api.tasks:241] Features saved to Ventana ID 72
+[2025-11-01 23:38:43] [INFO] [api.tasks:256] Prediction saved: Analisis ID 76, risk=low, prob=16.89%
+[2025-11-01 23:39:40] [INFO] [api.tasks:319] ======================================================================
+[2025-11-01 23:39:41] [INFO] [api.tasks:399] ======================================================================
+[2025-11-01 23:39:43] [INFO] [api.tasks:93] Starting prediction for user 2
+[2025-11-01 23:39:43] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 23:39:43] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 23:39:43] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 23:39:43] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 1
+[2025-11-01 23:39:43] [INFO] [api.tasks:140] Features calculated: {'hr_mean': 68.94281074029504, 'hr_std': 2.736531518916983, 'hr_min': 63.93395874377278, 'hr_max': 72.9840886145519, 'hr_range': 9.050129870779116, 'accel_magnitude_mean': 1.3733875140387939, 'accel_magnitude_std': 0.46892404477725147, 'gyro_magnitude_mean': 0.7746840296749303, 'gyro_magnitude_std': 0.19919153113637894, 'accel_energy': 126.36498140927498, 'gyro_energy': 38.38875671459062}
+[2025-11-01 23:39:43] [INFO] [api.tasks:222] Prediction: probability=4.90%, risk=low
+[2025-11-01 23:39:43] [INFO] [api.tasks:241] Features saved to Ventana ID 73
+[2025-11-01 23:39:43] [INFO] [api.tasks:256] Prediction saved: Analisis ID 77, risk=low, prob=4.90%
+[2025-11-01 23:40:40] [INFO] [api.tasks:319] ======================================================================
+[2025-11-01 23:40:41] [INFO] [api.tasks:399] ======================================================================
+[2025-11-01 23:40:43] [INFO] [api.tasks:93] Starting prediction for user 5
+[2025-11-01 23:40:43] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 23:40:43] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 23:40:43] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 23:40:43] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 4
+[2025-11-01 23:40:43] [INFO] [api.tasks:140] Features calculated: {'hr_mean': 87.44312211876357, 'hr_std': 2.9224359174233174, 'hr_min': 82.73890898024078, 'hr_max': 92.48172402496124, 'hr_range': 9.742815044720459, 'accel_magnitude_mean': 1.4405537621716926, 'accel_magnitude_std': 0.4081429283413165, 'gyro_magnitude_mean': 0.7548175106632319, 'gyro_magnitude_std': 0.20298299514111207, 'accel_energy': 134.5065474997226, 'gyro_energy': 36.657094243217706}
+[2025-11-01 23:40:43] [INFO] [api.tasks:222] Prediction: probability=16.89%, risk=low
+[2025-11-01 23:40:43] [INFO] [api.tasks:241] Features saved to Ventana ID 72
+[2025-11-01 23:40:43] [INFO] [api.tasks:256] Prediction saved: Analisis ID 78, risk=low, prob=16.89%
+[2025-11-01 23:41:40] [INFO] [api.tasks:319] ======================================================================
+[2025-11-01 23:41:40] [INFO] [api.tasks:399] ======================================================================
+[2025-11-01 23:41:42] [INFO] [api.tasks:93] Starting prediction for user 5
+[2025-11-01 23:41:42] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 23:41:42] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 23:41:42] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 23:41:42] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 4
+[2025-11-01 23:41:43] [INFO] [api.tasks:140] Features calculated: {'hr_mean': 87.44312211876357, 'hr_std': 2.9224359174233174, 'hr_min': 82.73890898024078, 'hr_max': 92.48172402496124, 'hr_range': 9.742815044720459, 'accel_magnitude_mean': 1.4405537621716926, 'accel_magnitude_std': 0.4081429283413165, 'gyro_magnitude_mean': 0.7548175106632319, 'gyro_magnitude_std': 0.20298299514111207, 'accel_energy': 134.5065474997226, 'gyro_energy': 36.657094243217706}
+[2025-11-01 23:41:43] [INFO] [api.tasks:222] Prediction: probability=16.89%, risk=low
+[2025-11-01 23:41:43] [INFO] [api.tasks:241] Features saved to Ventana ID 72
+[2025-11-01 23:41:43] [INFO] [api.tasks:256] Prediction saved: Analisis ID 79, risk=low, prob=16.89%
+[2025-11-01 23:42:35] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 23:42:37] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 23:42:40] [INFO] [api.tasks:319] ======================================================================
+[2025-11-01 23:42:40] [INFO] [api.tasks:399] ======================================================================
+[2025-11-01 23:42:42] [INFO] [api.tasks:93] Starting prediction for user 2
+[2025-11-01 23:42:42] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 23:42:42] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 23:42:42] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 23:42:42] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 1
+[2025-11-01 23:42:42] [INFO] [api.tasks:140] Features calculated: {'hr_mean': 68.94281074029504, 'hr_std': 2.736531518916983, 'hr_min': 63.93395874377278, 'hr_max': 72.9840886145519, 'hr_range': 9.050129870779116, 'accel_magnitude_mean': 1.3733875140387939, 'accel_magnitude_std': 0.46892404477725147, 'gyro_magnitude_mean': 0.7746840296749303, 'gyro_magnitude_std': 0.19919153113637894, 'accel_energy': 126.36498140927498, 'gyro_energy': 38.38875671459062}
+[2025-11-01 23:42:42] [INFO] [api.tasks:222] Prediction: probability=4.90%, risk=low
+[2025-11-01 23:42:42] [INFO] [api.tasks:241] Features saved to Ventana ID 73
+[2025-11-01 23:42:42] [INFO] [api.tasks:256] Prediction saved: Analisis ID 80, risk=low, prob=4.90%
+[2025-11-01 23:42:49] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 23:42:51] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 23:42:58] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 23:43:00] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 23:43:40] [INFO] [api.tasks:319] ======================================================================
+[2025-11-01 23:43:40] [INFO] [api.tasks:399] ======================================================================
+[2025-11-01 23:43:42] [INFO] [api.tasks:93] Starting prediction for user 3
+[2025-11-01 23:43:42] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 23:43:42] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 23:43:42] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 23:43:42] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 2
+[2025-11-01 23:43:42] [INFO] [api.tasks:140] Features calculated: {'hr_mean': 86.36456548600519, 'hr_std': 2.7752379825647173, 'hr_min': 81.53550822906466, 'hr_max': 91.35678719086357, 'hr_range': 9.82127896179891, 'accel_magnitude_mean': 1.459231406039392, 'accel_magnitude_std': 0.43255662589616767, 'gyro_magnitude_mean': 0.7820643376474535, 'gyro_magnitude_std': 0.24661906737478217, 'accel_energy': 138.98769185870262, 'gyro_energy': 40.34673555676546}
+[2025-11-01 23:43:42] [INFO] [api.tasks:222] Prediction: probability=18.07%, risk=low
+[2025-11-01 23:43:42] [INFO] [api.tasks:241] Features saved to Ventana ID 77
+[2025-11-01 23:43:42] [INFO] [api.tasks:256] Prediction saved: Analisis ID 81, risk=low, prob=18.07%
+[2025-11-01 23:44:32] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 23:44:34] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 23:44:40] [INFO] [api.tasks:319] ======================================================================
+[2025-11-01 23:44:40] [INFO] [api.tasks:399] ======================================================================
+[2025-11-01 23:44:42] [INFO] [api.tasks:93] Starting prediction for user 5
+[2025-11-01 23:44:42] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 23:44:42] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 23:44:42] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 23:44:42] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 4
+[2025-11-01 23:44:42] [INFO] [api.tasks:140] Features calculated: {'hr_mean': 87.44312211876357, 'hr_std': 2.9224359174233174, 'hr_min': 82.73890898024078, 'hr_max': 92.48172402496124, 'hr_range': 9.742815044720459, 'accel_magnitude_mean': 1.4405537621716926, 'accel_magnitude_std': 0.4081429283413165, 'gyro_magnitude_mean': 0.7548175106632319, 'gyro_magnitude_std': 0.20298299514111207, 'accel_energy': 134.5065474997226, 'gyro_energy': 36.657094243217706}
+[2025-11-01 23:44:42] [INFO] [api.tasks:222] Prediction: probability=16.89%, risk=low
+[2025-11-01 23:44:42] [INFO] [api.tasks:241] Features saved to Ventana ID 72
+[2025-11-01 23:44:42] [INFO] [api.tasks:256] Prediction saved: Analisis ID 82, risk=low, prob=16.89%
+[2025-11-01 23:45:40] [INFO] [api.tasks:319] ======================================================================
+[2025-11-01 23:45:40] [INFO] [api.tasks:399] ======================================================================
+[2025-11-01 23:45:42] [INFO] [api.tasks:93] Starting prediction for user 5
+[2025-11-01 23:45:43] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 23:45:43] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 23:45:43] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 23:45:43] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 4
+[2025-11-01 23:45:43] [INFO] [api.tasks:140] Features calculated: {'hr_mean': 87.44312211876357, 'hr_std': 2.9224359174233174, 'hr_min': 82.73890898024078, 'hr_max': 92.48172402496124, 'hr_range': 9.742815044720459, 'accel_magnitude_mean': 1.4405537621716926, 'accel_magnitude_std': 0.4081429283413165, 'gyro_magnitude_mean': 0.7548175106632319, 'gyro_magnitude_std': 0.20298299514111207, 'accel_energy': 134.5065474997226, 'gyro_energy': 36.657094243217706}
+[2025-11-01 23:45:43] [INFO] [api.tasks:222] Prediction: probability=16.89%, risk=low
+[2025-11-01 23:45:43] [INFO] [api.tasks:241] Features saved to Ventana ID 72
+[2025-11-01 23:45:43] [INFO] [api.tasks:256] Prediction saved: Analisis ID 83, risk=low, prob=16.89%
+[2025-11-01 23:45:44] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 23:45:46] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 23:46:20] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\tasks.py changed, reloading.
+[2025-11-01 23:46:21] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-01 23:46:40] [INFO] [api.tasks:319] ======================================================================
+[2025-11-01 23:46:40] [INFO] [api.tasks:320] [CYCLE] Iniciando ciclo de simulaci�n autom�tico
+[2025-11-01 23:46:40] [INFO] [api.tasks:337] [USER] Consumidor seleccionado: Laura Mart�nez (ID: 4)
+[2025-11-01 23:46:40] [INFO] [api.tasks:350] [WINDOW] Ventana creada: ID 80
+[2025-11-01 23:46:40] [INFO] [api.tasks:385] [OK] 60 lecturas generadas (HR base: 90.8)
+[2025-11-01 23:46:40] [INFO] [api.tasks:388] [ML] Disparando predicci�n ML...
+[2025-11-01 23:46:40] [INFO] [api.tasks:396] [OK] Predicci�n encolada (Task ID: 77b3a7b2-24fa-4d28-b199-9ee5689696fe)
+[2025-11-01 23:46:40] [INFO] [api.tasks:397] ======================================================================
+[2025-11-01 23:46:42] [INFO] [api.tasks:93] Starting prediction for user 5
+[2025-11-01 23:46:42] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 23:46:42] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 23:46:42] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 23:46:42] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 4
+[2025-11-01 23:46:42] [INFO] [api.tasks:140] Features calculated: {'hr_mean': 87.44312211876357, 'hr_std': 2.9224359174233174, 'hr_min': 82.73890898024078, 'hr_max': 92.48172402496124, 'hr_range': 9.742815044720459, 'accel_magnitude_mean': 1.4405537621716926, 'accel_magnitude_std': 0.4081429283413165, 'gyro_magnitude_mean': 0.7548175106632319, 'gyro_magnitude_std': 0.20298299514111207, 'accel_energy': 134.5065474997226, 'gyro_energy': 36.657094243217706}
+[2025-11-01 23:46:43] [INFO] [api.tasks:222] Prediction: probability=16.89%, risk=low
+[2025-11-01 23:46:43] [INFO] [api.tasks:241] Features saved to Ventana ID 72
+[2025-11-01 23:46:43] [INFO] [api.tasks:256] Prediction saved: Analisis ID 84, risk=low, prob=16.89%
+[2025-11-01 23:47:40] [INFO] [api.tasks:319] ======================================================================
+[2025-11-01 23:47:40] [INFO] [api.tasks:320] [CYCLE] Iniciando ciclo de simulaci�n autom�tico
+[2025-11-01 23:47:40] [INFO] [api.tasks:337] [USER] Consumidor seleccionado: Laura Mart�nez (ID: 4)
+[2025-11-01 23:47:40] [INFO] [api.tasks:350] [WINDOW] Ventana creada: ID 81
+[2025-11-01 23:47:40] [INFO] [api.tasks:385] [OK] 60 lecturas generadas (HR base: 88.4)
+[2025-11-01 23:47:40] [INFO] [api.tasks:388] [ML] Disparando predicci�n ML...
+[2025-11-01 23:47:40] [INFO] [api.tasks:396] [OK] Predicci�n encolada (Task ID: 8c7f061b-96de-4a60-ae26-4a1cc2b920e3)
+[2025-11-01 23:47:40] [INFO] [api.tasks:397] ======================================================================
+[2025-11-01 23:47:42] [INFO] [api.tasks:93] Starting prediction for user 5
+[2025-11-01 23:47:42] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 23:47:42] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 23:47:42] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 23:47:42] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 4
+[2025-11-01 23:47:42] [INFO] [api.tasks:140] Features calculated: {'hr_mean': 87.44312211876357, 'hr_std': 2.9224359174233174, 'hr_min': 82.73890898024078, 'hr_max': 92.48172402496124, 'hr_range': 9.742815044720459, 'accel_magnitude_mean': 1.4405537621716926, 'accel_magnitude_std': 0.4081429283413165, 'gyro_magnitude_mean': 0.7548175106632319, 'gyro_magnitude_std': 0.20298299514111207, 'accel_energy': 134.5065474997226, 'gyro_energy': 36.657094243217706}
+[2025-11-01 23:47:42] [INFO] [api.tasks:222] Prediction: probability=16.89%, risk=low
+[2025-11-01 23:47:42] [INFO] [api.tasks:241] Features saved to Ventana ID 72
+[2025-11-01 23:47:42] [INFO] [api.tasks:256] Prediction saved: Analisis ID 85, risk=low, prob=16.89%
+[2025-11-01 23:48:17] [INFO] [api.tasks:319] ======================================================================
+[2025-11-01 23:48:17] [INFO] [api.tasks:320] [CYCLE] Iniciando ciclo de simulaci�n autom�tico
+[2025-11-01 23:48:17] [INFO] [api.tasks:337] [USER] Consumidor seleccionado: Carlos Rodr�guez (ID: 3)
+[2025-11-01 23:48:17] [INFO] [api.tasks:350] [WINDOW] Ventana creada: ID 82
+[2025-11-01 23:48:17] [INFO] [api.tasks:385] [OK] 60 lecturas generadas (HR base: 70.8)
+[2025-11-01 23:48:17] [INFO] [api.tasks:388] [ML] Disparando predicci�n ML...
+[2025-11-01 23:48:17] [INFO] [api.tasks:396] [OK] Predicci�n encolada (Task ID: 7482e6bc-cb27-43f1-9ac9-fd2192e2a117)
+[2025-11-01 23:48:17] [INFO] [api.tasks:397] ======================================================================
+[2025-11-01 23:48:19] [INFO] [api.tasks:93] Starting prediction for user 4
+[2025-11-01 23:48:19] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 23:48:19] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 23:48:19] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 23:48:19] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 3
+[2025-11-01 23:48:19] [INFO] [api.tasks:140] Features calculated: {'hr_mean': 77.21337525725694, 'hr_std': 3.0545780538892386, 'hr_min': 72.41972141742423, 'hr_max': 82.2004566750979, 'hr_range': 9.780735257673669, 'accel_magnitude_mean': 1.3993890496673906, 'accel_magnitude_std': 0.4617572847420896, 'gyro_magnitude_mean': 0.7594104804703569, 'gyro_magnitude_std': 0.21423052743420248, 'accel_energy': 130.29057014048337, 'gyro_energy': 37.35593980397728}
+[2025-11-01 23:48:19] [INFO] [api.tasks:222] Prediction: probability=9.20%, risk=low
+[2025-11-01 23:48:19] [INFO] [api.tasks:241] Features saved to Ventana ID 70
+[2025-11-01 23:48:19] [INFO] [api.tasks:256] Prediction saved: Analisis ID 86, risk=low, prob=9.20%
+[2025-11-01 23:48:40] [INFO] [api.tasks:319] ======================================================================
+[2025-11-01 23:48:40] [INFO] [api.tasks:320] [CYCLE] Iniciando ciclo de simulaci�n autom�tico
+[2025-11-01 23:48:40] [INFO] [api.tasks:337] [USER] Consumidor seleccionado: Ana L�pez (ID: 2)
+[2025-11-01 23:48:40] [INFO] [api.tasks:350] [WINDOW] Ventana creada: ID 83
+[2025-11-01 23:48:40] [INFO] [api.tasks:385] [OK] 60 lecturas generadas (HR base: 71.4)
+[2025-11-01 23:48:40] [INFO] [api.tasks:388] [ML] Disparando predicci�n ML...
+[2025-11-01 23:48:40] [INFO] [api.tasks:396] [OK] Predicci�n encolada (Task ID: 8b6d64c4-8966-4331-a0d5-9f1d77618408)
+[2025-11-01 23:48:40] [INFO] [api.tasks:397] ======================================================================
+[2025-11-01 23:48:42] [INFO] [api.tasks:93] Starting prediction for user 3
+[2025-11-01 23:48:42] [INFO] [api.tasks:121] Received features_dict: None
+[2025-11-01 23:48:42] [INFO] [api.tasks:122] features_dict is None: True
+[2025-11-01 23:48:42] [INFO] [api.tasks:123] features_dict type: <class 'NoneType'>
+[2025-11-01 23:48:42] [INFO] [api.tasks:127] Calculating features from sensor readings for consumidor 2
+[2025-11-01 23:48:42] [INFO] [api.tasks:140] Features calculated: {'hr_mean': 86.36456548600519, 'hr_std': 2.7752379825647173, 'hr_min': 81.53550822906466, 'hr_max': 91.35678719086357, 'hr_range': 9.82127896179891, 'accel_magnitude_mean': 1.459231406039392, 'accel_magnitude_std': 0.43255662589616767, 'gyro_magnitude_mean': 0.7820643376474535, 'gyro_magnitude_std': 0.24661906737478217, 'accel_energy': 138.98769185870262, 'gyro_energy': 40.34673555676546}
+[2025-11-01 23:48:42] [INFO] [api.tasks:222] Prediction: probability=18.07%, risk=low
+[2025-11-01 23:48:42] [INFO] [api.tasks:241] Features saved to Ventana ID 77
+[2025-11-01 23:48:42] [INFO] [api.tasks:256] Prediction saved: Analisis ID 87, risk=low, prob=18.07%

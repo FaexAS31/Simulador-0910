@@ -6,7 +6,7 @@ Models for tracking user forms: Formularios, FormulariosTemporales
 These models store user-submitted data about habits, emotions, motives, and solutions.
 """
 
-from django.db import models
+from django.db import models # type: ignore
 from .base import TimeStampedModel
 from .user import Consumidor
 from .lookup import Habito

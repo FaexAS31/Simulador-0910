@@ -7,7 +7,7 @@ Ventanas (Windows) aggregate sensor readings over time periods.
 Lecturas (Readings) are individual sensor data points.
 """
 
-from django.db import models
+from django.db import models # type: ignore
 from .base import TimeStampedModel
 from .user import Consumidor
 

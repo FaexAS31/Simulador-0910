@@ -7,7 +7,7 @@ Design Pattern: Flyweight Pattern
 Shared reference data used across multiple entities.
 """
 
-from django.db import models
+from django.db import models # type: ignore
 from .base import TimeStampedModel
 
 

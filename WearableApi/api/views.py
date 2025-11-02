@@ -8,14 +8,21 @@ Each ViewSet handles CRUD operations for a model.
 """
 
 from rest_framework import viewsets, status
-from rest_framework.decorators import action
+from rest_framework.decorators import action, api_view, permission_classes
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from django.contrib.auth.hashers import check_password
+
 
 from api.models import *
 from api.serializers import *
 from utils.mixins import LoggingMixin, ConsumerFilterMixin, ReadOnlyMixin
 from utils.decorators import log_endpoint
+from .tasks import predict_smoking_craving
+from celery.result import AsyncResult
+
+
+
 
 
 # ============================================
@@ -398,3 +405,61 @@ class VwWeeklyComparisonViewSet(LoggingMixin, ConsumerFilterMixin, ReadOnlyMixin
     """Read-only ViewSet for weekly comparison dashboard view"""
     queryset = VwWeeklyComparison.objects.all()
     serializer_class = VwWeeklyComparisonSerializer
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def predict_craving(request):
+    """
+    Trigger async prediction
+    
+    POST /api/predict/
+    
+    OPTION 1: Let the system calculate features from sensor readings (RECOMMENDED)
+    {
+        // Empty body - will use recent Lectura data
+    }
+    
+    OPTION 2: Provide manual features (for testing)
+    {
+        "manual_features": {
+            "hr_mean": 85.5,
+            "hr_std": 10.2,
+            "hr_min": 70,
+            "hr_max": 100,
+            "hr_range": 30,
+            "accel_magnitude_mean": 1.2,
+            "accel_magnitude_std": 0.5,
+            "gyro_magnitude_mean": 0.8,
+            "gyro_magnitude_std": 0.3,
+            "accel_energy": 150.0,
+            "gyro_energy": 80.0
+        }
+    }
+    """
+    # Check if manual features provided (for testing)
+    manual_features = request.data.get('manual_features', None)
+    
+    # Trigger async task - will auto-calculate from readings if manual_features is None
+    task = predict_smoking_craving.delay(request.user.id, manual_features)
+    
+    return Response({
+        'task_id': task.id,
+        'status': 'processing',
+        'message': 'Prediction task started. Will calculate from sensor readings.' if manual_features is None else 'Using provided manual features.'
+    }, status=202)
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def check_task_status(request, task_id):
+    """Check status of async task"""
+    task = AsyncResult(task_id)
+    
+    if task.ready():
+        return Response({
+            'status': 'completed',
+            'result': task.result
+        })
+    else:
+        return Response({'status': 'processing'})

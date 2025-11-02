@@ -1,0 +1,21 @@
+[2025-11-01 21:36:38] [ERROR] [api.tasks:88] Prediction failed: Usuario has no consumidor.
+[2025-11-01 21:37:38] [ERROR] [api.tasks:88] Prediction failed: Usuario has no consumidor.
+[2025-11-01 21:39:38] [ERROR] [api.tasks:88] Prediction failed: Usuario has no consumidor.
+[2025-11-01 21:43:38] [ERROR] [api.tasks:88] Prediction failed: Usuario has no consumidor.
+[2025-11-01 21:48:44] [ERROR] [api.tasks:88] Prediction failed: [Errno 2] No such file or directory: 'models/smoking_craving_model.pkl'
+[2025-11-01 21:49:44] [ERROR] [api.tasks:88] Prediction failed: [Errno 2] No such file or directory: 'models/smoking_craving_model.pkl'
+[2025-11-01 21:51:44] [ERROR] [api.tasks:88] Prediction failed: [Errno 2] No such file or directory: 'models/smoking_craving_model.pkl'
+[2025-11-01 22:09:10] [ERROR] [api.tasks:59] ML model file not found at 'models/smoking_craving_model.pkl'
+[2025-11-01 22:15:21] [ERROR] [api.tasks:133] Unexpected error in prediction: 'dict' object has no attribute 'predict'
+[2025-11-01 22:16:22] [ERROR] [api.tasks:133] Unexpected error in prediction: 'dict' object has no attribute 'predict'
+[2025-11-01 22:18:22] [ERROR] [api.tasks:133] Unexpected error in prediction: 'dict' object has no attribute 'predict'
+[2025-11-01 22:22:22] [ERROR] [api.tasks:133] Unexpected error in prediction: 'dict' object has no attribute 'predict'
+[2025-11-01 22:27:08] [ERROR] [api.tasks:152] Unexpected error in prediction: "None of [Index(['hr_mean', 'hr_std', 'hr_min', 'hr_max', 'hr_range',\n       'accel_magnitude_mean', 'accel_magnitude_std', 'gyro_magnitude_mean',\n       'gyro_magnitude_std', 'accel_energy', 'gyro_energy'],\n      dtype='object')] are in the [columns]"
+[2025-11-01 22:28:08] [ERROR] [api.tasks:152] Unexpected error in prediction: "None of [Index(['hr_mean', 'hr_std', 'hr_min', 'hr_max', 'hr_range',\n       'accel_magnitude_mean', 'accel_magnitude_std', 'gyro_magnitude_mean',\n       'gyro_magnitude_std', 'accel_energy', 'gyro_energy'],\n      dtype='object')] are in the [columns]"
+[2025-11-01 22:30:08] [ERROR] [api.tasks:152] Unexpected error in prediction: "None of [Index(['hr_mean', 'hr_std', 'hr_min', 'hr_max', 'hr_range',\n       'accel_magnitude_mean', 'accel_magnitude_std', 'gyro_magnitude_mean',\n       'gyro_magnitude_std', 'accel_energy', 'gyro_energy'],\n      dtype='object')] are in the [columns]"
+[2025-11-01 22:34:05] [ERROR] [api.tasks:184] Missing required features: "None of [Index(['hr_mean', 'hr_std', 'hr_min', 'hr_max', 'hr_range',\n       'accel_magnitude_mean', 'accel_magnitude_std', 'gyro_magnitude_mean',\n       'gyro_magnitude_std', 'accel_energy', 'gyro_energy'],\n      dtype='object')] are in the [columns]". Required: ['hr_mean', 'hr_std', 'hr_min', 'hr_max', 'hr_range', 'accel_magnitude_mean', 'accel_magnitude_std', 'gyro_magnitude_mean', 'gyro_magnitude_std', 'accel_energy', 'gyro_energy']
+[2025-11-01 22:34:08] [ERROR] [api.tasks:184] Missing required features: "None of [Index(['hr_mean', 'hr_std', 'hr_min', 'hr_max', 'hr_range',\n       'accel_magnitude_mean', 'accel_magnitude_std', 'gyro_magnitude_mean',\n       'gyro_magnitude_std', 'accel_energy', 'gyro_energy'],\n      dtype='object')] are in the [columns]". Required: ['hr_mean', 'hr_std', 'hr_min', 'hr_max', 'hr_range', 'accel_magnitude_mean', 'accel_magnitude_std', 'gyro_magnitude_mean', 'gyro_magnitude_std', 'accel_energy', 'gyro_energy']
+[2025-11-01 22:40:19] [ERROR] [api.tasks:132] No recent sensor readings found. Cannot make prediction.
+[2025-11-01 23:03:19] [ERROR] [api.tasks:132] No recent sensor readings found. Cannot make prediction.
+[2025-11-01 23:07:37] [ERROR] [api.tasks:132] No recent sensor readings found. Cannot make prediction.
+[2025-11-01 23:10:04] [ERROR] [api.tasks:132] No recent sensor readings found. Cannot make prediction.

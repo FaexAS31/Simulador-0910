@@ -7,7 +7,7 @@ Design Pattern: Template Method Pattern
 Provides common structure and behavior for all models.
 """
 
-from django.db import models
+from django.db import models # type: ignore
 
 
 class TimeStampedModel(models.Model):
@@ -78,7 +78,7 @@ class SoftDeleteModel(TimeStampedModel):
     
     def delete(self, using=None, keep_parents=False):
         """Override delete to implement soft delete"""
-        from django.utils import timezone
+        from django.utils import timezone # type: ignore
         self.is_deleted = True
         self.deleted_at = timezone.now()
         self.save(using=using)

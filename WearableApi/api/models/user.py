@@ -7,8 +7,8 @@ Design Pattern: Class Table Inheritance
 Usuario is the base, with Administrador and Consumidor extending it.
 """
 
-from django.db import models
-from django.contrib.auth.hashers import make_password, check_password
+from django.db import models # type: ignore
+from django.contrib.auth.hashers import make_password, check_password # type: ignore
 from .base import TimeStampedModel
 
 

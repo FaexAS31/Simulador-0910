@@ -6,7 +6,7 @@ Models for ML analysis and user interactions: Analisis, Deseos, Notificaciones
 These models handle ML predictions, desire tracking, and notifications.
 """
 
-from django.db import models
+from django.db import models # type: ignore
 from .base import TimeStampedModel
 from .user import Consumidor
 from .sensor import Ventana
@@ -300,7 +300,7 @@ class Notificacion(TimeStampedModel):
         Returns:
             float: Hours since notification was sent
         """
-        from django.utils import timezone
+        from django.utils import timezone # type: ignore
         if self.fecha_envio:
             delta = timezone.now() - self.fecha_envio
             return round(delta.total_seconds() / 3600, 2)

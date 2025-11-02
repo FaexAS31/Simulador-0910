@@ -10,7 +10,7 @@ Important: managed = False means Django won't create/modify these in migrations.
 The PostgreSQL views must be created separately.
 """
 
-from django.db import models
+from django.db import models # type: ignore
 
 
 class VwHabitTracking(models.Model):
