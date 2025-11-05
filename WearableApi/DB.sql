@@ -98,7 +98,8 @@ BEFORE UPDATE ON habitos
 FOR EACH ROW
 EXECUTE FUNCTION update_timestamp();
 
-
+ALTER TABLE formularios 
+ADD COLUMN habitos JSONB;
 -- ==========================================================
 -- 1.4 Permisos base table
 -- ==========================================================
@@ -171,6 +172,9 @@ CREATE TABLE consumidores (
     created_at TIMESTAMP DEFAULT NOW(),
     updated_at TIMESTAMP DEFAULT NOW()
 );
+
+ALTER TABLE consumidores
+ALTER COLUMN genero DROP NOT NULL;
 
 CREATE INDEX idx_consumidores_usuario_id
     ON consumidores(usuario_id);

@@ -141,7 +141,7 @@ class PermisoViewSet(LoggingMixin, viewsets.ModelViewSet):
 class FormularioViewSet(LoggingMixin, ConsumerFilterMixin, viewsets.ModelViewSet):
     
     queryset = Formulario.objects.select_related(
-        'consumidor__usuario', 'habito'
+        'consumidor__usuario'
     ).all()
     serializer_class = FormularioSerializer
 

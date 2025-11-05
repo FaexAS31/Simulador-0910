@@ -106,11 +106,16 @@ class PermisoSerializer(serializers.ModelSerializer):
 
 class FormularioSerializer(serializers.ModelSerializer):
     
-    habito_nombre = serializers.CharField(source='habito.nombre', read_only=True)
+    habito_nombre = serializers.SerializerMethodField()
     consumidor_nombre = serializers.CharField(source='consumidor.nombre', read_only=True)
     emotion_count = serializers.ReadOnlyField()
     motive_count = serializers.ReadOnlyField()
     solution_count = serializers.ReadOnlyField()
+    
+    def get_habito_nombre(self, obj):
+        if obj.habito and isinstance(obj.habito, dict):
+            return obj.habito.get('nombre', None)
+        return None
     
     class Meta:
         model = Formulario

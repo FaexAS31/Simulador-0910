@@ -2,7 +2,6 @@
 from django.db import models
 from .base import TimeStampedModel
 from .user import Consumidor
-from .lookup import Habito
 
 class Formulario(TimeStampedModel):
     
@@ -16,13 +15,10 @@ class Formulario(TimeStampedModel):
         auto_now_add=True,
         help_text="Timestamp when form was submitted"
     )
-    habito = models.ForeignKey(
-        Habito,
-        on_delete=models.SET_NULL,
+    habito = models.JSONField(
         null=True,
         blank=True,
-        related_name='formularios',
-        help_text="Related habit (e.g., smoking)"
+        help_text="Habit data as JSON (JSONB)"
     )
     emociones = models.JSONField(
         null=True,
@@ -47,12 +43,11 @@ class Formulario(TimeStampedModel):
         ordering = ['-fecha_envio']
         indexes = [
             models.Index(fields=['consumidor', 'fecha_envio']),
-            models.Index(fields=['habito']),
             models.Index(fields=['fecha_envio']),
         ]
     
     def __str__(self):
-        habito_str = self.habito.nombre if self.habito else "Sin hábito"
+        habito_str = self.habito.get('nombre', 'Sin hábito') if self.habito else "Sin hábito"
         return f"Form {self.id} - {self.consumidor.nombre} - {habito_str}"
     
     @property

@@ -330,3 +330,395 @@ rest_framework.exceptions.NotAuthenticated: Authentication credentials were not 
 [2025-11-05 10:35:40] [INFO] [api.services.auth_service:67] Successful login: esteban321@gmail.com (rol: consumidor)
 [2025-11-05 10:35:40] [INFO] [api.views.UsuarioViewSet] 📤 ✓ Response: 200 | Action: login
 [2025-11-05 10:35:40] [INFO] [django.server:213] "POST /api/usuarios/login/ HTTP/1.1" 200 725
+[2025-11-05 11:47:02] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-05 12:31:09] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-05 12:32:09] [INFO] [django.server:213] "OPTIONS /api/usuarios/register/ HTTP/1.1" 200 0
+[2025-11-05 12:32:09] [INFO] [api.views.UsuarioViewSet] 📥 POST /api/usuarios/register/ | Action: register
+[2025-11-05 12:32:10] [INFO] [api.services.user_factory:31] Created Consumidor: fabian@gmail.com (ID: 26, Profile ID: 18)
+[2025-11-05 12:32:10] [INFO] [api.views.UsuarioViewSet] New user registered: fabian@gmail.com (rol: consumidor)
+[2025-11-05 12:32:10] [INFO] [api.views.UsuarioViewSet] 📤 ✓ Response: 201 | Action: register
+[2025-11-05 12:32:10] [INFO] [django.server:213] "POST /api/usuarios/register/ HTTP/1.1" 201 714
+[2025-11-05 12:37:10] [INFO] [django.server:213] "OPTIONS /api/consumidores HTTP/1.1" 200 0
+[2025-11-05 12:37:10] [ERROR] [django.request:253] Internal Server Error: /api/consumidores
+Traceback (most recent call last):
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\sentry_sdk\integrations\django\middleware.py", line 177, in __call__
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\utils\deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/consumidores/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2025-11-05 12:37:10] [ERROR] [django.server:213] "POST /api/consumidores HTTP/1.1" 500 92060
+[2025-11-05 12:52:07] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-05 13:10:05] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\models\form.py changed, reloading.
+[2025-11-05 13:10:07] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-05 13:11:03] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\models\form.py changed, reloading.
+[2025-11-05 13:11:06] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-05 13:11:58] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\models\form.py changed, reloading.
+[2025-11-05 13:12:01] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-05 13:12:04] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\models\form.py changed, reloading.
+[2025-11-05 13:12:05] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-05 13:12:10] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\serializers.py changed, reloading.
+[2025-11-05 13:12:13] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-05 13:12:19] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\models\form.py changed, reloading.
+[2025-11-05 13:12:21] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-05 13:12:41] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\serializers.py changed, reloading.
+[2025-11-05 13:12:43] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-05 13:16:24] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-05 13:23:27] [INFO] [api.views.UsuarioViewSet] 📥 POST /api/usuarios/register/ | Action: register
+[2025-11-05 13:23:28] [INFO] [api.services.user_factory:31] Created Consumidor: gabriel@gmail.com (ID: 27, Profile ID: 19)
+[2025-11-05 13:23:28] [INFO] [api.views.UsuarioViewSet] New user registered: gabriel@gmail.com (rol: consumidor)
+[2025-11-05 13:23:28] [INFO] [api.views.UsuarioViewSet] 📤 ✓ Response: 201 | Action: register
+[2025-11-05 13:23:28] [INFO] [django.server:213] "POST /api/usuarios/register/ HTTP/1.1" 201 716
+[2025-11-05 13:23:42] [INFO] [django.server:213] "OPTIONS /api/consumidores/ HTTP/1.1" 200 0
+[2025-11-05 13:23:42] [INFO] [api.views.ConsumidorViewSet] 📥 POST /api/consumidores/ | Action: create
+[2025-11-05 13:23:42] [ERROR] [api.views.ConsumidorViewSet] IntegrityError: duplicate key value violates unique constraint "consumidores_usuario_id_key"
+DETAIL:  Key (usuario_id)=(27) already exists. | Context: action=create, view=ConsumidorViewSet
+Traceback (most recent call last):
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\psycopg\cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UniqueViolation: duplicate key value violates unique constraint "consumidores_usuario_id_key"
+DETAIL:  Key (usuario_id)=(27) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\serializers.py", line 991, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\sentry_sdk\utils.py", line 1851, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\sentry_sdk\integrations\django\__init__.py", line 652, in execute
+    result = real_execute(self, sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\psycopg\cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "consumidores_usuario_id_key"
+DETAIL:  Key (usuario_id)=(27) already exists.
+[2025-11-05 13:23:43] [ERROR] [django.request:253] Internal Server Error: /api/consumidores/
+Traceback (most recent call last):
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\psycopg\cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UniqueViolation: duplicate key value violates unique constraint "consumidores_usuario_id_key"
+DETAIL:  Key (usuario_id)=(27) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\utils\mixins.py", line 38, in handle_exception
+    return super().handle_exception(exc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\serializers.py", line 991, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\sentry_sdk\utils.py", line 1851, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\sentry_sdk\integrations\django\__init__.py", line 652, in execute
+    result = real_execute(self, sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\psycopg\cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "consumidores_usuario_id_key"
+DETAIL:  Key (usuario_id)=(27) already exists.
+[2025-11-05 13:23:43] [ERROR] [django.server:213] "POST /api/consumidores/ HTTP/1.1" 500 257361
+[2025-11-05 13:31:09] [INFO] [api.views.UsuarioViewSet] 📥 POST /api/usuarios/register/ | Action: register
+[2025-11-05 13:31:10] [INFO] [api.services.user_factory:31] Created Consumidor: bryton@gmail.com (ID: 28, Profile ID: 21)
+[2025-11-05 13:31:10] [INFO] [api.views.UsuarioViewSet] New user registered: bryton@gmail.com (rol: consumidor)
+[2025-11-05 13:31:10] [INFO] [api.views.UsuarioViewSet] 📤 ✓ Response: 201 | Action: register
+[2025-11-05 13:31:10] [INFO] [django.server:213] "POST /api/usuarios/register/ HTTP/1.1" 201 714
+[2025-11-05 13:31:25] [INFO] [api.views.ConsumidorViewSet] 📥 GET /api/consumidores/21/ | Action: retrieve
+[2025-11-05 13:31:25] [INFO] [api.views.ConsumidorViewSet] 📤 ✓ Response: 200 | Action: retrieve
+[2025-11-05 13:31:25] [INFO] [django.server:213] "GET /api/consumidores/21/ HTTP/1.1" 200 345
+[2025-11-05 13:31:25] [INFO] [django.server:213] "OPTIONS /api/consumidores/21/ HTTP/1.1" 200 0
+[2025-11-05 13:31:25] [INFO] [api.views.ConsumidorViewSet] 📥 PATCH /api/consumidores/21/ | Action: partial_update
+[2025-11-05 13:31:25] [INFO] [api.views.ConsumidorViewSet] 📤 ✓ Response: 200 | Action: partial_update
+[2025-11-05 13:31:25] [INFO] [django.server:213] "PATCH /api/consumidores/21/ HTTP/1.1" 200 344
+[2025-11-05 13:31:46] [INFO] [api.views.FormularioViewSet] 📥 GET /api/formularios/ | Action: list
+[2025-11-05 13:31:46] [ERROR] [api.views.FormularioViewSet] FieldError: Non-relational field given in select_related: 'habito'. Choices are: consumidor | Context: action=list, view=FormularioViewSet
+Traceback (most recent call last):
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\pagination.py", line 222, in paginate_queryset
+    return list(self.page)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\core\paginator.py", line 191, in __len__
+    return len(self.object_list)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1610, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\sql\compiler.py", line 766, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\sql\compiler.py", line 85, in pre_sql_setup
+    self.setup_query(with_col_aliases=with_col_aliases)
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\sql\compiler.py", line 74, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select(
+                                                            ^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\sql\compiler.py", line 299, in get_select
+    related_klass_infos = self.get_related_selections(select, select_mask)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1230, in get_related_selections
+    raise FieldError(
+django.core.exceptions.FieldError: Non-relational field given in select_related: 'habito'. Choices are: consumidor
+[2025-11-05 13:31:46] [ERROR] [django.request:253] Internal Server Error: /api/formularios/
+Traceback (most recent call last):
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\utils\mixins.py", line 38, in handle_exception
+    return super().handle_exception(exc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\pagination.py", line 222, in paginate_queryset
+    return list(self.page)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\core\paginator.py", line 191, in __len__
+    return len(self.object_list)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1610, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\sql\compiler.py", line 766, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\sql\compiler.py", line 85, in pre_sql_setup
+    self.setup_query(with_col_aliases=with_col_aliases)
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\sql\compiler.py", line 74, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select(
+                                                            ^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\sql\compiler.py", line 299, in get_select
+    related_klass_infos = self.get_related_selections(select, select_mask)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1230, in get_related_selections
+    raise FieldError(
+django.core.exceptions.FieldError: Non-relational field given in select_related: 'habito'. Choices are: consumidor
+[2025-11-05 13:31:46] [ERROR] [django.server:213] "GET /api/formularios/?consumidor_id=21 HTTP/1.1" 500 183744
+[2025-11-05 13:31:46] [INFO] [django.server:213] "OPTIONS /api/formularios/ HTTP/1.1" 200 0
+[2025-11-05 13:31:46] [INFO] [api.views.FormularioViewSet] 📥 POST /api/formularios/ | Action: create
+[2025-11-05 13:31:46] [ERROR] [api.views.FormularioViewSet] ValidationError: {'consumidor': [ErrorDetail(string='This field is required.', code='required')]} | Context: action=create, view=FormularioViewSet
+Traceback (most recent call last):
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\env\Lib\site-packages\rest_framework\serializers.py", line 233, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'consumidor': [ErrorDetail(string='This field is required.', code='required')]}
+[2025-11-05 13:31:46] [INFO] [api.views.FormularioViewSet] 📤 ✗ Response: 400 | Action: create
+[2025-11-05 13:31:46] [WARNING] [django.request:253] Bad Request: /api/formularios/
+[2025-11-05 13:31:46] [WARNING] [django.server:213] "POST /api/formularios/ HTTP/1.1" 400 42
+[2025-11-05 13:36:43] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\views.py changed, reloading.
+[2025-11-05 13:36:46] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-05 13:38:32] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\views.py changed, reloading.
+[2025-11-05 13:38:34] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-05 13:38:57] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-05 13:39:54] [INFO] [api.views.UsuarioViewSet] 📥 POST /api/usuarios/register/ | Action: register
+[2025-11-05 13:39:55] [INFO] [api.services.user_factory:31] Created Consumidor: perdomo@gmail.com (ID: 29, Profile ID: 22)
+[2025-11-05 13:39:55] [INFO] [api.views.UsuarioViewSet] New user registered: perdomo@gmail.com (rol: consumidor)
+[2025-11-05 13:39:55] [INFO] [api.views.UsuarioViewSet] 📤 ✓ Response: 201 | Action: register
+[2025-11-05 13:39:55] [INFO] [django.server:213] "POST /api/usuarios/register/ HTTP/1.1" 201 716
+[2025-11-05 13:40:09] [INFO] [api.views.ConsumidorViewSet] 📥 GET /api/consumidores/22/ | Action: retrieve
+[2025-11-05 13:40:09] [INFO] [api.views.ConsumidorViewSet] 📤 ✓ Response: 200 | Action: retrieve
+[2025-11-05 13:40:09] [INFO] [django.server:213] "GET /api/consumidores/22/ HTTP/1.1" 200 347
+[2025-11-05 13:40:09] [INFO] [django.server:213] "OPTIONS /api/consumidores/22/ HTTP/1.1" 200 0
+[2025-11-05 13:40:09] [INFO] [api.views.ConsumidorViewSet] 📥 PATCH /api/consumidores/22/ | Action: partial_update
+[2025-11-05 13:40:09] [INFO] [api.views.ConsumidorViewSet] 📤 ✓ Response: 200 | Action: partial_update
+[2025-11-05 13:40:09] [INFO] [django.server:213] "PATCH /api/consumidores/22/ HTTP/1.1" 200 346
+[2025-11-05 13:40:28] [INFO] [api.views.FormularioViewSet] 📥 GET /api/formularios/ | Action: list
+[2025-11-05 13:40:28] [INFO] [api.views.FormularioViewSet] 📤 ✓ Response: 200 | Action: list
+[2025-11-05 13:40:28] [INFO] [django.server:213] "GET /api/formularios/?consumidor=22 HTTP/1.1" 200 5997
+[2025-11-05 13:40:28] [INFO] [api.views.FormularioViewSet] 📥 POST /api/formularios/ | Action: create
+[2025-11-05 13:40:28] [INFO] [api.views.FormularioViewSet] 📤 ✓ Response: 201 | Action: create
+[2025-11-05 13:40:28] [INFO] [django.server:213] "POST /api/formularios/ HTTP/1.1" 201 406
+[2025-11-05 13:41:43] [INFO] [django.utils.autoreload:265] C:\Users\MSI\Desktop\9B\Proyecto 9B\API_wearable\Simulador-0910\WearableApi\api\admin.py changed, reloading.
+[2025-11-05 13:41:44] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
