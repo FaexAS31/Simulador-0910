@@ -253,6 +253,10 @@ class VwHeartRateStatsViewSet(LoggingMixin, ConsumerFilterMixin, ReadOnlyMixin, 
     queryset = VwHeartRateStats.objects.all()
     serializer_class = VwHeartRateStatsSerializer
 
+class VwHeartRateTodayViewSet(LoggingMixin, ConsumerFilterMixin, ReadOnlyMixin, viewsets.ModelViewSet):
+    queryset = VwHeartRateToday.objects.all()
+    serializer_class = VwHeartRateTodaySerializer
+
 class VwPredictionTimelineViewSet(LoggingMixin, ConsumerFilterMixin, ReadOnlyMixin, viewsets.ModelViewSet):
     queryset = VwPredictionTimeline.objects.all()
     serializer_class = VwPredictionTimelineSerializer

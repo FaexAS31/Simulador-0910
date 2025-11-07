@@ -74,6 +74,24 @@ class VwHeartRateStats(models.Model):
         verbose_name_plural = 'Heart Rate Statistics'
         ordering = ['consumidor_id']
 
+class VwHeartRateToday(models.Model):
+    
+    consumidor_id = models.IntegerField(primary_key=True)
+    fecha = models.DateField()
+    total_ventanas = models.IntegerField()
+    ventanas_con_datos = models.IntegerField()
+    promedio_dia = models.DecimalField(max_digits=10, decimal_places=1, null=True)
+    minimo_dia = models.DecimalField(max_digits=10, decimal_places=1, null=True)
+    maximo_dia = models.DecimalField(max_digits=10, decimal_places=1, null=True)
+    ventanas = models.JSONField()
+    
+    class Meta:
+        managed = False
+        db_table = 'vw_heart_rate_today'
+        verbose_name = 'Heart Rate Today'
+        verbose_name_plural = 'Heart Rate Today'
+        ordering = ['consumidor_id']
+
 class VwPredictionTimeline(models.Model):
     
     analisis_id = models.IntegerField(primary_key=True)

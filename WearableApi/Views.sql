@@ -99,6 +99,37 @@ COMMENT ON VIEW vw_heart_rate_stats IS 'Aggregated heart rate statistics for KPI
 
 
 -- ==========================================================
+-- 4.1 HEART RATE TODAY - DETAILED DAILY VIEW
+-- ==========================================================
+-- Heart rate data for current day with summary statistics
+DROP VIEW IF EXISTS vw_heart_rate_today CASCADE;
+CREATE OR REPLACE VIEW vw_heart_rate_today AS
+SELECT 
+    v.consumidor_id,
+    CURRENT_DATE AS fecha,
+    -- Summary statistics for the day
+    COUNT(*) AS total_ventanas,
+    COUNT(*) FILTER (WHERE v.hr_mean IS NOT NULL) AS ventanas_con_datos,
+    ROUND(AVG(v.hr_mean) FILTER (WHERE v.hr_mean IS NOT NULL)::NUMERIC, 1) AS promedio_dia,
+    ROUND(MIN(v.hr_mean) FILTER (WHERE v.hr_mean IS NOT NULL)::NUMERIC, 1) AS minimo_dia,
+    ROUND(MAX(v.hr_mean) FILTER (WHERE v.hr_mean IS NOT NULL)::NUMERIC, 1) AS maximo_dia,
+    -- Aggregated window details as JSON array
+    JSON_AGG(
+        JSON_BUILD_OBJECT(
+            'window_start', v.window_start,
+            'window_end', v.window_end,
+            'heart_rate_mean', v.hr_mean,
+            'heart_rate_std', v.hr_std
+        ) ORDER BY v.window_start
+    ) AS ventanas
+FROM ventanas v
+WHERE DATE(v.window_start) = CURRENT_DATE
+GROUP BY v.consumidor_id;
+
+COMMENT ON VIEW vw_heart_rate_today IS 'Heart rate data for today with summary and detailed window data';
+
+
+-- ==========================================================
 -- 5. PREDICTION TIMELINE
 -- ==========================================================
 -- Predictions over time for trend analysis

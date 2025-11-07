@@ -244,6 +244,11 @@ class VwHeartRateStatsSerializer(serializers.ModelSerializer):
         model = VwHeartRateStats
         fields = '__all__'
 
+class VwHeartRateTodaySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = VwHeartRateToday
+        fields = '__all__'
+
 class VwPredictionTimelineSerializer(serializers.ModelSerializer):
     class Meta:
         model = VwPredictionTimeline
