@@ -25,6 +25,9 @@ router.register(r'analisis', views.AnalisisViewSet, basename='analisis')
 router.register(r'deseos', views.DeseoViewSet, basename='deseo')
 router.register(r'notificaciones', views.NotificacionViewSet, basename='notificacion')
 
+# Device session management (ESP32)
+router.register(r'device-session', views.DeviceSessionViewSet, basename='device-session')
+
 router.register(r'dashboard/habit-tracking', views.VwHabitTrackingViewSet, basename='dashboard-habit-tracking')
 router.register(r'dashboard/habit-stats', views.VwHabitStatsViewSet, basename='dashboard-habit-stats')
 router.register(r'dashboard/heart-rate', views.VwHeartRateTimelineViewSet, basename='dashboard-heart-rate')
