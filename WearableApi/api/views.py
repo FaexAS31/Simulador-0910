@@ -10,8 +10,17 @@ from api.serializers import *
 from api.services import AuthenticationService, UserFactory
 from utils.mixins import LoggingMixin, ConsumerFilterMixin, ReadOnlyMixin
 from utils.decorators import log_endpoint
+from django.utils import timezone
+from django.core.cache import cache
 from .tasks import predict_smoking_craving
 from celery.result import AsyncResult
+
+# Import the new Celery tasks
+from api.tasks import (
+    check_and_calculate_ventana_stats,
+    calculate_ventana_statistics,
+    trigger_prediction_if_ready
+)
 
 class UsuarioViewSet(LoggingMixin, viewsets.ModelViewSet):
     
@@ -590,20 +599,52 @@ def check_task_status(request, task_id):
 
 
 class LecturaViewSet(LoggingMixin, viewsets.ModelViewSet):
+    """
+    ViewSet for managing sensor readings (Lecturas) from ESP32
     
-    queryset = Lectura.objects.select_related('ventana').all()
+    Automatically triggers Celery tasks to:
+    1. Calculate ventana statistics (hr_mean, hr_std, accel_energy, gyro_energy)
+    2. Trigger ML predictions when ready
+    
+    Endpoints:
+    - GET /api/lecturas/ - List all readings (with filters)
+    - GET /api/lecturas/:id/ - Get specific reading
+    - POST /api/lecturas/ - Create new reading (ESP32, no auth required)
+    - GET /api/lecturas/recent/ - Get recent readings for a consumer
+    """
+    
+    queryset = Lectura.objects.select_related('ventana', 'ventana__consumidor').all()
     serializer_class = LecturaSerializer
     
     def get_queryset(self):
+        """
+        Filter queryset based on query parameters
+        Supports: ventana_id, consumidor_id, limit, ordering
+        """
         queryset = super().get_queryset()
-        ventana_id = self.request.query_params.get('ventana_id')
-        consumidor_id = self.request.query_params.get('consumidor_id')
         
+        # Filter by ventana_id
+        ventana_id = self.request.query_params.get('ventana_id')
         if ventana_id:
             queryset = queryset.filter(ventana_id=ventana_id)
         
+        # Filter by consumidor_id (through ventana relationship)
+        consumidor_id = self.request.query_params.get('consumidor_id')
         if consumidor_id:
             queryset = queryset.filter(ventana__consumidor_id=consumidor_id)
+        
+        # Apply ordering (default: most recent first)
+        ordering = self.request.query_params.get('ordering', '-created_at')
+        queryset = queryset.order_by(ordering)
+        
+        # Apply limit if specified
+        limit = self.request.query_params.get('limit')
+        if limit:
+            try:
+                limit_int = int(limit)
+                queryset = queryset[:limit_int]
+            except ValueError:
+                pass
         
         return queryset
     
@@ -620,9 +661,15 @@ class LecturaViewSet(LoggingMixin, viewsets.ModelViewSet):
         """
         Create a new lectura from ESP32 sensor data
         
+        This method:
+        1. Validates and saves the sensor reading
+        2. Checks if ventana has enough readings (default: 5)
+        3. Triggers Celery task to calculate ventana statistics if ready
+        4. Triggers ML prediction if statistics are complete
+        
         Expected payload:
         {
-            "ventana_id": 1,
+            "ventana": 1,  # or "ventana_id": 1
             "heart_rate": 75.5,
             "accel_x": 0.12,
             "accel_y": -0.05,
@@ -633,111 +680,208 @@ class LecturaViewSet(LoggingMixin, viewsets.ModelViewSet):
         }
         """
         try:
-            # Validate ventana exists
-            ventana_id = request.data.get('ventana_id')
+            # Support both 'ventana' and 'ventana_id' in request
+            ventana_id = request.data.get('ventana') or request.data.get('ventana_id')
             
             if not ventana_id:
                 return Response({
                     'error': 'ventana_id is required'
                 }, status=status.HTTP_400_BAD_REQUEST)
             
+            # Validate ventana exists
             try:
                 ventana = Ventana.objects.get(id=ventana_id)
             except Ventana.DoesNotExist:
                 return Response({
-                    'error': f'Ventana with id {ventana_id} not found'
+                    'error': f'Ventana with id {ventana_id} does not exist'
                 }, status=status.HTTP_404_NOT_FOUND)
             
-            # Create lectura using serializer
-            serializer = self.get_serializer(data=request.data)
-            serializer.is_valid(raise_exception=True)
+            # Create the lectura
+            data = request.data.copy()
+            data['ventana'] = ventana_id  # Ensure 'ventana' key is used
             
-            lectura = serializer.save()
+            serializer = self.get_serializer(data=data)
+            serializer.is_valid(raise_exception=True)
+            lectura = self.perform_create(serializer)
             
             self.logger.info(
-                f"New sensor reading created: Lectura {lectura.id} for Ventana {ventana_id}"
+                f"✓ Lectura created: ID={lectura.id}, Ventana={ventana_id}, "
+                f"HR={data.get('heart_rate')}, "
+                f"Accel=({data.get('accel_x')}, {data.get('accel_y')}, {data.get('accel_z')}), "
+                f"Gyro=({data.get('gyro_x')}, {data.get('gyro_y')}, {data.get('gyro_z')})"
             )
             
-            return Response({
-                'status': 'success',
-                'id': lectura.id,
-                'ventana_id': ventana_id,
-                'message': 'Sensor data saved successfully',
-                'data': serializer.data
-            }, status=status.HTTP_201_CREATED)
+            # TRIGGER CELERY TASKS
+            # Check if we have enough readings to calculate statistics
+            lectura_count = Lectura.objects.filter(ventana_id=ventana_id).count()
+            
+            # Trigger check and calculation every 5 readings
+            # This prevents overwhelming the task queue
+            if lectura_count % 5 == 0:
+                self.logger.info(
+                    f"📊 Triggering ventana calculation check (count: {lectura_count})"
+                )
+                check_and_calculate_ventana_stats.delay(ventana_id, min_readings=5)
+            
+            # If ventana is ending soon, force calculation
+            if ventana.window_end and timezone.now() >= ventana.window_end:
+                self.logger.info(f"⏰ Ventana {ventana_id} window ended, forcing calculation")
+                calculate_ventana_statistics.delay(ventana_id)
+            
+            headers = self.get_success_headers(serializer.data)
+            return Response(
+                {
+                    'status': 'success',
+                    'id': lectura.id,
+                    'ventana_id': ventana_id,
+                    'message': 'Sensor data saved successfully',
+                    'lectura_count': lectura_count,
+                    'calculation_pending': lectura_count % 5 == 0,
+                    'data': serializer.data
+                },
+                status=status.HTTP_201_CREATED,
+                headers=headers
+            )
             
         except Exception as e:
             self.logger.error(f"Error creating lectura: {str(e)}")
             return Response({
-                'error': 'Failed to save sensor data',
+                'error': 'Failed to create lectura',
                 'detail': str(e)
             }, status=status.HTTP_400_BAD_REQUEST)
     
-    @action(detail=False, methods=['post'], permission_classes=[AllowAny])
-    def bulk_create(self, request):
+    def perform_create(self, serializer):
+        """Save the lectura and return the instance"""
+        return serializer.save()
+    
+    @action(detail=False, methods=['get'], permission_classes=[IsAuthenticated])
+    def recent(self, request):
         """
-        Bulk create multiple lecturas at once
+        Get recent sensor readings for a consumer
         
-        Expected payload:
-        {
-            "ventana_id": 1,
-            "readings": [
-                {
-                    "heart_rate": 75.5,
-                    "accel_x": 0.12,
-                    ...
-                },
-                {...}
-            ]
-        }
+        Query params:
+        - consumidor_id (required): Consumer ID
+        - limit (optional): Number of readings to return (default: 10)
+        - hours (optional): Only readings from last N hours
+        
+        GET /api/lecturas/recent/?consumidor_id=1&limit=20&hours=1
         """
-        try:
-            ventana_id = request.data.get('ventana_id')
-            readings = request.data.get('readings', [])
-            
-            if not ventana_id:
-                return Response({
-                    'error': 'ventana_id is required'
-                }, status=status.HTTP_400_BAD_REQUEST)
-            
-            if not readings or not isinstance(readings, list):
-                return Response({
-                    'error': 'readings must be a non-empty list'
-                }, status=status.HTTP_400_BAD_REQUEST)
-            
-            try:
-                ventana = Ventana.objects.get(id=ventana_id)
-            except Ventana.DoesNotExist:
-                return Response({
-                    'error': f'Ventana with id {ventana_id} not found'
-                }, status=status.HTTP_404_NOT_FOUND)
-            
-            # Add ventana_id to each reading
-            for reading in readings:
-                reading['ventana'] = ventana_id
-            
-            # Validate all readings
-            serializer = self.get_serializer(data=readings, many=True)
-            serializer.is_valid(raise_exception=True)
-            
-            # Bulk create
-            lecturas = serializer.save()
-            
-            self.logger.info(
-                f"Bulk created {len(lecturas)} sensor readings for Ventana {ventana_id}"
-            )
-            
+        consumidor_id = request.query_params.get('consumidor_id')
+        if not consumidor_id:
             return Response({
-                'status': 'success',
-                'count': len(lecturas),
-                'ventana_id': ventana_id,
-                'message': f'Successfully saved {len(lecturas)} sensor readings',
-                'data': serializer.data
-            }, status=status.HTTP_201_CREATED)
-            
-        except Exception as e:
-            self.logger.error(f"Error in bulk create: {str(e)}")
-            return Response({
-                'error': 'Failed to save sensor data',
-                'detail': str(e)
+                'error': 'consumidor_id is required'
             }, status=status.HTTP_400_BAD_REQUEST)
+        
+        # Get limit parameter
+        limit = int(request.query_params.get('limit', 10))
+        
+        # Base queryset
+        queryset = self.get_queryset().filter(
+            ventana__consumidor_id=consumidor_id
+        )
+        
+        # Filter by hours if specified
+        hours = request.query_params.get('hours')
+        if hours:
+            from datetime import timedelta
+            time_threshold = timezone.now() - timedelta(hours=int(hours))
+            queryset = queryset.filter(created_at__gte=time_threshold)
+        
+        # Apply limit and get results
+        lecturas = queryset[:limit]
+        serializer = self.get_serializer(lecturas, many=True)
+        
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    
+    @action(detail=False, methods=['post'], permission_classes=[IsAuthenticated])
+    def force_calculation(self, request):
+        """
+        Force calculation of ventana statistics
+        Useful for manual triggering or testing
+        
+        POST /api/lecturas/force-calculation/
+        Body: { "ventana_id": 1 }
+        """
+        ventana_id = request.data.get('ventana_id')
+        
+        if not ventana_id:
+            return Response({
+                'error': 'ventana_id is required'
+            }, status=status.HTTP_400_BAD_REQUEST)
+        
+        try:
+            ventana = Ventana.objects.get(id=ventana_id)
+        except Ventana.DoesNotExist:
+            return Response({
+                'error': f'Ventana {ventana_id} not found'
+            }, status=status.HTTP_404_NOT_FOUND)
+        
+        # Check if there are readings
+        lectura_count = Lectura.objects.filter(ventana_id=ventana_id).count()
+        
+        if lectura_count == 0:
+            return Response({
+                'error': 'No readings available for this ventana'
+            }, status=status.HTTP_400_BAD_REQUEST)
+        
+        # Trigger calculation
+        task = calculate_ventana_statistics.delay(ventana_id)
+        
+        self.logger.info(
+            f"🔧 Manual calculation triggered for Ventana {ventana_id} "
+            f"(Task ID: {task.id})"
+        )
+        
+        return Response({
+            'status': 'calculation_triggered',
+            'ventana_id': ventana_id,
+            'lectura_count': lectura_count,
+            'task_id': task.id,
+            'message': 'Ventana calculation task started'
+        }, status=status.HTTP_202_ACCEPTED)
+    
+    @action(detail=False, methods=['get'], permission_classes=[IsAuthenticated])
+    def stats(self, request):
+        """
+        Get statistics about lecturas and ventanas
+        
+        GET /api/lecturas/stats/?consumidor_id=1
+        """
+        consumidor_id = request.query_params.get('consumidor_id')
+        
+        if consumidor_id:
+            # Stats for specific consumer
+            total_lecturas = Lectura.objects.filter(
+                ventana__consumidor_id=consumidor_id
+            ).count()
+            
+            ventanas_with_stats = Ventana.objects.filter(
+                consumidor_id=consumidor_id,
+                hr_mean__isnull=False
+            ).count()
+            
+            ventanas_pending = Ventana.objects.filter(
+                consumidor_id=consumidor_id,
+                hr_mean__isnull=True
+            ).count()
+            
+            return Response({
+                'consumidor_id': consumidor_id,
+                'total_lecturas': total_lecturas,
+                'ventanas_calculated': ventanas_with_stats,
+                'ventanas_pending': ventanas_pending
+            })
+        else:
+            # Global stats
+            total_lecturas = Lectura.objects.count()
+            total_ventanas = Ventana.objects.count()
+            ventanas_calculated = Ventana.objects.filter(hr_mean__isnull=False).count()
+            ventanas_pending = Ventana.objects.filter(hr_mean__isnull=True).count()
+            
+            return Response({
+                'total_lecturas': total_lecturas,
+                'total_ventanas': total_ventanas,
+                'ventanas_calculated': ventanas_calculated,
+                'ventanas_pending': ventanas_pending,
+                'calculation_rate': f"{(ventanas_calculated/total_ventanas*100):.1f}%" if total_ventanas > 0 else "0%"
+            })

@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 import sentry_sdk
 import dj_database_url
+from decouple import Config, RepositoryEnv
 from sentry_sdk.integrations.django import DjangoIntegration
 from sentry_sdk.integrations.celery import CeleryIntegration
 from sentry_sdk.integrations.redis import RedisIntegration
