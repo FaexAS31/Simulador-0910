@@ -2,6 +2,8 @@ from celery import shared_task
 import logging
 import numpy as np
 import pandas as pd
+from datetime import timedelta
+from django.db import models
 from django.core.cache import cache
 from django.utils import timezone
 from api.models import Consumidor, Analisis, Ventana, Usuario, Notificacion, Deseo, Lectura
@@ -355,3 +357,289 @@ def simulate_wearable_cycle(self):
             'error': str(exc)
         }
 
+
+@shared_task(bind=True, max_retries=3)
+def calculate_ventana_statistics(self, ventana_id):
+    """
+    Calculate aggregated statistics for a ventana based on its lecturas
+    Called periodically or when enough readings have accumulated
+    
+    This calculates:
+    - hr_mean: Average heart rate
+    - hr_std: Heart rate standard deviation
+    - accel_energy: Total accelerometer energy (movement intensity)
+    - gyro_energy: Total gyroscope energy (rotation intensity)
+    """
+    try:
+        logger.info(f"[VENTANA-CALC] Starting calculation for Ventana {ventana_id}")
+        
+        # Get the ventana
+        try:
+            ventana = Ventana.objects.get(id=ventana_id)
+        except Ventana.DoesNotExist:
+            logger.error(f"[VENTANA-CALC] Ventana {ventana_id} not found")
+            return {
+                'success': False,
+                'error': f'Ventana {ventana_id} does not exist'
+            }
+        
+        # Get all lecturas for this ventana
+        lecturas = Lectura.objects.filter(ventana=ventana).order_by('created_at')
+        
+        if not lecturas.exists():
+            logger.warning(f"[VENTANA-CALC] No lecturas found for Ventana {ventana_id}")
+            return {
+                'success': False,
+                'error': 'No sensor readings available',
+                'ventana_id': ventana_id
+            }
+        
+        lectura_count = lecturas.count()
+        logger.info(f"[VENTANA-CALC] Processing {lectura_count} readings")
+        
+        # Extract sensor data
+        heart_rates = []
+        accel_x_values = []
+        accel_y_values = []
+        accel_z_values = []
+        gyro_x_values = []
+        gyro_y_values = []
+        gyro_z_values = []
+        
+        for lectura in lecturas:
+            if lectura.heart_rate is not None:
+                heart_rates.append(lectura.heart_rate)
+            
+            if lectura.accel_x is not None:
+                accel_x_values.append(lectura.accel_x)
+            if lectura.accel_y is not None:
+                accel_y_values.append(lectura.accel_y)
+            if lectura.accel_z is not None:
+                accel_z_values.append(lectura.accel_z)
+            
+            if lectura.gyro_x is not None:
+                gyro_x_values.append(lectura.gyro_x)
+            if lectura.gyro_y is not None:
+                gyro_y_values.append(lectura.gyro_y)
+            if lectura.gyro_z is not None:
+                gyro_z_values.append(lectura.gyro_z)
+        
+        # Calculate heart rate statistics
+        if heart_rates:
+            hr_array = np.array(heart_rates)
+            ventana.hr_mean = float(np.mean(hr_array))
+            ventana.hr_std = float(np.std(hr_array))
+            logger.info(f"[HR-STATS] Mean: {ventana.hr_mean:.2f}, Std: {ventana.hr_std:.2f}")
+        else:
+            logger.warning(f"[VENTANA-CALC] No heart rate data available")
+        
+        # Calculate accelerometer energy (movement intensity)
+        if accel_x_values and accel_y_values and accel_z_values:
+            accel_x_array = np.array(accel_x_values)
+            accel_y_array = np.array(accel_y_values)
+            accel_z_array = np.array(accel_z_values)
+            
+            # Energy = sum of squared values
+            ventana.accel_energy = float(
+                np.sum(accel_x_array**2 + accel_y_array**2 + accel_z_array**2)
+            )
+            
+            logger.info(f"[ACCEL-ENERGY] {ventana.accel_energy:.4f}")
+        else:
+            logger.warning(f"[VENTANA-CALC] No accelerometer data available")
+        
+        # Calculate gyroscope energy (rotation intensity)
+        if gyro_x_values and gyro_y_values and gyro_z_values:
+            gyro_x_array = np.array(gyro_x_values)
+            gyro_y_array = np.array(gyro_y_values)
+            gyro_z_array = np.array(gyro_z_values)
+            
+            # Energy = sum of squared values
+            ventana.gyro_energy = float(
+                np.sum(gyro_x_array**2 + gyro_y_array**2 + gyro_z_array**2)
+            )
+            
+            logger.info(f"[GYRO-ENERGY] {ventana.gyro_energy:.4f}")
+        else:
+            logger.warning(f"[VENTANA-CALC] No gyroscope data available")
+        
+        # Save the calculated statistics
+        ventana.save()
+        
+        logger.info(
+            f"[VENTANA-CALC] ✓ Successfully calculated statistics for Ventana {ventana_id}"
+        )
+        
+        return {
+            'success': True,
+            'ventana_id': ventana_id,
+            'lecturas_processed': lectura_count,
+            'statistics': {
+                'hr_mean': ventana.hr_mean,
+                'hr_std': ventana.hr_std,
+                'accel_energy': ventana.accel_energy,
+                'gyro_energy': ventana.gyro_energy
+            }
+        }
+        
+    except Exception as exc:
+        logger.error(f"[VENTANA-CALC] Error calculating statistics: {exc}")
+        raise self.retry(exc=exc, countdown=60 * (2 ** self.request.retries))
+
+
+@shared_task(bind=True)
+def check_and_calculate_ventana_stats(self, ventana_id, min_readings=5):
+    """
+    Check if a ventana has enough readings and trigger calculation
+    
+    Args:
+        ventana_id: ID of the ventana to check
+        min_readings: Minimum number of readings before calculating (default: 5)
+    """
+    try:
+        ventana = Ventana.objects.get(id=ventana_id)
+        lectura_count = Lectura.objects.filter(ventana=ventana).count()
+        
+        logger.info(
+            f"[CHECK-CALC] Ventana {ventana_id} has {lectura_count} readings "
+            f"(min: {min_readings})"
+        )
+        
+        if lectura_count >= min_readings:
+            # Trigger calculation
+            logger.info(f"[CHECK-CALC] Triggering calculation for Ventana {ventana_id}")
+            calculate_ventana_statistics.delay(ventana_id)
+            
+            return {
+                'success': True,
+                'ventana_id': ventana_id,
+                'lectura_count': lectura_count,
+                'action': 'calculation_triggered'
+            }
+        else:
+            logger.info(
+                f"[CHECK-CALC] Not enough readings yet for Ventana {ventana_id} "
+                f"({lectura_count}/{min_readings})"
+            )
+            return {
+                'success': True,
+                'ventana_id': ventana_id,
+                'lectura_count': lectura_count,
+                'action': 'waiting_for_more_data'
+            }
+            
+    except Ventana.DoesNotExist:
+        logger.error(f"[CHECK-CALC] Ventana {ventana_id} not found")
+        return {
+            'success': False,
+            'error': f'Ventana {ventana_id} does not exist'
+        }
+
+
+@shared_task(bind=True)
+def periodic_ventana_calculation(self):
+    """
+    Periodic task to calculate statistics for all active ventanas
+    Run this every 5-10 minutes via Celery Beat
+    """
+    try:
+        logger.info("[PERIODIC] Starting periodic ventana calculation")
+        
+        # Get all ventanas from the last hour that have lecturas but no calculated stats
+        one_hour_ago = timezone.now() - timedelta(hours=1)
+        
+        ventanas_to_process = Ventana.objects.filter(
+            window_start__gte=one_hour_ago,
+            hr_mean__isnull=True  # Not yet calculated
+        ).annotate(
+            lectura_count=models.Count('lecturas')
+        ).filter(
+            lectura_count__gte=5  # At least 5 readings
+        )
+        
+        processed_count = 0
+        for ventana in ventanas_to_process:
+            logger.info(f"[PERIODIC] Processing Ventana {ventana.id}")
+            calculate_ventana_statistics.delay(ventana.id)
+            processed_count += 1
+        
+        logger.info(f"[PERIODIC] ✓ Triggered calculation for {processed_count} ventanas")
+        
+        return {
+            'success': True,
+            'ventanas_processed': processed_count
+        }
+        
+    except Exception as exc:
+        logger.error(f"[PERIODIC] Error in periodic calculation: {exc}")
+        return {
+            'success': False,
+            'error': str(exc)
+        }
+
+
+@shared_task(bind=True)
+def trigger_prediction_if_ready(self, ventana_id):
+    """
+    Check if ventana has calculated statistics and trigger ML prediction
+    This should be called after calculate_ventana_statistics completes
+    """
+    try:
+        ventana = Ventana.objects.get(id=ventana_id)
+        
+        # Check if statistics are calculated
+        if (ventana.hr_mean is not None and 
+            ventana.accel_energy is not None and 
+            ventana.gyro_energy is not None):
+            
+            logger.info(
+                f"[PREDICTION-TRIGGER] Ventana {ventana_id} ready for prediction"
+            )
+            
+            # Get the consumidor and usuario
+            consumidor = ventana.consumidor
+            usuario = consumidor.usuario
+            
+            # Prepare features for prediction
+            features = {
+                'hr_mean': ventana.hr_mean,
+                'hr_std': ventana.hr_std,
+                'accel_energy': ventana.accel_energy,
+                'gyro_energy': ventana.gyro_energy,
+            }
+            
+            # Trigger prediction task
+            from api.tasks import predict_smoking_craving
+            predict_smoking_craving.delay(usuario.id, features)
+            
+            logger.info(f"[PREDICTION-TRIGGER] ✓ Prediction triggered for User {usuario.id}")
+            
+            return {
+                'success': True,
+                'ventana_id': ventana_id,
+                'user_id': usuario.id,
+                'action': 'prediction_triggered'
+            }
+        else:
+            logger.warning(
+                f"[PREDICTION-TRIGGER] Ventana {ventana_id} not ready - "
+                f"statistics incomplete"
+            )
+            return {
+                'success': False,
+                'ventana_id': ventana_id,
+                'error': 'Statistics not calculated yet'
+            }
+            
+    except Ventana.DoesNotExist:
+        logger.error(f"[PREDICTION-TRIGGER] Ventana {ventana_id} not found")
+        return {
+            'success': False,
+            'error': f'Ventana {ventana_id} does not exist'
+        }
+    except Exception as exc:
+        logger.error(f"[PREDICTION-TRIGGER] Error: {exc}")
+        return {
+            'success': False,
+            'error': str(exc)
+        }
