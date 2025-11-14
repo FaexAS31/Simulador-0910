@@ -3964,3 +3964,243 @@ Traceback (most recent call last):
     raise e.__class__(
 ValueError: Field 'consumidor_id' expected a number but got '() => {\n    const consumidorId2 = user?.id;\n    return consumidorId2;\n  }'.
 [2025-11-07 09:54:10] [ERROR] [django.server:213] "GET /api/dashboard/desires-tracking/?consumidor_id=()+%3D%3E+%7B%0A++++const+consumidorId2+%3D+user%3F.id%3B%0A++++return+consumidorId2%3B%0A++%7D HTTP/1.1" 500 190618
+[2025-11-14 00:25:22] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:25:22] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:25:26] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:25:26] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:25:30] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:25:30] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:27:14] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:27:14] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:28:31] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:28:31] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:29:28] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:29:28] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:30:26] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:30:26] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:31:19] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:31:19] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:37:55] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:37:55] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:37:58] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:37:58] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:38:06] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:38:06] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:38:17] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:38:17] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:43:42] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:43:42] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:43:47] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:43:47] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:46:37] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:46:37] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:52:49] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:52:49] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:55:57] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:55:57] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:56:28] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:56:28] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:57:28] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:57:28] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:58:15] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 00:58:15] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-14 01:20:15] [ERROR] [api.views.UsuarioViewSet:114] [log_exception] NotAuthenticated: Authentication credentials were not provided. | Context: action=create, view=UsuarioViewSet
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 421, in initial
+    self.check_permissions(request)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 339, in check_permissions
+    self.permission_denied(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+        message=getattr(permission, 'message', None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        code=getattr(permission, 'code', None)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 180, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+[2025-11-14 01:21:53] [ERROR] [api.views.UsuarioViewSet:114] [log_exception] NotAuthenticated: Authentication credentials were not provided. | Context: action=create, view=UsuarioViewSet
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 421, in initial
+    self.check_permissions(request)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 339, in check_permissions
+    self.permission_denied(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+        message=getattr(permission, 'message', None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        code=getattr(permission, 'code', None)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 180, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+[2025-11-14 01:21:55] [ERROR] [api.views.UsuarioViewSet:114] [log_exception] NotAuthenticated: Authentication credentials were not provided. | Context: action=create, view=UsuarioViewSet
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 421, in initial
+    self.check_permissions(request)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 339, in check_permissions
+    self.permission_denied(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+        message=getattr(permission, 'message', None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        code=getattr(permission, 'code', None)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 180, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+[2025-11-14 02:00:24] [ERROR] [api.views.UsuarioViewSet:114] [log_exception] NameError: name 'timezone' is not defined | Context: action=login, view=UsuarioViewSet
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\USER\Desktop\Simulador-0910\WearableApi\api\views.py", line 101, in login
+    window_start=timezone.now(),
+                 ^^^^^^^^
+NameError: name 'timezone' is not defined
+[2025-11-14 02:00:24] [ERROR] [django.request:253] Internal Server Error: /api/usuarios/login/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\USER\Desktop\Simulador-0910\WearableApi\utils\mixins.py", line 38, in handle_exception
+    return super().handle_exception(exc)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\USER\Desktop\Simulador-0910\WearableApi\api\views.py", line 101, in login
+    window_start=timezone.now(),
+                 ^^^^^^^^
+NameError: name 'timezone' is not defined
+[2025-11-14 02:01:40] [ERROR] [api.views.UsuarioViewSet:114] [log_exception] ValidationError: {'email': [ErrorDetail(string='This email is already registered', code='invalid')], 'password': [ErrorDetail(string='Password must contain at least one letter', code='invalid')]} | Context: action=register, view=UsuarioViewSet
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\USER\Desktop\Simulador-0910\WearableApi\api\views.py", line 30, in register
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\serializers.py", line 233, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'email': [ErrorDetail(string='This email is already registered', code='invalid')], 'password': [ErrorDetail(string='Password must contain at least one letter', code='invalid')]}
+[2025-11-14 02:01:49] [ERROR] [api.views.UsuarioViewSet:114] [log_exception] ValidationError: {'password': [ErrorDetail(string='Password must contain at least one letter', code='invalid')]} | Context: action=register, view=UsuarioViewSet
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\USER\Desktop\Simulador-0910\WearableApi\api\views.py", line 30, in register
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\serializers.py", line 233, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'password': [ErrorDetail(string='Password must contain at least one letter', code='invalid')]}
+[2025-11-14 02:06:20] [ERROR] [api.views.UsuarioViewSet:114] [log_exception] NameError: name 'timezone' is not defined | Context: action=login, view=UsuarioViewSet
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\USER\Desktop\Simulador-0910\WearableApi\api\views.py", line 101, in login
+    window_start=timezone.now(),
+                 ^^^^^^^^
+NameError: name 'timezone' is not defined
+[2025-11-14 02:06:20] [ERROR] [django.request:253] Internal Server Error: /api/usuarios/login/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\USER\Desktop\Simulador-0910\WearableApi\utils\mixins.py", line 38, in handle_exception
+    return super().handle_exception(exc)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\USER\Desktop\Simulador-0910\WearableApi\api\views.py", line 101, in login
+    window_start=timezone.now(),
+                 ^^^^^^^^
+NameError: name 'timezone' is not defined
+[2025-11-14 02:52:59] [ERROR] [api.views.UsuarioViewSet:114] [log_exception] ValidationError: {'telefono': [ErrorDetail(string='This field may not be null.', code='null')]} | Context: action=register, view=UsuarioViewSet
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\USER\Desktop\Simulador-0910\WearableApi\api\views.py", line 30, in register
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\serializers.py", line 233, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'telefono': [ErrorDetail(string='This field may not be null.', code='null')]}

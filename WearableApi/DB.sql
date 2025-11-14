@@ -98,6 +98,7 @@ BEFORE UPDATE ON habitos
 FOR EACH ROW
 EXECUTE FUNCTION update_timestamp();
 
+llllll
 ALTER TABLE formularios 
 ADD COLUMN habitos JSONB;
 -- ==========================================================

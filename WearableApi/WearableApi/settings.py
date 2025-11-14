@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'drf_spectacular',
     'django_celery_results',
     'django_celery_beat',
-    'sslserver',
 ]
 
 MIDDLEWARE = [
@@ -113,18 +112,18 @@ if USE_DOCKER_DB:
     DB_USER = os.environ.get('POSTGRES_USER', 'wearable')
     print("📦 Usando PostgreSQL en Docker")
 else:
-    DB_HOST = os.environ.get('POSTGRES_HOST', 'localhost')
-    DB_USER = os.environ.get('POSTGRES_USER', 'postgres')
+    DB_HOST = 'localhost'
+    DB_USER = 'postgres'
     print("💻 Usando PostgreSQL local")
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('POSTGRES_DB', 'wearable'),
+        'NAME': 'wearable',
         'USER': DB_USER,
-        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', ''),
+        'PASSWORD': '032210',
         'HOST': DB_HOST,
-        'PORT': os.environ.get('POSTGRES_PORT', '5432'),
+        'PORT': '5432',
         'CONN_MAX_AGE': 600,
         'OPTIONS': {
             'connect_timeout': 10,

@@ -9882,3 +9882,1315 @@ t
 [2025-11-10 19:22:30] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 PUT /api/ventanas/{id}/ | Action: update
 [2025-11-10 19:22:30] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 PATCH /api/ventanas/{id}/ | Action: partial_update
 [2025-11-10 19:22:30] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 DELETE /api/ventanas/{id}/ | Action: destroy
+[2025-11-14 01:07:43] [INFO] [daphne.cli:268] Starting server at ssl:8000:privateKey=key.pem:certKey=cert.pem
+[2025-11-14 01:07:43] [INFO] [daphne.server:120] HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+[2025-11-14 01:07:43] [INFO] [daphne.server:129] Configuring endpoint ssl:8000:privateKey=key.pem:certKey=cert.pem
+[2025-11-14 01:14:21] [INFO] [daphne.cli:268] Starting server at ssl:8000:privateKey=key.pem:certKey=cert.pem
+[2025-11-14 01:14:21] [INFO] [daphne.server:120] HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+[2025-11-14 01:14:21] [INFO] [daphne.server:129] Configuring endpoint ssl:8000:privateKey=key.pem:certKey=cert.pem
+[2025-11-14 01:14:21] [INFO] [daphne.server:160] Listening on TCP address 0.0.0.0:8000
+[2025-11-14 01:17:08] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 GET /api/administradores/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 POST /api/administradores/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 GET /api/administradores/{id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 PUT /api/administradores/{id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 PATCH /api/administradores/{id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 DELETE /api/administradores/{id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 GET /api/analisis/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 POST /api/analisis/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 GET /api/analisis/{id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 PUT /api/analisis/{id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 PATCH /api/analisis/{id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 DELETE /api/analisis/{id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 GET /api/consumidores/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 POST /api/consumidores/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 GET /api/consumidores/{id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 PUT /api/consumidores/{id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 PATCH /api/consumidores/{id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 DELETE /api/consumidores/{id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 GET /api/dashboard/daily-summary/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 POST /api/dashboard/daily-summary/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 GET /api/dashboard/daily-summary/{consumidor_id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 PUT /api/dashboard/daily-summary/{consumidor_id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/daily-summary/{consumidor_id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/daily-summary/{consumidor_id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 POST /api/dashboard/desires/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 POST /api/dashboard/desires-stats/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/{id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 PUT /api/dashboard/desires-stats/{id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/desires-stats/{id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/desires-stats/{id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 POST /api/dashboard/desires-tracking/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/{deseo_id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 PUT /api/dashboard/desires-tracking/{deseo_id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/desires-tracking/{deseo_id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/desires-tracking/{deseo_id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires/{deseo_id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 PUT /api/dashboard/desires/{deseo_id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/desires/{deseo_id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/desires/{deseo_id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/habit-stats/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 POST /api/dashboard/habit-stats/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/habit-stats/{consumidor_id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 PUT /api/dashboard/habit-stats/{consumidor_id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/habit-stats/{consumidor_id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/habit-stats/{consumidor_id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/habit-tracking/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 POST /api/dashboard/habit-tracking/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/habit-tracking/{consumidor_id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 PUT /api/dashboard/habit-tracking/{consumidor_id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/habit-tracking/{consumidor_id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/habit-tracking/{consumidor_id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 POST /api/dashboard/heart-rate/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 POST /api/dashboard/heart-rate-stats/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 PUT /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 POST /api/dashboard/heart-rate-today/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/{consumidor_id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 PUT /api/dashboard/heart-rate-today/{consumidor_id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/heart-rate-today/{consumidor_id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/heart-rate-today/{consumidor_id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate/{id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 PUT /api/dashboard/heart-rate/{id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/heart-rate/{id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/heart-rate/{id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 GET /api/dashboard/prediction-summary/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 POST /api/dashboard/prediction-summary/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 GET /api/dashboard/prediction-summary/{consumidor_id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 PUT /api/dashboard/prediction-summary/{consumidor_id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/prediction-summary/{consumidor_id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/prediction-summary/{consumidor_id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 GET /api/dashboard/predictions/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 POST /api/dashboard/predictions/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 GET /api/dashboard/predictions/{analisis_id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 PUT /api/dashboard/predictions/{analisis_id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/predictions/{analisis_id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/predictions/{analisis_id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 GET /api/dashboard/weekly-comparison/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 POST /api/dashboard/weekly-comparison/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 GET /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 PUT /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 GET /api/deseos/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 POST /api/deseos/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 GET /api/deseos/{id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 PUT /api/deseos/{id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 PATCH /api/deseos/{id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 DELETE /api/deseos/{id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 POST /api/deseos/{id}/resolve/ | Action: resolve
+[2025-11-14 01:17:08] [INFO] [api.views.DeviceSessionViewSet:16] [initialize_request] 📥 GET /api/device-session/active/ | Action: active
+[2025-11-14 01:17:08] [INFO] [api.views.DeviceSessionViewSet:16] [initialize_request] 📥 POST /api/device-session/check_session/ | Action: check_session
+[2025-11-14 01:17:08] [INFO] [api.views.DeviceSessionViewSet:16] [initialize_request] 📥 POST /api/device-session/extend_window/ | Action: extend_window
+[2025-11-14 01:17:08] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 GET /api/emociones/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 POST /api/emociones/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 GET /api/emociones/{id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 PUT /api/emociones/{id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 PATCH /api/emociones/{id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 DELETE /api/emociones/{id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 GET /api/formularios/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 POST /api/formularios/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 GET /api/formularios-temporales/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 POST /api/formularios-temporales/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 GET /api/formularios-temporales/{id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 PUT /api/formularios-temporales/{id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 PATCH /api/formularios-temporales/{id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 DELETE /api/formularios-temporales/{id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 GET /api/formularios/{id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 PUT /api/formularios/{id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 PATCH /api/formularios/{id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 DELETE /api/formularios/{id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 GET /api/habitos/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 POST /api/habitos/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 GET /api/habitos/{id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 PUT /api/habitos/{id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 PATCH /api/habitos/{id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 DELETE /api/habitos/{id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 GET /api/lecturas/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 POST /api/lecturas/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 GET /api/lecturas/{id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 PUT /api/lecturas/{id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 PATCH /api/lecturas/{id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 DELETE /api/lecturas/{id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 POST /api/lecturas/bulk_create/ | Action: bulk_create
+[2025-11-14 01:17:08] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 GET /api/motivos/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 POST /api/motivos/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 GET /api/motivos/{id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 PUT /api/motivos/{id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 PATCH /api/motivos/{id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 DELETE /api/motivos/{id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 GET /api/notificaciones/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 POST /api/notificaciones/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 GET /api/notificaciones/{id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 PUT /api/notificaciones/{id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 PATCH /api/notificaciones/{id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 DELETE /api/notificaciones/{id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 POST /api/notificaciones/{id}/mark_read/ | Action: mark_read
+[2025-11-14 01:17:08] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 POST /api/notificaciones/{id}/mark_unread/ | Action: mark_unread
+[2025-11-14 01:17:08] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 GET /api/permisos/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 POST /api/permisos/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 GET /api/permisos/{id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 PUT /api/permisos/{id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 PATCH /api/permisos/{id}/ | Action: partial_update
+[2025-11-14 01:17:08] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 DELETE /api/permisos/{id}/ | Action: destroy
+[2025-11-14 01:17:08] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 GET /api/soluciones/ | Action: list
+[2025-11-14 01:17:08] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 POST /api/soluciones/ | Action: create
+[2025-11-14 01:17:08] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 GET /api/soluciones/{id}/ | Action: retrieve
+[2025-11-14 01:17:08] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 PUT /api/soluciones/{id}/ | Action: update
+[2025-11-14 01:17:08] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 PATCH /api/soluciones/{id}/ | Action: partial_update
+[2025-11-14 01:17:09] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 DELETE /api/soluciones/{id}/ | Action: destroy
+[2025-11-14 01:17:09] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 GET /api/usuarios/ | Action: list
+[2025-11-14 01:17:09] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/ | Action: create
+[2025-11-14 01:17:09] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 GET /api/usuarios/{id}/ | Action: retrieve
+[2025-11-14 01:17:09] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 PUT /api/usuarios/{id}/ | Action: update
+[2025-11-14 01:17:09] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 PATCH /api/usuarios/{id}/ | Action: partial_update
+[2025-11-14 01:17:09] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 DELETE /api/usuarios/{id}/ | Action: destroy
+[2025-11-14 01:17:09] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 PATCH /api/usuarios/{id}/profile/ | Action: profile
+[2025-11-14 01:17:09] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/login/ | Action: login
+[2025-11-14 01:17:09] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/logout/ | Action: logout
+[2025-11-14 01:17:09] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/register/ | Action: register
+[2025-11-14 01:17:09] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 GET /api/ventanas/ | Action: list
+[2025-11-14 01:17:09] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 POST /api/ventanas/ | Action: create
+[2025-11-14 01:17:09] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 GET /api/ventanas/{id}/ | Action: retrieve
+[2025-11-14 01:17:09] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 PUT /api/ventanas/{id}/ | Action: update
+[2025-11-14 01:17:09] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 PATCH /api/ventanas/{id}/ | Action: partial_update
+[2025-11-14 01:17:09] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 DELETE /api/ventanas/{id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 GET /api/administradores/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 POST /api/administradores/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 GET /api/administradores/{id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 PUT /api/administradores/{id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 PATCH /api/administradores/{id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 DELETE /api/administradores/{id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 GET /api/analisis/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 POST /api/analisis/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 GET /api/analisis/{id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 PUT /api/analisis/{id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 PATCH /api/analisis/{id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 DELETE /api/analisis/{id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 GET /api/consumidores/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 POST /api/consumidores/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 GET /api/consumidores/{id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 PUT /api/consumidores/{id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 PATCH /api/consumidores/{id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 DELETE /api/consumidores/{id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 GET /api/dashboard/daily-summary/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 POST /api/dashboard/daily-summary/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 GET /api/dashboard/daily-summary/{consumidor_id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 PUT /api/dashboard/daily-summary/{consumidor_id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/daily-summary/{consumidor_id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/daily-summary/{consumidor_id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 POST /api/dashboard/desires/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 POST /api/dashboard/desires-stats/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/{id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 PUT /api/dashboard/desires-stats/{id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/desires-stats/{id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/desires-stats/{id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 POST /api/dashboard/desires-tracking/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/{deseo_id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 PUT /api/dashboard/desires-tracking/{deseo_id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/desires-tracking/{deseo_id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/desires-tracking/{deseo_id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires/{deseo_id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 PUT /api/dashboard/desires/{deseo_id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/desires/{deseo_id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/desires/{deseo_id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/habit-stats/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 POST /api/dashboard/habit-stats/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/habit-stats/{consumidor_id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 PUT /api/dashboard/habit-stats/{consumidor_id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/habit-stats/{consumidor_id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/habit-stats/{consumidor_id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/habit-tracking/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 POST /api/dashboard/habit-tracking/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/habit-tracking/{consumidor_id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 PUT /api/dashboard/habit-tracking/{consumidor_id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/habit-tracking/{consumidor_id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/habit-tracking/{consumidor_id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 POST /api/dashboard/heart-rate/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 POST /api/dashboard/heart-rate-stats/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 PUT /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 POST /api/dashboard/heart-rate-today/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/{consumidor_id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 PUT /api/dashboard/heart-rate-today/{consumidor_id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/heart-rate-today/{consumidor_id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/heart-rate-today/{consumidor_id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate/{id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 PUT /api/dashboard/heart-rate/{id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/heart-rate/{id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/heart-rate/{id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 GET /api/dashboard/prediction-summary/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 POST /api/dashboard/prediction-summary/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 GET /api/dashboard/prediction-summary/{consumidor_id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 PUT /api/dashboard/prediction-summary/{consumidor_id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/prediction-summary/{consumidor_id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/prediction-summary/{consumidor_id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 GET /api/dashboard/predictions/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 POST /api/dashboard/predictions/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 GET /api/dashboard/predictions/{analisis_id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 PUT /api/dashboard/predictions/{analisis_id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/predictions/{analisis_id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/predictions/{analisis_id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 GET /api/dashboard/weekly-comparison/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 POST /api/dashboard/weekly-comparison/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 GET /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 PUT /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 GET /api/deseos/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 POST /api/deseos/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 GET /api/deseos/{id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 PUT /api/deseos/{id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 PATCH /api/deseos/{id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 DELETE /api/deseos/{id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 POST /api/deseos/{id}/resolve/ | Action: resolve
+[2025-11-14 01:17:21] [INFO] [api.views.DeviceSessionViewSet:16] [initialize_request] 📥 GET /api/device-session/active/ | Action: active
+[2025-11-14 01:17:21] [INFO] [api.views.DeviceSessionViewSet:16] [initialize_request] 📥 POST /api/device-session/check_session/ | Action: check_session
+[2025-11-14 01:17:21] [INFO] [api.views.DeviceSessionViewSet:16] [initialize_request] 📥 POST /api/device-session/extend_window/ | Action: extend_window
+[2025-11-14 01:17:21] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 GET /api/emociones/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 POST /api/emociones/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 GET /api/emociones/{id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 PUT /api/emociones/{id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 PATCH /api/emociones/{id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 DELETE /api/emociones/{id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 GET /api/formularios/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 POST /api/formularios/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 GET /api/formularios-temporales/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 POST /api/formularios-temporales/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 GET /api/formularios-temporales/{id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 PUT /api/formularios-temporales/{id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 PATCH /api/formularios-temporales/{id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 DELETE /api/formularios-temporales/{id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 GET /api/formularios/{id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 PUT /api/formularios/{id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 PATCH /api/formularios/{id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 DELETE /api/formularios/{id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 GET /api/habitos/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 POST /api/habitos/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 GET /api/habitos/{id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 PUT /api/habitos/{id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 PATCH /api/habitos/{id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 DELETE /api/habitos/{id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 GET /api/lecturas/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 POST /api/lecturas/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 GET /api/lecturas/{id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 PUT /api/lecturas/{id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 PATCH /api/lecturas/{id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 DELETE /api/lecturas/{id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 POST /api/lecturas/bulk_create/ | Action: bulk_create
+[2025-11-14 01:17:21] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 GET /api/motivos/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 POST /api/motivos/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 GET /api/motivos/{id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 PUT /api/motivos/{id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 PATCH /api/motivos/{id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 DELETE /api/motivos/{id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 GET /api/notificaciones/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 POST /api/notificaciones/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 GET /api/notificaciones/{id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 PUT /api/notificaciones/{id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 PATCH /api/notificaciones/{id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 DELETE /api/notificaciones/{id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 POST /api/notificaciones/{id}/mark_read/ | Action: mark_read
+[2025-11-14 01:17:21] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 POST /api/notificaciones/{id}/mark_unread/ | Action: mark_unread
+[2025-11-14 01:17:21] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 GET /api/permisos/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 POST /api/permisos/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 GET /api/permisos/{id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 PUT /api/permisos/{id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 PATCH /api/permisos/{id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 DELETE /api/permisos/{id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 GET /api/soluciones/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 POST /api/soluciones/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 GET /api/soluciones/{id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 PUT /api/soluciones/{id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 PATCH /api/soluciones/{id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 DELETE /api/soluciones/{id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 GET /api/usuarios/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 GET /api/usuarios/{id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 PUT /api/usuarios/{id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 PATCH /api/usuarios/{id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 DELETE /api/usuarios/{id}/ | Action: destroy
+[2025-11-14 01:17:21] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 PATCH /api/usuarios/{id}/profile/ | Action: profile
+[2025-11-14 01:17:21] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/login/ | Action: login
+[2025-11-14 01:17:21] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/logout/ | Action: logout
+[2025-11-14 01:17:21] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/register/ | Action: register
+[2025-11-14 01:17:21] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 GET /api/ventanas/ | Action: list
+[2025-11-14 01:17:21] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 POST /api/ventanas/ | Action: create
+[2025-11-14 01:17:21] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 GET /api/ventanas/{id}/ | Action: retrieve
+[2025-11-14 01:17:21] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 PUT /api/ventanas/{id}/ | Action: update
+[2025-11-14 01:17:21] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 PATCH /api/ventanas/{id}/ | Action: partial_update
+[2025-11-14 01:17:21] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 DELETE /api/ventanas/{id}/ | Action: destroy
+[2025-11-14 01:20:15] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/ | Action: create
+[2025-11-14 01:20:15] [ERROR] [api.views.UsuarioViewSet:114] [log_exception] NotAuthenticated: Authentication credentials were not provided. | Context: action=create, view=UsuarioViewSet
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 421, in initial
+    self.check_permissions(request)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 339, in check_permissions
+    self.permission_denied(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+        message=getattr(permission, 'message', None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        code=getattr(permission, 'code', None)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 180, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+[2025-11-14 01:20:15] [INFO] [api.views.UsuarioViewSet:26] [finalize_response] 📤 ✗ Response: 401 | Action: create
+[2025-11-14 01:21:11] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 GET /api/administradores/ | Action: list
+[2025-11-14 01:21:11] [INFO] [api.views.AdministradorViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:21:53] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/ | Action: create
+[2025-11-14 01:21:53] [ERROR] [api.views.UsuarioViewSet:114] [log_exception] NotAuthenticated: Authentication credentials were not provided. | Context: action=create, view=UsuarioViewSet
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 421, in initial
+    self.check_permissions(request)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 339, in check_permissions
+    self.permission_denied(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+        message=getattr(permission, 'message', None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        code=getattr(permission, 'code', None)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 180, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+[2025-11-14 01:21:53] [INFO] [api.views.UsuarioViewSet:26] [finalize_response] 📤 ✗ Response: 401 | Action: create
+[2025-11-14 01:21:55] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/ | Action: create
+[2025-11-14 01:21:55] [ERROR] [api.views.UsuarioViewSet:114] [log_exception] NotAuthenticated: Authentication credentials were not provided. | Context: action=create, view=UsuarioViewSet
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 421, in initial
+    self.check_permissions(request)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 339, in check_permissions
+    self.permission_denied(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+        message=getattr(permission, 'message', None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        code=getattr(permission, 'code', None)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 180, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+[2025-11-14 01:21:55] [INFO] [api.views.UsuarioViewSet:26] [finalize_response] 📤 ✗ Response: 401 | Action: create
+[2025-11-14 01:26:51] [INFO] [daphne.server:322] Killed 0 pending application instances
+[2025-11-14 01:27:00] [INFO] [daphne.cli:268] Starting server at ssl:8000:privateKey=key.pem:certKey=cert.pem
+[2025-11-14 01:27:00] [INFO] [daphne.server:120] HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+[2025-11-14 01:27:00] [INFO] [daphne.server:129] Configuring endpoint ssl:8000:privateKey=key.pem:certKey=cert.pem
+[2025-11-14 01:27:00] [INFO] [daphne.server:160] Listening on TCP address 0.0.0.0:8000
+[2025-11-14 01:27:49] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 GET /api/formularios/ | Action: list
+[2025-11-14 01:27:49] [INFO] [api.views.FormularioViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 GET /api/administradores/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 POST /api/administradores/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 GET /api/administradores/{id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 PUT /api/administradores/{id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 PATCH /api/administradores/{id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 DELETE /api/administradores/{id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 GET /api/analisis/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 POST /api/analisis/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 GET /api/analisis/{id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 PUT /api/analisis/{id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 PATCH /api/analisis/{id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 DELETE /api/analisis/{id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 GET /api/consumidores/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 POST /api/consumidores/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 GET /api/consumidores/{id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 PUT /api/consumidores/{id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 PATCH /api/consumidores/{id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 DELETE /api/consumidores/{id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 GET /api/dashboard/daily-summary/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 POST /api/dashboard/daily-summary/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 GET /api/dashboard/daily-summary/{consumidor_id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 PUT /api/dashboard/daily-summary/{consumidor_id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/daily-summary/{consumidor_id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/daily-summary/{consumidor_id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 POST /api/dashboard/desires/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 POST /api/dashboard/desires-stats/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/{id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 PUT /api/dashboard/desires-stats/{id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/desires-stats/{id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/desires-stats/{id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 POST /api/dashboard/desires-tracking/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/{deseo_id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 PUT /api/dashboard/desires-tracking/{deseo_id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/desires-tracking/{deseo_id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/desires-tracking/{deseo_id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires/{deseo_id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 PUT /api/dashboard/desires/{deseo_id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/desires/{deseo_id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/desires/{deseo_id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/habit-stats/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 POST /api/dashboard/habit-stats/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/habit-stats/{consumidor_id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 PUT /api/dashboard/habit-stats/{consumidor_id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/habit-stats/{consumidor_id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/habit-stats/{consumidor_id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/habit-tracking/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 POST /api/dashboard/habit-tracking/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/habit-tracking/{consumidor_id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 PUT /api/dashboard/habit-tracking/{consumidor_id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/habit-tracking/{consumidor_id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/habit-tracking/{consumidor_id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 POST /api/dashboard/heart-rate/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 POST /api/dashboard/heart-rate-stats/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 PUT /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 POST /api/dashboard/heart-rate-today/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/{consumidor_id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 PUT /api/dashboard/heart-rate-today/{consumidor_id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/heart-rate-today/{consumidor_id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/heart-rate-today/{consumidor_id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate/{id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 PUT /api/dashboard/heart-rate/{id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/heart-rate/{id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/heart-rate/{id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 GET /api/dashboard/prediction-summary/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 POST /api/dashboard/prediction-summary/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 GET /api/dashboard/prediction-summary/{consumidor_id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 PUT /api/dashboard/prediction-summary/{consumidor_id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/prediction-summary/{consumidor_id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/prediction-summary/{consumidor_id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 GET /api/dashboard/predictions/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 POST /api/dashboard/predictions/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 GET /api/dashboard/predictions/{analisis_id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 PUT /api/dashboard/predictions/{analisis_id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/predictions/{analisis_id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/predictions/{analisis_id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 GET /api/dashboard/weekly-comparison/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 POST /api/dashboard/weekly-comparison/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 GET /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 PUT /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 GET /api/deseos/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 POST /api/deseos/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 GET /api/deseos/{id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 PUT /api/deseos/{id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 PATCH /api/deseos/{id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 DELETE /api/deseos/{id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 POST /api/deseos/{id}/resolve/ | Action: resolve
+[2025-11-14 01:27:58] [INFO] [api.views.DeviceSessionViewSet:16] [initialize_request] 📥 GET /api/device-session/active/ | Action: active
+[2025-11-14 01:27:58] [INFO] [api.views.DeviceSessionViewSet:16] [initialize_request] 📥 POST /api/device-session/check_session/ | Action: check_session
+[2025-11-14 01:27:58] [INFO] [api.views.DeviceSessionViewSet:16] [initialize_request] 📥 POST /api/device-session/extend_window/ | Action: extend_window
+[2025-11-14 01:27:58] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 GET /api/emociones/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 POST /api/emociones/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 GET /api/emociones/{id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 PUT /api/emociones/{id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 PATCH /api/emociones/{id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 DELETE /api/emociones/{id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 GET /api/formularios/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 POST /api/formularios/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 GET /api/formularios-temporales/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 POST /api/formularios-temporales/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 GET /api/formularios-temporales/{id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 PUT /api/formularios-temporales/{id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 PATCH /api/formularios-temporales/{id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 DELETE /api/formularios-temporales/{id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 GET /api/formularios/{id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 PUT /api/formularios/{id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 PATCH /api/formularios/{id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 DELETE /api/formularios/{id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 GET /api/habitos/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 POST /api/habitos/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 GET /api/habitos/{id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 PUT /api/habitos/{id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 PATCH /api/habitos/{id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 DELETE /api/habitos/{id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 GET /api/lecturas/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 POST /api/lecturas/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 GET /api/lecturas/{id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 PUT /api/lecturas/{id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 PATCH /api/lecturas/{id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 DELETE /api/lecturas/{id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 POST /api/lecturas/bulk_create/ | Action: bulk_create
+[2025-11-14 01:27:58] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 GET /api/motivos/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 POST /api/motivos/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 GET /api/motivos/{id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 PUT /api/motivos/{id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 PATCH /api/motivos/{id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 DELETE /api/motivos/{id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 GET /api/notificaciones/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 POST /api/notificaciones/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 GET /api/notificaciones/{id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 PUT /api/notificaciones/{id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 PATCH /api/notificaciones/{id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 DELETE /api/notificaciones/{id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 POST /api/notificaciones/{id}/mark_read/ | Action: mark_read
+[2025-11-14 01:27:58] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 POST /api/notificaciones/{id}/mark_unread/ | Action: mark_unread
+[2025-11-14 01:27:58] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 GET /api/permisos/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 POST /api/permisos/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 GET /api/permisos/{id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 PUT /api/permisos/{id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 PATCH /api/permisos/{id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 DELETE /api/permisos/{id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 GET /api/soluciones/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 POST /api/soluciones/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 GET /api/soluciones/{id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 PUT /api/soluciones/{id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 PATCH /api/soluciones/{id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 DELETE /api/soluciones/{id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 GET /api/usuarios/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 GET /api/usuarios/{id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 PUT /api/usuarios/{id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 PATCH /api/usuarios/{id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 DELETE /api/usuarios/{id}/ | Action: destroy
+[2025-11-14 01:27:58] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 PATCH /api/usuarios/{id}/profile/ | Action: profile
+[2025-11-14 01:27:58] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/login/ | Action: login
+[2025-11-14 01:27:58] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/logout/ | Action: logout
+[2025-11-14 01:27:58] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/register/ | Action: register
+[2025-11-14 01:27:58] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 GET /api/ventanas/ | Action: list
+[2025-11-14 01:27:58] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 POST /api/ventanas/ | Action: create
+[2025-11-14 01:27:58] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 GET /api/ventanas/{id}/ | Action: retrieve
+[2025-11-14 01:27:58] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 PUT /api/ventanas/{id}/ | Action: update
+[2025-11-14 01:27:58] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 PATCH /api/ventanas/{id}/ | Action: partial_update
+[2025-11-14 01:27:58] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 DELETE /api/ventanas/{id}/ | Action: destroy
+[2025-11-14 01:28:44] [INFO] [daphne.server:322] Killed 0 pending application instances
+[2025-11-14 01:28:56] [INFO] [daphne.cli:268] Starting server at ssl:8000:privateKey=key.pem:certKey=cert.pem
+[2025-11-14 01:28:56] [INFO] [daphne.server:120] HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+[2025-11-14 01:28:56] [INFO] [daphne.server:129] Configuring endpoint ssl:8000:privateKey=key.pem:certKey=cert.pem
+[2025-11-14 01:28:56] [INFO] [daphne.server:160] Listening on TCP address 0.0.0.0:8000
+[2025-11-14 01:33:28] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/register/ | Action: register
+[2025-11-14 01:33:29] [INFO] [api.services.user_factory:31] Created Consumidor: gagor0202@gmail.com (ID: 1, Profile ID: 1)
+[2025-11-14 01:33:29] [INFO] [api.views.UsuarioViewSet:64] [register] New user registered: gagor0202@gmail.com (rol: consumidor)
+[2025-11-14 01:33:29] [INFO] [api.views.UsuarioViewSet:26] [finalize_response] 📤 ✓ Response: 201 | Action: register
+[2025-11-14 01:33:45] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 GET /api/consumidores/1/ | Action: retrieve
+[2025-11-14 01:33:45] [INFO] [api.views.ConsumidorViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: retrieve
+[2025-11-14 01:33:45] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 PATCH /api/consumidores/1/ | Action: partial_update
+[2025-11-14 01:33:45] [INFO] [api.views.ConsumidorViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: partial_update
+[2025-11-14 01:33:55] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 GET /api/formularios/ | Action: list
+[2025-11-14 01:33:55] [INFO] [api.views.FormularioViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:33:55] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 POST /api/formularios/ | Action: create
+[2025-11-14 01:33:55] [INFO] [api.views.FormularioViewSet:26] [finalize_response] 📤 ✓ Response: 201 | Action: create
+[2025-11-14 01:33:58] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:33:58] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:33:58] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:33:58] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:33:58] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:33:58] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:33:58] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:33:58] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:33:58] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:33:58] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:33:58] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:33:58] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:34:14] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:34:14] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:34:14] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:34:14] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:34:14] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:34:14] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:34:14] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:34:14] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:34:14] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:34:14] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:34:14] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:34:14] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:34:16] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:34:16] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:34:16] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:34:16] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:34:16] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:34:16] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:34:16] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:34:16] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:34:16] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:34:16] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:34:16] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:34:16] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:34:18] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:34:18] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:34:18] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:34:18] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:34:18] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:34:18] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:34:18] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:34:18] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:34:18] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:34:18] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:34:18] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:34:18] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:36:51] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:36:51] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:36:51] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:36:51] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:36:51] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:36:51] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:36:51] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:36:51] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:36:51] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:36:51] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:36:51] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:36:51] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:36:52] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:36:52] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:36:52] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:36:52] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:36:52] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:36:52] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:36:52] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:36:52] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:36:52] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:36:52] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:36:52] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:36:52] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:03] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:37:03] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:03] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:37:03] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:03] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:37:03] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:37:03] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:03] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:03] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:03] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:03] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:03] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:09] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:37:09] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:09] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:37:09] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:09] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:37:09] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:37:09] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:09] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:09] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:09] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:09] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:09] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:19] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:37:19] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:19] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:37:19] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:37:19] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:19] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:19] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:37:19] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:20] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:20] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:20] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:20] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:29] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:37:29] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:37:29] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:29] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:37:29] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:29] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:37:29] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:29] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:29] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:29] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:29] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:32] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:37:32] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:32] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:37:32] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:32] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:37:32] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:37:32] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:32] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:33] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:33] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:33] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:33] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:39] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:37:39] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:39] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:37:39] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:37:39] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:37:39] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:39] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:39] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:37:39] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:39] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:39] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:37:39] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:38:44] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:38:44] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:38:44] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:38:44] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:38:44] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:38:44] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:38:44] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:38:44] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:38:44] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:38:44] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:38:44] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:38:44] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:39:59] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:39:59] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:39:59] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:39:59] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:39:59] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:39:59] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:39:59] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:39:59] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:39:59] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:39:59] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:39:59] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:39:59] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:43:05] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:43:05] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:43:05] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:43:05] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:43:05] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:43:05] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:43:05] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:43:05] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:43:05] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:43:05] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:43:05] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:43:05] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:44:37] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:44:37] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:44:37] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:44:37] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:44:37] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:44:37] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:44:37] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:44:37] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:44:37] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:44:37] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:44:37] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:44:37] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:45:47] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:45:47] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:45:47] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:45:47] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:45:47] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:45:47] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:45:47] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:45:47] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:45:47] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:45:47] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:45:47] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:45:47] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:47:46] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:47:46] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:47:46] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:47:46] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:47:46] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:47:46] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:47:46] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:47:46] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:47:46] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:47:46] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:47:46] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:47:46] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:48:08] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:48:08] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:48:08] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:48:08] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:48:08] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:48:08] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:48:08] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:48:08] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:48:08] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:48:08] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:48:08] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:48:08] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:50:25] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:50:25] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:50:25] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:50:25] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:50:25] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:50:25] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:50:25] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:50:25] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:50:25] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:50:25] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:50:25] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:50:25] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:50:32] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:50:32] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:50:32] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:50:32] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:50:32] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:50:32] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:50:32] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:50:32] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:50:32] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:50:32] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:50:32] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:50:32] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:52:33] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:52:33] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:52:33] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:52:33] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:52:33] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:52:33] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:52:33] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:52:33] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:52:33] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:52:33] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:52:33] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:52:33] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:52:45] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:52:45] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:52:45] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:52:45] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:52:45] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:52:45] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:52:45] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:52:45] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:52:45] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:52:45] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:52:45] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:52:45] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:54:27] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:54:27] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:54:27] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:54:27] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:54:27] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:54:27] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:54:27] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:54:27] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:54:27] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:54:27] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:54:27] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:54:27] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:54:46] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:54:46] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:54:46] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:54:46] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:54:46] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:54:46] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:54:46] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:54:46] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:54:46] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:54:46] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:54:46] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:54:46] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:55:10] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:55:10] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:55:10] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:55:10] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:55:10] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:55:10] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:55:10] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:55:10] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:55:10] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:55:10] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:55:10] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:55:22] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:55:22] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:55:22] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:55:22] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:55:22] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:55:22] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:55:22] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:55:22] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:55:23] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:55:23] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:55:23] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:55:23] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:55:29] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:55:29] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:55:29] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:55:29] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:55:29] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:55:29] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:55:29] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:55:29] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:55:29] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:55:29] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:55:29] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:55:29] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:56:03] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:56:03] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:56:03] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:56:03] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:56:03] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:56:03] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:56:03] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:56:03] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:56:03] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:56:03] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:56:03] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:56:03] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:56:10] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:56:10] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:56:10] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:56:10] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:56:10] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:56:10] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:56:10] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:56:10] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:56:10] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:56:10] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:56:10] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:56:10] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:58:58] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:58:58] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:58:58] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:58:58] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:58:58] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:58:58] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:58:58] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:58:58] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:58:58] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:58:58] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:58:58] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:58:58] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:59:16] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 01:59:16] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 01:59:16] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 01:59:16] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:59:16] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:59:16] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:59:16] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 01:59:16] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 01:59:16] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:59:16] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:59:16] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 01:59:16] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 02:00:23] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/login/ | Action: login
+[2025-11-14 02:00:24] [WARNING] [api.services.auth_service:58] Administrador profile not found for user 1
+[2025-11-14 02:00:24] [INFO] [api.services.auth_service:67] Successful login: gagor0202@gmail.com (rol: administrador)
+[2025-11-14 02:00:24] [ERROR] [api.views.UsuarioViewSet:114] [log_exception] NameError: name 'timezone' is not defined | Context: action=login, view=UsuarioViewSet
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\USER\Desktop\Simulador-0910\WearableApi\api\views.py", line 101, in login
+    window_start=timezone.now(),
+                 ^^^^^^^^
+NameError: name 'timezone' is not defined
+[2025-11-14 02:00:53] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/login/ | Action: login
+[2025-11-14 02:00:54] [WARNING] [api.services.auth_service:26] Failed login: gagor0202@gmail.com (invalid password)
+[2025-11-14 02:00:54] [INFO] [api.views.UsuarioViewSet:26] [finalize_response] 📤 ✗ Response: 401 | Action: login
+[2025-11-14 02:01:40] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/register/ | Action: register
+[2025-11-14 02:01:40] [ERROR] [api.views.UsuarioViewSet:114] [log_exception] ValidationError: {'email': [ErrorDetail(string='This email is already registered', code='invalid')], 'password': [ErrorDetail(string='Password must contain at least one letter', code='invalid')]} | Context: action=register, view=UsuarioViewSet
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\USER\Desktop\Simulador-0910\WearableApi\api\views.py", line 30, in register
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\serializers.py", line 233, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'email': [ErrorDetail(string='This email is already registered', code='invalid')], 'password': [ErrorDetail(string='Password must contain at least one letter', code='invalid')]}
+[2025-11-14 02:01:40] [INFO] [api.views.UsuarioViewSet:26] [finalize_response] 📤 ✗ Response: 400 | Action: register
+[2025-11-14 02:01:49] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/register/ | Action: register
+[2025-11-14 02:01:49] [ERROR] [api.views.UsuarioViewSet:114] [log_exception] ValidationError: {'password': [ErrorDetail(string='Password must contain at least one letter', code='invalid')]} | Context: action=register, view=UsuarioViewSet
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\USER\Desktop\Simulador-0910\WearableApi\api\views.py", line 30, in register
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\serializers.py", line 233, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'password': [ErrorDetail(string='Password must contain at least one letter', code='invalid')]}
+[2025-11-14 02:01:49] [INFO] [api.views.UsuarioViewSet:26] [finalize_response] 📤 ✗ Response: 400 | Action: register
+[2025-11-14 02:02:19] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/register/ | Action: register
+[2025-11-14 02:02:20] [INFO] [api.services.user_factory:31] Created Consumidor: gagor02@gmail.com (ID: 2, Profile ID: 2)
+[2025-11-14 02:02:20] [INFO] [api.views.UsuarioViewSet:64] [register] New user registered: gagor02@gmail.com (rol: consumidor)
+[2025-11-14 02:02:20] [INFO] [api.views.UsuarioViewSet:26] [finalize_response] 📤 ✓ Response: 201 | Action: register
+[2025-11-14 02:02:29] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 GET /api/consumidores/2/ | Action: retrieve
+[2025-11-14 02:02:29] [INFO] [api.views.ConsumidorViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: retrieve
+[2025-11-14 02:02:29] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 PATCH /api/consumidores/2/ | Action: partial_update
+[2025-11-14 02:02:29] [INFO] [api.views.ConsumidorViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: partial_update
+[2025-11-14 02:02:35] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 GET /api/formularios/ | Action: list
+[2025-11-14 02:02:35] [INFO] [api.views.FormularioViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 02:02:35] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 POST /api/formularios/ | Action: create
+[2025-11-14 02:02:35] [INFO] [api.views.FormularioViewSet:26] [finalize_response] 📤 ✓ Response: 201 | Action: create
+[2025-11-14 02:02:37] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 02:02:37] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 02:02:37] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 02:02:37] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 02:02:37] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 02:02:37] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 02:02:37] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 02:02:37] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 02:02:37] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 02:02:37] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 02:02:37] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 02:02:37] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 02:06:13] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/login/ | Action: login
+[2025-11-14 02:06:13] [WARNING] [api.services.auth_service:26] Failed login: gagor02@gmail.com (invalid password)
+[2025-11-14 02:06:13] [INFO] [api.views.UsuarioViewSet:26] [finalize_response] 📤 ✗ Response: 401 | Action: login
+[2025-11-14 02:06:19] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/login/ | Action: login
+[2025-11-14 02:06:20] [INFO] [api.services.auth_service:67] Successful login: gagor02@gmail.com (rol: consumidor)
+[2025-11-14 02:06:20] [ERROR] [api.views.UsuarioViewSet:114] [log_exception] NameError: name 'timezone' is not defined | Context: action=login, view=UsuarioViewSet
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\USER\Desktop\Simulador-0910\WearableApi\api\views.py", line 101, in login
+    window_start=timezone.now(),
+                 ^^^^^^^^
+NameError: name 'timezone' is not defined
+[2025-11-14 02:06:46] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/register/ | Action: register
+[2025-11-14 02:06:46] [INFO] [api.services.user_factory:31] Created Consumidor: gagor0@gmail.com (ID: 3, Profile ID: 3)
+[2025-11-14 02:06:46] [INFO] [api.views.UsuarioViewSet:64] [register] New user registered: gagor0@gmail.com (rol: consumidor)
+[2025-11-14 02:06:46] [INFO] [api.views.UsuarioViewSet:26] [finalize_response] 📤 ✓ Response: 201 | Action: register
+[2025-11-14 02:06:55] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 GET /api/consumidores/3/ | Action: retrieve
+[2025-11-14 02:06:55] [INFO] [api.views.ConsumidorViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: retrieve
+[2025-11-14 02:06:55] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 PATCH /api/consumidores/3/ | Action: partial_update
+[2025-11-14 02:06:55] [INFO] [api.views.ConsumidorViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: partial_update
+[2025-11-14 02:07:03] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 GET /api/formularios/ | Action: list
+[2025-11-14 02:07:03] [INFO] [api.views.FormularioViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 02:07:03] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 POST /api/formularios/ | Action: create
+[2025-11-14 02:07:03] [INFO] [api.views.FormularioViewSet:26] [finalize_response] 📤 ✓ Response: 201 | Action: create
+[2025-11-14 02:07:05] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 02:07:05] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 02:07:05] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 02:07:05] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 02:07:05] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 02:07:05] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 02:07:05] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 02:07:05] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 02:07:05] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 02:07:05] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 02:07:05] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 02:07:05] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 02:52:59] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/register/ | Action: register
+[2025-11-14 02:52:59] [ERROR] [api.views.UsuarioViewSet:114] [log_exception] ValidationError: {'telefono': [ErrorDetail(string='This field may not be null.', code='null')]} | Context: action=register, view=UsuarioViewSet
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\USER\Desktop\Simulador-0910\WearableApi\api\views.py", line 30, in register
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Simulador-0910\venv\Lib\site-packages\rest_framework\serializers.py", line 233, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'telefono': [ErrorDetail(string='This field may not be null.', code='null')]}
+[2025-11-14 02:52:59] [INFO] [api.views.UsuarioViewSet:26] [finalize_response] 📤 ✗ Response: 400 | Action: register
+[2025-11-14 02:55:30] [INFO] [daphne.server:322] Killed 0 pending application instances
+[2025-11-14 02:55:34] [INFO] [daphne.cli:268] Starting server at ssl:8000:privateKey=key.pem:certKey=cert.pem
+[2025-11-14 02:55:34] [INFO] [daphne.server:120] HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+[2025-11-14 02:55:34] [INFO] [daphne.server:129] Configuring endpoint ssl:8000:privateKey=key.pem:certKey=cert.pem
+[2025-11-14 02:55:34] [INFO] [daphne.server:160] Listening on TCP address 0.0.0.0:8000
+[2025-11-14 02:55:45] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 GET /api/administradores/ | Action: list
+[2025-11-14 02:55:45] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 POST /api/administradores/ | Action: create
+[2025-11-14 02:55:45] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 GET /api/administradores/{id}/ | Action: retrieve
+[2025-11-14 02:55:45] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 PUT /api/administradores/{id}/ | Action: update
+[2025-11-14 02:55:45] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 PATCH /api/administradores/{id}/ | Action: partial_update
+[2025-11-14 02:55:45] [INFO] [api.views.AdministradorViewSet:16] [initialize_request] 📥 DELETE /api/administradores/{id}/ | Action: destroy
+[2025-11-14 02:55:45] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 GET /api/analisis/ | Action: list
+[2025-11-14 02:55:45] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 POST /api/analisis/ | Action: create
+[2025-11-14 02:55:45] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 GET /api/analisis/{id}/ | Action: retrieve
+[2025-11-14 02:55:45] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 PUT /api/analisis/{id}/ | Action: update
+[2025-11-14 02:55:45] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 PATCH /api/analisis/{id}/ | Action: partial_update
+[2025-11-14 02:55:45] [INFO] [api.views.AnalisisViewSet:16] [initialize_request] 📥 DELETE /api/analisis/{id}/ | Action: destroy
+[2025-11-14 02:55:45] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 GET /api/consumidores/ | Action: list
+[2025-11-14 02:55:45] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 POST /api/consumidores/ | Action: create
+[2025-11-14 02:55:45] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 GET /api/consumidores/{id}/ | Action: retrieve
+[2025-11-14 02:55:45] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 PUT /api/consumidores/{id}/ | Action: update
+[2025-11-14 02:55:45] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 PATCH /api/consumidores/{id}/ | Action: partial_update
+[2025-11-14 02:55:45] [INFO] [api.views.ConsumidorViewSet:16] [initialize_request] 📥 DELETE /api/consumidores/{id}/ | Action: destroy
+[2025-11-14 02:55:45] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 GET /api/dashboard/daily-summary/ | Action: list
+[2025-11-14 02:55:45] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 POST /api/dashboard/daily-summary/ | Action: create
+[2025-11-14 02:55:45] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 GET /api/dashboard/daily-summary/{consumidor_id}/ | Action: retrieve
+[2025-11-14 02:55:45] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 PUT /api/dashboard/daily-summary/{consumidor_id}/ | Action: update
+[2025-11-14 02:55:45] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/daily-summary/{consumidor_id}/ | Action: partial_update
+[2025-11-14 02:55:45] [INFO] [api.views.VwDailySummaryViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/daily-summary/{consumidor_id}/ | Action: destroy
+[2025-11-14 02:55:45] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires/ | Action: list
+[2025-11-14 02:55:45] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 POST /api/dashboard/desires/ | Action: create
+[2025-11-14 02:55:45] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 02:55:45] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 POST /api/dashboard/desires-stats/ | Action: create
+[2025-11-14 02:55:45] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/{id}/ | Action: retrieve
+[2025-11-14 02:55:45] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 PUT /api/dashboard/desires-stats/{id}/ | Action: update
+[2025-11-14 02:55:45] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/desires-stats/{id}/ | Action: partial_update
+[2025-11-14 02:55:45] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/desires-stats/{id}/ | Action: destroy
+[2025-11-14 02:55:45] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 02:55:45] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 POST /api/dashboard/desires-tracking/ | Action: create
+[2025-11-14 02:55:45] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/{deseo_id}/ | Action: retrieve
+[2025-11-14 02:55:45] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 PUT /api/dashboard/desires-tracking/{deseo_id}/ | Action: update
+[2025-11-14 02:55:45] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/desires-tracking/{deseo_id}/ | Action: partial_update
+[2025-11-14 02:55:45] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/desires-tracking/{deseo_id}/ | Action: destroy
+[2025-11-14 02:55:45] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires/{deseo_id}/ | Action: retrieve
+[2025-11-14 02:55:45] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 PUT /api/dashboard/desires/{deseo_id}/ | Action: update
+[2025-11-14 02:55:45] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/desires/{deseo_id}/ | Action: partial_update
+[2025-11-14 02:55:45] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/desires/{deseo_id}/ | Action: destroy
+[2025-11-14 02:55:45] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/habit-stats/ | Action: list
+[2025-11-14 02:55:45] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 POST /api/dashboard/habit-stats/ | Action: create
+[2025-11-14 02:55:45] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/habit-stats/{consumidor_id}/ | Action: retrieve
+[2025-11-14 02:55:45] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 PUT /api/dashboard/habit-stats/{consumidor_id}/ | Action: update
+[2025-11-14 02:55:45] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/habit-stats/{consumidor_id}/ | Action: partial_update
+[2025-11-14 02:55:45] [INFO] [api.views.VwHabitStatsViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/habit-stats/{consumidor_id}/ | Action: destroy
+[2025-11-14 02:55:45] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/habit-tracking/ | Action: list
+[2025-11-14 02:55:45] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 POST /api/dashboard/habit-tracking/ | Action: create
+[2025-11-14 02:55:45] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/habit-tracking/{consumidor_id}/ | Action: retrieve
+[2025-11-14 02:55:45] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 PUT /api/dashboard/habit-tracking/{consumidor_id}/ | Action: update
+[2025-11-14 02:55:45] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/habit-tracking/{consumidor_id}/ | Action: partial_update
+[2025-11-14 02:55:45] [INFO] [api.views.VwHabitTrackingViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/habit-tracking/{consumidor_id}/ | Action: destroy
+[2025-11-14 02:55:45] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate/ | Action: list
+[2025-11-14 02:55:45] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 POST /api/dashboard/heart-rate/ | Action: create
+[2025-11-14 02:55:45] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 02:55:45] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 POST /api/dashboard/heart-rate-stats/ | Action: create
+[2025-11-14 02:55:45] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: retrieve
+[2025-11-14 02:55:45] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 PUT /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: update
+[2025-11-14 02:55:45] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: partial_update
+[2025-11-14 02:55:45] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/heart-rate-stats/{consumidor_id}/ | Action: destroy
+[2025-11-14 02:55:45] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 02:55:45] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 POST /api/dashboard/heart-rate-today/ | Action: create
+[2025-11-14 02:55:45] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/{consumidor_id}/ | Action: retrieve
+[2025-11-14 02:55:45] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 PUT /api/dashboard/heart-rate-today/{consumidor_id}/ | Action: update
+[2025-11-14 02:55:45] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/heart-rate-today/{consumidor_id}/ | Action: partial_update
+[2025-11-14 02:55:45] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/heart-rate-today/{consumidor_id}/ | Action: destroy
+[2025-11-14 02:55:45] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate/{id}/ | Action: retrieve
+[2025-11-14 02:55:45] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 PUT /api/dashboard/heart-rate/{id}/ | Action: update
+[2025-11-14 02:55:45] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/heart-rate/{id}/ | Action: partial_update
+[2025-11-14 02:55:45] [INFO] [api.views.VwHeartRateTimelineViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/heart-rate/{id}/ | Action: destroy
+[2025-11-14 02:55:45] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 GET /api/dashboard/prediction-summary/ | Action: list
+[2025-11-14 02:55:45] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 POST /api/dashboard/prediction-summary/ | Action: create
+[2025-11-14 02:55:45] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 GET /api/dashboard/prediction-summary/{consumidor_id}/ | Action: retrieve
+[2025-11-14 02:55:45] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 PUT /api/dashboard/prediction-summary/{consumidor_id}/ | Action: update
+[2025-11-14 02:55:45] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/prediction-summary/{consumidor_id}/ | Action: partial_update
+[2025-11-14 02:55:45] [INFO] [api.views.VwPredictionSummaryViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/prediction-summary/{consumidor_id}/ | Action: destroy
+[2025-11-14 02:55:45] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 GET /api/dashboard/predictions/ | Action: list
+[2025-11-14 02:55:45] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 POST /api/dashboard/predictions/ | Action: create
+[2025-11-14 02:55:45] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 GET /api/dashboard/predictions/{analisis_id}/ | Action: retrieve
+[2025-11-14 02:55:45] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 PUT /api/dashboard/predictions/{analisis_id}/ | Action: update
+[2025-11-14 02:55:45] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/predictions/{analisis_id}/ | Action: partial_update
+[2025-11-14 02:55:45] [INFO] [api.views.VwPredictionTimelineViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/predictions/{analisis_id}/ | Action: destroy
+[2025-11-14 02:55:45] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 GET /api/dashboard/weekly-comparison/ | Action: list
+[2025-11-14 02:55:45] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 POST /api/dashboard/weekly-comparison/ | Action: create
+[2025-11-14 02:55:45] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 GET /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: retrieve
+[2025-11-14 02:55:45] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 PUT /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: update
+[2025-11-14 02:55:45] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 PATCH /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: partial_update
+[2025-11-14 02:55:45] [INFO] [api.views.VwWeeklyComparisonViewSet:16] [initialize_request] 📥 DELETE /api/dashboard/weekly-comparison/{consumidor_id}/ | Action: destroy
+[2025-11-14 02:55:45] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 GET /api/deseos/ | Action: list
+[2025-11-14 02:55:45] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 POST /api/deseos/ | Action: create
+[2025-11-14 02:55:45] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 GET /api/deseos/{id}/ | Action: retrieve
+[2025-11-14 02:55:45] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 PUT /api/deseos/{id}/ | Action: update
+[2025-11-14 02:55:45] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 PATCH /api/deseos/{id}/ | Action: partial_update
+[2025-11-14 02:55:45] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 DELETE /api/deseos/{id}/ | Action: destroy
+[2025-11-14 02:55:45] [INFO] [api.views.DeseoViewSet:16] [initialize_request] 📥 POST /api/deseos/{id}/resolve/ | Action: resolve
+[2025-11-14 02:55:45] [INFO] [api.views.DeviceSessionViewSet:16] [initialize_request] 📥 GET /api/device-session/active/ | Action: active
+[2025-11-14 02:55:45] [INFO] [api.views.DeviceSessionViewSet:16] [initialize_request] 📥 POST /api/device-session/check_session/ | Action: check_session
+[2025-11-14 02:55:45] [INFO] [api.views.DeviceSessionViewSet:16] [initialize_request] 📥 POST /api/device-session/extend_window/ | Action: extend_window
+[2025-11-14 02:55:45] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 GET /api/emociones/ | Action: list
+[2025-11-14 02:55:45] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 POST /api/emociones/ | Action: create
+[2025-11-14 02:55:45] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 GET /api/emociones/{id}/ | Action: retrieve
+[2025-11-14 02:55:45] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 PUT /api/emociones/{id}/ | Action: update
+[2025-11-14 02:55:45] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 PATCH /api/emociones/{id}/ | Action: partial_update
+[2025-11-14 02:55:45] [INFO] [api.views.EmocionViewSet:16] [initialize_request] 📥 DELETE /api/emociones/{id}/ | Action: destroy
+[2025-11-14 02:55:46] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 GET /api/formularios/ | Action: list
+[2025-11-14 02:55:46] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 POST /api/formularios/ | Action: create
+[2025-11-14 02:55:46] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 GET /api/formularios-temporales/ | Action: list
+[2025-11-14 02:55:46] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 POST /api/formularios-temporales/ | Action: create
+[2025-11-14 02:55:46] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 GET /api/formularios-temporales/{id}/ | Action: retrieve
+[2025-11-14 02:55:46] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 PUT /api/formularios-temporales/{id}/ | Action: update
+[2025-11-14 02:55:46] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 PATCH /api/formularios-temporales/{id}/ | Action: partial_update
+[2025-11-14 02:55:46] [INFO] [api.views.FormularioTemporalViewSet:16] [initialize_request] 📥 DELETE /api/formularios-temporales/{id}/ | Action: destroy
+[2025-11-14 02:55:46] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 GET /api/formularios/{id}/ | Action: retrieve
+[2025-11-14 02:55:46] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 PUT /api/formularios/{id}/ | Action: update
+[2025-11-14 02:55:46] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 PATCH /api/formularios/{id}/ | Action: partial_update
+[2025-11-14 02:55:46] [INFO] [api.views.FormularioViewSet:16] [initialize_request] 📥 DELETE /api/formularios/{id}/ | Action: destroy
+[2025-11-14 02:55:46] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 GET /api/habitos/ | Action: list
+[2025-11-14 02:55:46] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 POST /api/habitos/ | Action: create
+[2025-11-14 02:55:46] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 GET /api/habitos/{id}/ | Action: retrieve
+[2025-11-14 02:55:46] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 PUT /api/habitos/{id}/ | Action: update
+[2025-11-14 02:55:46] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 PATCH /api/habitos/{id}/ | Action: partial_update
+[2025-11-14 02:55:46] [INFO] [api.views.HabitoViewSet:16] [initialize_request] 📥 DELETE /api/habitos/{id}/ | Action: destroy
+[2025-11-14 02:55:46] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 GET /api/lecturas/ | Action: list
+[2025-11-14 02:55:46] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 POST /api/lecturas/ | Action: create
+[2025-11-14 02:55:46] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 GET /api/lecturas/{id}/ | Action: retrieve
+[2025-11-14 02:55:46] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 PUT /api/lecturas/{id}/ | Action: update
+[2025-11-14 02:55:46] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 PATCH /api/lecturas/{id}/ | Action: partial_update
+[2025-11-14 02:55:46] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 DELETE /api/lecturas/{id}/ | Action: destroy
+[2025-11-14 02:55:46] [INFO] [api.views.LecturaViewSet:16] [initialize_request] 📥 POST /api/lecturas/bulk_create/ | Action: bulk_create
+[2025-11-14 02:55:46] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 GET /api/motivos/ | Action: list
+[2025-11-14 02:55:46] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 POST /api/motivos/ | Action: create
+[2025-11-14 02:55:46] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 GET /api/motivos/{id}/ | Action: retrieve
+[2025-11-14 02:55:46] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 PUT /api/motivos/{id}/ | Action: update
+[2025-11-14 02:55:46] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 PATCH /api/motivos/{id}/ | Action: partial_update
+[2025-11-14 02:55:46] [INFO] [api.views.MotivoViewSet:16] [initialize_request] 📥 DELETE /api/motivos/{id}/ | Action: destroy
+[2025-11-14 02:55:46] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 GET /api/notificaciones/ | Action: list
+[2025-11-14 02:55:46] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 POST /api/notificaciones/ | Action: create
+[2025-11-14 02:55:46] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 GET /api/notificaciones/{id}/ | Action: retrieve
+[2025-11-14 02:55:46] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 PUT /api/notificaciones/{id}/ | Action: update
+[2025-11-14 02:55:46] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 PATCH /api/notificaciones/{id}/ | Action: partial_update
+[2025-11-14 02:55:46] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 DELETE /api/notificaciones/{id}/ | Action: destroy
+[2025-11-14 02:55:46] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 POST /api/notificaciones/{id}/mark_read/ | Action: mark_read
+[2025-11-14 02:55:46] [INFO] [api.views.NotificacionViewSet:16] [initialize_request] 📥 POST /api/notificaciones/{id}/mark_unread/ | Action: mark_unread
+[2025-11-14 02:55:46] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 GET /api/permisos/ | Action: list
+[2025-11-14 02:55:46] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 POST /api/permisos/ | Action: create
+[2025-11-14 02:55:46] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 GET /api/permisos/{id}/ | Action: retrieve
+[2025-11-14 02:55:46] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 PUT /api/permisos/{id}/ | Action: update
+[2025-11-14 02:55:46] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 PATCH /api/permisos/{id}/ | Action: partial_update
+[2025-11-14 02:55:46] [INFO] [api.views.PermisoViewSet:16] [initialize_request] 📥 DELETE /api/permisos/{id}/ | Action: destroy
+[2025-11-14 02:55:46] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 GET /api/soluciones/ | Action: list
+[2025-11-14 02:55:46] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 POST /api/soluciones/ | Action: create
+[2025-11-14 02:55:46] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 GET /api/soluciones/{id}/ | Action: retrieve
+[2025-11-14 02:55:46] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 PUT /api/soluciones/{id}/ | Action: update
+[2025-11-14 02:55:46] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 PATCH /api/soluciones/{id}/ | Action: partial_update
+[2025-11-14 02:55:46] [INFO] [api.views.SolucionViewSet:16] [initialize_request] 📥 DELETE /api/soluciones/{id}/ | Action: destroy
+[2025-11-14 02:55:46] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 GET /api/usuarios/ | Action: list
+[2025-11-14 02:55:46] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/ | Action: create
+[2025-11-14 02:55:46] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 GET /api/usuarios/{id}/ | Action: retrieve
+[2025-11-14 02:55:46] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 PUT /api/usuarios/{id}/ | Action: update
+[2025-11-14 02:55:46] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 PATCH /api/usuarios/{id}/ | Action: partial_update
+[2025-11-14 02:55:46] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 DELETE /api/usuarios/{id}/ | Action: destroy
+[2025-11-14 02:55:46] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 PATCH /api/usuarios/{id}/profile/ | Action: profile
+[2025-11-14 02:55:46] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/login/ | Action: login
+[2025-11-14 02:55:46] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/logout/ | Action: logout
+[2025-11-14 02:55:46] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/register/ | Action: register
+[2025-11-14 02:55:46] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 GET /api/ventanas/ | Action: list
+[2025-11-14 02:55:46] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 POST /api/ventanas/ | Action: create
+[2025-11-14 02:55:46] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 GET /api/ventanas/{id}/ | Action: retrieve
+[2025-11-14 02:55:46] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 PUT /api/ventanas/{id}/ | Action: update
+[2025-11-14 02:55:46] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 PATCH /api/ventanas/{id}/ | Action: partial_update
+[2025-11-14 02:55:46] [INFO] [api.views.VentanaViewSet:16] [initialize_request] 📥 DELETE /api/ventanas/{id}/ | Action: destroy
+[2025-11-14 02:56:05] [INFO] [api.views.UsuarioViewSet:16] [initialize_request] 📥 POST /api/usuarios/register/ | Action: register
+[2025-11-14 02:56:05] [INFO] [api.services.user_factory:31] Created Consumidor: gagor@gmail.com (ID: 4, Profile ID: 4)
+[2025-11-14 02:56:05] [INFO] [api.views.UsuarioViewSet:64] [register] New user registered: gagor@gmail.com (rol: consumidor)
+[2025-11-14 02:56:05] [INFO] [api.views.UsuarioViewSet:26] [finalize_response] 📤 ✓ Response: 201 | Action: register
+[2025-11-14 02:56:24] [INFO] [api.views.VwHeartRateTodayViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-today/ | Action: list
+[2025-11-14 02:56:24] [DEBUG] [api.views.VwHeartRateTodayViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 02:56:24] [INFO] [api.views.VwHeartRateStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/heart-rate-stats/ | Action: list
+[2025-11-14 02:56:24] [DEBUG] [api.views.VwHeartRateStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 02:56:24] [INFO] [api.views.VwDesiresStatsViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-stats/ | Action: list
+[2025-11-14 02:56:24] [INFO] [api.views.VwDesiresTrackingViewSet:16] [initialize_request] 📥 GET /api/dashboard/desires-tracking/ | Action: list
+[2025-11-14 02:56:24] [DEBUG] [api.views.VwDesiresStatsViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 02:56:24] [DEBUG] [api.views.VwDesiresTrackingViewSet:52] [get_queryset] 🔍 Filtering by consumidor_id: 1
+[2025-11-14 02:56:24] [INFO] [api.views.VwHeartRateTodayViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 02:56:24] [INFO] [api.views.VwHeartRateStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 02:56:24] [INFO] [api.views.VwDesiresStatsViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 02:56:24] [INFO] [api.views.VwDesiresTrackingViewSet:26] [finalize_response] 📤 ✓ Response: 200 | Action: list
+[2025-11-14 03:12:18] [INFO] [daphne.server:322] Killed 0 pending application instances
